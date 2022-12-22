@@ -26,15 +26,15 @@
 
 <!-- Додай секції id="contacts" -->
 <section class="contacts">
-  <div class="contacts__container">
+  <div class="contacts__container container">
     <h2 class="visually-hidden">Contacts</h2>
     <ul class="contacts__restaurants">
       <li class="contacts__categories">
         <span class="contacts__title">cafe</span>
         <ul class="contacts__box">
-          <p class="contacts__cities">chicago</p>
+          <p class="contacts__cities">Chicago</p>
           <li class="contacts__adress">
-            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow"
+            <a href="https://goo.gl/maps/papps6fs2TLJiucG6" target="_blank" rel="noopener noreferrer nofollow"
               class="contacts__link--adress">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a>
           </li>
           <li class="contacts__adress">
@@ -44,12 +44,17 @@
             <p class="contacts__week">Saturday - Sunday</p>
             <span class="contacts__time">08:00 AM - 16:00 PM</span>
           </li>
-          <li class="contacts__adress">
-            <a href="tel:+61(0) 383 766 284" class="contacts__link">+61(0) 383 766 284</a>
-          </li>
-          <li class="contacts__adress">
-            <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
-          </li>
+          <div class="contacts__auth">
+            <ul>
+              <li class="contacts__tel">
+                <a href="tel:+61(0) 383 766 284" class="contacts__link">+61(0) 383 766 284</a>
+              </li>
+              <li class="contacts__mail">
+                <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+              </li>
+            </ul>
+          </div>
+
 
         </ul>
       </li>
@@ -68,12 +73,16 @@
             <p class="contacts__week">Saturday - Sunday</p>
             <span class="contacts__time">08:00 AM - 16:00 PM</span>
           </li>
-          <li class="contacts__adress">
-            <a href="tel:+61(0) 383 766 284" class="contacts__link">+61(0) 383 766 284</a>
-          </li>
-          <li class="contacts__adress">
-            <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
-          </li>
+          <div class="contacts__auth">
+            <ul>
+              <li class="contacts__tel">
+                <a href="tel:+61(0) 383 766 284" class="contacts__link">+61(0) 383 766 284</a>
+              </li>
+              <li class="contacts__mail">
+                <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+              </li>
+            </ul>
+          </div>
 
         </ul>
       </li>
@@ -92,26 +101,35 @@
             <p class="contacts__week">Saturday - Sunday</p>
             <span class="contacts__time">08:00 AM - 16:00 PM</span>
           </li>
-          <li class="contacts__adress">
-            <a href="tel:+61(0) 383 766 284" class="contacts__link">+61(0) 383 766 284</a>
-          </li>
-          <li class="contacts__adress">
-            <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
-          </li>
+          <div class="contacts__auth">
+            <ul>
+              <li class="contacts__tel">
+                <a href="tel:+61(0) 383 766 284" class="contacts__link">+61(0) 383 766 284</a>
+              </li>
+              <li class="contacts__mail">
+                <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+              </li>
+            </ul>
+          </div>
 
         </ul>
       </li>
     </ul>
-    <button class="btn contacts__button" type="submit" data-modal-open>
-      Our Locations
-      <svg class="contacts__icon" width="12" height="12">
-        <use href="./images/sprite.svg#arrow-small"></use>
-      </svg>
-      <button class="btn contacts__button" type="submit" data-modal-open>
+    <div class="contacts__btns">
+      <button class="btn contacts__location" type="submit" data-modal-open>
+        Our Locations
+        <svg class="contacts__icon" width="12" height="12">
+          <use href="./images/sprite.svg#arrow-small"></use>
+        </svg>
+      </button>
+      <button class="btn contacts__franchise" type="submit" data-modal-open>
         Franchise
         <svg class="contacts__icon" width="12" height="12">
           <use href="./images/sprite.svg#arrow-small"></use>
         </svg>
+      </button>
+    </div>
+
   </div>
   <!-- modal-franchise-->
   <div class="backdrop-franchise is-hidden" data-modal>
