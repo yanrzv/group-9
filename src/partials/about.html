@@ -1,8 +1,43 @@
 <section>
   <div class="container about">
     <p class="section-uptitle about-uptitle">tradition and love</p>
+    <h2 class="section-title about-title">how it’s made?</h2>
+    <div class="about-image-wrap">
+      <div class="about-image-ground"></div>
+      <div class="about-image">
+        <picture>
+          <source
+            srcset="
+              /src/images/cow-about-mob-1x.jpg 1x,
+              /src/images/cow-about-mob-2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              /src/images/cow-about-tab-1x.jpg 1x,
+              /src/images/cow-about-tab-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              /src/images/cow-about-dtop-1x.jpg 1x,
+              /src/images/cow-about-dtop-2x.jpg 2x
+            "
+            media="(min-width: 1200px;)"
+          />
+          <img
+            src="/src/images/cow-about-dtop-1x.jpg"
+            alt="Корівка"
+            width="279px"
+          />
+        </picture>
+      </div>
+    </div>
   </div>
 </section>
+
 <!--
     ❗️❗️❗️ The path to images from the HTML partial
     is the same as from the index.html file
