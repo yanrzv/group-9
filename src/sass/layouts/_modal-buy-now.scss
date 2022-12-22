@@ -4,9 +4,87 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 1.4;
-        display: flex;
         align-items: center;
         text-align: center;
         color: #131313;
-        margin-top:32px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        @media screen and (min-width:768px) {
+                margin-bottom: 40px;
+                flex-wrap: nowrap;
+            }
+}
+.name-ice-buy-nov{
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #131313;
+}
+.ul-ice-buy-nov {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    @media screen and (min-width:768px) {
+        flex-direction: row-reverse;
+        gap: 32px;
+    }
+}
+.name-ice-buy-nov{
+    margin-top: 27px;
+    margin-bottom: 20px;
+    @media screen and (min-width:768px) {
+            margin-top: 26px;
+            margin-bottom: 20px;
+}}
+.form-buy-naw{
+    display: flex;
+    flex-direction: column;
+    margin-top: 31px;
+    margin-bottom: 14px;
+    @media screen and (min-width:768px) {
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+}
+.label-name-input-buy{
+    margin-bottom: 12px;
+    @media screen and (min-width:768px) {
+            margin-bottom: 16px;
+        }
+}
+.container-buy-naw{
+    padding: 28px 28px 29px 28px;
+    @media screen and (min-width:768px) {
+            padding: 32px 54px 32px 54px;
+        }
+}
+.button-buy-nav{
+    background: #F8D24E;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #131313;
+        border: none;
+    width: 121px;
+    height: 42px;
+}
+.div-btn-buy-now{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
