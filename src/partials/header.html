@@ -32,3 +32,42 @@
     для кнопки додатковий клас - btn , для ссилок - link , для списка - list  -->
 
     <!-- ссилки в меню: #about , #products , #contacts -->
+
+
+
+    <header>
+      <div class="container header__container">
+        <nav class="header__navigation">
+          <a href="/src/index.html" class="header__logo link"> 
+            <img src="/src/images/logo-desk-1x.png" class="header-logo__img" alt="Logo-company" width="40" height="37">
+          </a>
+          <ul class="site-navigation list">
+            <li class="site-navigation__iteam">
+              <a href="#" class="site-navigation__link link">Home</a>
+            </li>
+            <li class="site-navigation__iteam">
+              <a href="#" class="site-navigation__link link">How it’s made?</a>
+            </li>
+            <li class="site-navigation__iteam">
+              <a href="#" class="site-navigation__link link">Our products</a>
+            </li>
+            <li class="site-navigation__iteam">
+              <a href="#" class="site-navigation__link link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="button__wrap">
+          <button type="button" class="menu-open btn">
+            <svg width="32" height="32" class="menu-open__icon">
+              <use href="/src/images/sprite.svg#menu-burger"></use>
+            </svg>
+          </button>
+            <button type="button" class="header__button btn">
+              Buy now 
+              <svg width="12" height="12" class="header-button__icon"> 
+                <use href="/src/images/sprite.svg#arrow-small"></use>
+              </svg>
+            </button>
+        </div>
+      </div>
+    </header>
