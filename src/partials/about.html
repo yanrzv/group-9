@@ -8,33 +8,46 @@
         <picture>
           <source
             srcset="
-              /src/images/cow-about-mob-1x.jpg 1x,
-              /src/images/cow-about-mob-2x.jpg 2x
+              ./images/cow-about-mob-1x.jpg 1x,
+              ./images/cow-about-mob-2x.jpg 2x
             "
             media="(max-width: 767px)"
           />
           <source
             srcset="
-              /src/images/cow-about-tab-1x.jpg 1x,
-              /src/images/cow-about-tab-2x.jpg 2x
+              ./images/cow-about-tab-1x.jpg 1x,
+              ./images/cow-about-tab-2x.jpg 2x
             "
             media="(min-width: 768px)"
           />
           <source
             srcset="
-              /src/images/cow-about-dtop-1x.jpg 1x,
-              /src/images/cow-about-dtop-2x.jpg 2x
+              ./images/cow-about-dtop-1x.jpg 1x,
+              ./images/cow-about-dtop-2x.jpg 2x
             "
             media="(min-width: 1200px;)"
           />
-          <img
-            src="/src/images/cow-about-dtop-1x.jpg"
-            alt="Корівка"
-            width="279px"
-          />
+          <img src="./images/cow-about-dtop-1x.jpg" alt="Корівка" />
         </picture>
       </div>
     </div>
+    <p class="about-text-up">
+      Ice is a place where you will become not only a little happier, but also
+      healthier. Health is the main value for us, and we follow it when creating
+      our handmade desserts.
+    </p>
+    <p class="about-text-down">
+      We use traditional recipes and 100% natural ingredients. Our products are
+      so natural that they can be given to children from the age of three years.
+      Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23
+      milkshakes.
+    </p>
+    <button type="button" class="btn about-button">
+      <span class="about-button-text">Read more</span>
+      <svg class="about-button-icon" width="12px" height="12px">
+        <use href="/src/images/sprite.svg#arrow-small"></use>
+      </svg>
+    </button>
   </div>
 </section>
 
