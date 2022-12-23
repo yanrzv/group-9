@@ -39,7 +39,12 @@
       <div class="container header__container">
         <nav class="header__navigation">
           <a href="/src/index.html" class="header__logo link"> 
-            <img src="/src/images/logo-desk-1x.png" class="header-logo__img" alt="Logo-company" width="40" height="37">
+            <picture>
+              <source srcset="./images/logo-desk-1x.png 1x, ./images/logo-desk-2x.png 2x" media="(min-width: 1200px)">
+              <source srcset="./images/logo-tab-1x.png 1x, ./images/logo-tab-2x.png 2x" media="(min-width: 768px)">
+              <source srcset="./images/logo-mob-1x.png 1x, ./images/logo-mob-2x.png 2x" media="(max-width: 767px)">
+              <img src="./images/logo-desk-1x.png" class="header-logo__img" alt="Logo-company">
+            </picture>
           </a>
           <ul class="site-navigation list">
             <li class="site-navigation__iteam">
