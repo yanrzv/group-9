@@ -134,9 +134,27 @@
    background-color: #F8D24E;
    border-radius: 10px;
    margin: 0 auto;
-   @include tablet {
-   margin: 0;
+   &:hover,
+   &:focus {
+      background-color: #0A8817;
+      outline: none;
+   }
+      &[disabled] {
+         color: #000000;;
+         background: #ABABAB;
+         cursor: not-allowed;
       }
+   @include tablet {
+      margin: 0;
+      }      
+}
+
+.about-button:focus .about-button-text{
+   color: var(--primary-text-color);
+}
+
+.about-button:focus .about-button-icon {
+   fill: var(--primary-text-color);
 }
 
 .about-button-text {
@@ -146,7 +164,7 @@
    line-height: calc(18 / 14);
    color: #000000;
    text-align: center;
-   margin-right: 4px;
+   margin-right: 4px;   
 }
 
 .about-text-wrap {
