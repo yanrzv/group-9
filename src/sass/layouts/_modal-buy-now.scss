@@ -33,7 +33,7 @@
     align-items: center;
 
     @media screen and (min-width:768px) {
-        flex-direction: row-reverse;
+        flex-direction: row;
         gap: 32px;
     }
 }
@@ -47,11 +47,15 @@
 .form-buy-naw{
     display: flex;
     flex-direction: column;
-    margin-top: 31px;
-    margin-bottom: 14px;
+    margin-top: 11px;
+    margin-bottom: 26px;
+    color: #131313;
     @media screen and (min-width:768px) {
-            margin-top: 40px;
-            margin-bottom: 16px;
+            margin-top: 19px;
+            margin-bottom: 32px;
+            justify-content: center;
+            align-items: center;
+
         }
 }
 .label-name-input-buy{
@@ -62,8 +66,14 @@
 }
 .container-buy-naw{
     padding: 28px 28px 29px 28px;
+    max-width:280px;
+    background: #FCFCFC;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    
     @media screen and (min-width:768px) {
             padding: 32px 54px 32px 54px;
+            max-width: 568px;
         }
 }
 .button-buy-nav{
@@ -87,4 +97,75 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.label-name-input-buy{
+   max-width: 224px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+        color: #131313;
+        padding: 8px 12px;
+        min-height: 32px;
+        @media screen and (min-width:768px) {
+                min-width: 368px;
+            }
+}
+.label-comment-input-buy{
+    max-width: 224px;
+        background: rgba(248, 210, 78, 0.1);
+        border: 1px solid #84A178;
+        border-radius: 10px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+        padding: 8px 12px;
+        min-height: 65px;
+        text-align: start;
+        @media screen and (min-width:768px) {
+                min-width: 368px;
+            }
+}
+textarea::placeholder {
+    color: #131313;
+}
+input::placeholder {
+    color: #131313;
+}
+.li-ice-buy-one{
+    border: 2px solid #96AF8C ;
+    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    border-radius: 15px;
+    background-image:
+     url(../images/by-now-img/Ellipse102x.jpg);
+        background-position-x: center;
+        background-position-y: -7px ;
+        background-repeat: no-repeat;
+    
+}
+.picture-ice-byu-now {
+    display:block;
+    
+    width: 132px;
+    height: 132px;
+   
+}
+.picture-ice-byu-now img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.menu-clouse-byu{
+    background: #FCFCFC;
+    margin-right: auto;
+    border: none;
+    position: absolute;
+    top:17px;
+    right: 17px;
 }
