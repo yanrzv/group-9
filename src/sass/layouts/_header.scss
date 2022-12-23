@@ -115,7 +115,7 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    top: 53px;
+    top: 0;
     right: -480px;
     background: #85A279;
     z-index: 1;
@@ -124,7 +124,7 @@
         right: -768px;
     }
     @include tablet {
-        top: 66px;
+        background: #97AF8D;
         right: -1200px;
     }
     @include desktop {
@@ -132,12 +132,35 @@
     }
 }
 
-
 .mob-menu > .container {
     height: 100%;
     display: flex;
     flex-direction: column;
     overflow: auto;
+}
+
+.mob-menu-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.mob-menu__logo {
+    margin-right: auto;
+    margin-top: 12px;
+    margin-left: 12px;
+    @include tablet {
+        margin-top: 20px;
+    }
+}
+
+.menu-close {
+    background-color: transparent;
+    fill: #FCFCFC;
+    margin-top: 16px;
+    @include tablet {
+        margin-top: 32px;
+        margin-right: 12px;
+    }
 }
 
 .menu-navigation {
@@ -167,21 +190,23 @@
     font-size: 32px;
     line-height: 1.22;
     color: #FCFCFC;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:active {
+        color: #131313;
+    } 
+    &:hover,
+    &:focus {
+        color: #F8D24E;
+    }
     @include tablet {
         font-size: 48px;
         line-height: 1.23;
     }    
 }
 
-.menu-navigation__link--black {
-    color: #131313;
-}
-
-
 .menu-button__wrap {
     display: flex;
     justify-content: center;
-
     @include tablet {
         display: none;
     }
@@ -200,9 +225,20 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-bottom: 64px;
+    &:hover {
+        background-color: #0A8817;
+    }
+    &:focus {
+        background-color: #0A8817;
+        color: #FFFFFF;
+        fill: #FFFFFF;
+    }
 }
 
 .mob-menu__icon {
     margin-left: 4px;
 }
+
+
 
