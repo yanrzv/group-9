@@ -1,34 +1,35 @@
-
-  <!--
-    ❗️❗️❗️ The path to images from the HTML partial
-    is the same as from the index.html file
-  -->
-
-  <!--
-    
-    Іконки в спрайті #facebook , #github , #telegram
-    
-
-    ❗️❗️❗️ Не додавай в css назви стилів: container, list, link, btn, 
-    вони уже є глобально і це може змінити верстку іншим. 
-    
-    Додав змінні для деяких кольорів, тому використовуй:
-    1. для світлого шрифта колір var(--primary-text-color);
-    2. для темного шрифта колір var(--secondary-texet-color);
-    3. дефолтний колір кнопки var(--button-background-default);
-    4. ховер для кнопки var(--button-background-hover);
-    5. колір вимкненої кнопки var(--button-background-disabled);
-
-    Глобально додав шрифти, тому не треба вказувати font-family. 
-
-    Додай додатковий div з класом container (крім мобільного меню), для нього уже прописані стилі.
-
- Медіа-правила є в міксінах, тому додавай через @include mobile, @include tablet, 
- @include desktop
- 
-    Глобально додав скидання стилів і додав курсор при ховері, тому використовуй 
-    для кнопки додатковий клас - btn , для ссилок - link , для списка - list  -->
-
-    <!-- Якщо без костилів не вийде центрувати логотипи соц.мереж, то викачаємо 
-    іконки 50х50 і при ховері буде мінятись бекграунд-колор, а не філл 
-(можливо так і було задумано) -->
+<footer>
+  <div class="footer container">
+    <div class="footer__title-wrap">
+      <p class="footer__title1">homemade ice cream made</p>
+      <p class="footer__title2">with passion</p>
+    </div>
+    <div class="footer__soc-wrap">
+      <ul class="footer__social-list list">
+        <li class="footer__item-soc"><a class="footer__soc-link link" href="https://github.com/" target="_blank">
+            <svg class="footer__icon" width="20" height="20">
+              <use href="./images/sprite.svg#github"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item-soc"><a class="footer__soc-link link" href="https://web.telegram.org/k/" target="_blank">
+            <svg class="footer__icon" width="20" height="16">
+              <use href="./images/sprite.svg#telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item-soc"><a class="footer__soc-link link" href="https://www.facebook.com/" target="_blank">
+            <svg class="footer__icon" width="9" height="20">
+              <use href="./images/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__text-tel">Feel free to contact <a href="tel:+61(0)383766284" class="footer__tel link">+61 (0) 383 766 284</a></p>
+    </div>
+  </div>
+  <div class="right-container">
+    <p class="footer__rights1">&#169; 2022 - IceCream.
+     <span class="footer__rights2"> All Rights Reserved.</span></p>
+  </div>
+</footer>
