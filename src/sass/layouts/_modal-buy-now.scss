@@ -70,7 +70,7 @@
     background: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
-    
+    margin: 0 auto;
     @media screen and (min-width:768px) {
             padding: 32px 54px 32px 54px;
             max-width: 568px;
@@ -147,11 +147,11 @@ input::placeholder {
         background-position-x: center;
         background-position-y: -7px ;
         background-repeat: no-repeat;
-    
+    position: relative;
 }
 .picture-ice-byu-now {
     display:block;
-    
+    position: absolute;
     width: 132px;
     height: 132px;
    
