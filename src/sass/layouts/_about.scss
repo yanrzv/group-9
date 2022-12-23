@@ -78,11 +78,13 @@
    min-width: 279px;
    // object-fit: cover;
    @include tablet {
-     border-radius: 1228px; 
+      min-width: 330px;
+      border-radius: 1228px; 
       margin-top: 26px;
       margin-bottom: 60px;
    }
       @include desktop {
+         min-width: 490px;
          border-radius: 1852.2px;
          margin: 39px 1px 0px 1px;
    }   
@@ -157,9 +159,6 @@
    }
       @include desktop {
          margin: 90px 105px 0px 109px;
-         // margin-left: 109px;
-         // margin-top: 90px;
-         // margin-right: 105px;
       }
 }
 
