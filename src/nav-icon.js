@@ -15,3 +15,9 @@
     refs.btn.classList.add('open');
   }
 })();
+
+// <div data-menu-open>
+//         <button id="nav-icon" class="btn" data-btn>
+//             <span></span><span></span><span></span>
+//         </button>
+//     </div>
