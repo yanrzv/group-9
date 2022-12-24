@@ -4,7 +4,7 @@
    background-color: #84A178;
    padding-bottom: 50px;
    @include tablet{
-         padding-bottom: 60px;
+      padding-bottom: 60px;
    }
 }
 
@@ -76,7 +76,6 @@
    border-radius: 140px;
    overflow: hidden;
    min-width: 279px;
-   // object-fit: cover;
    @include tablet {
       min-width: 330px;
       border-radius: 1228px; 
