@@ -4,14 +4,14 @@
         margin: 0 auto;
         background-color: var(--overlay-color);
         background-image: linear-gradient(to top,
-                #84A178,
-                #84A178);
+                var(--button-background-hover),
+                var(--button-background-hover));
             
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: 50% 358px ;
         @include mobile {
-                background-position: 50% 358px;
+                
             }
         
             @include tablet {
@@ -24,10 +24,11 @@
             }
 }
 .contacts__container {
-        @include mobile {
-            width: 480px;
+    width: 480px;
             
             margin: auto;
+        @include mobile {
+            
         }
 
         @include tablet {
@@ -42,13 +43,13 @@
      
     }
     .contacts__restaurants {
-        
-            @include mobile {
-                    display: flex;
+        display: flex;
                         justify-content: center;
                         flex-wrap: wrap;
                         flex-direction: column;
                         align-items: center;
+            @include mobile {
+                    
                         
                 }
             
@@ -72,12 +73,12 @@
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
         transition: ease-in-out .3s;
-
+        width: 280px;
+                    height: 412px;
+                    margin-bottom: 16px;
         @include mobile {
             
-            width: 280px;
-            height: 412px;
-            margin-bottom: 16px;
+            
             
         }
         
@@ -101,20 +102,20 @@
 // }
 .contacts__title {
     position: relative;
-    top: 40px;
-    left: 32px;
+    
     text-transform: uppercase;
     
     background-color: var(--button-background-default);
     border-radius: 4px;
-    padding: 4px 14px;
-    @include mobile {
-        top: 40px;
+    padding: 4px 14px; 
+    top: 40px;
         left: 32px;
         font-size: 12px;
         line-height: 1.2;
         letter-spacing: 0.04em;
-        font-weight: 500;    
+        font-weight: 500;
+    @include mobile {
+           
             
         }
     
@@ -134,12 +135,12 @@
         }
 }
 .contacts__box {
-    
-    @include mobile {
-            position: relative;
+    position: relative;
         top: 67px;
         left: 32px;
         max-width: 216px;
+    @include mobile {
+            
     
         }
     
@@ -160,14 +161,14 @@
     
 }
 .contacts__cities{
-    
-    @include mobile {
-        color: var(--secondary-text-color);
+    color: var(--secondary-text-color);
         font-weight: 500;
         font-size: 12px;
         line-height: 1.86;
         letter-spacing: 0.04em;
         margin-bottom: 9px;
+    @include mobile {
+        
             
         }
     
@@ -184,12 +185,12 @@
 }
 
 .contacts__adress {
-
+margin-bottom: 24px;
+            padding-bottom: 24px;
 
 border-bottom: 1px solid #E1E1E1;
 @include mobile {
-        margin-bottom: 24px;
-            padding-bottom: 24px;
+        
 
     }
 
@@ -205,14 +206,15 @@ border-bottom: 1px solid #E1E1E1;
 
 .contacts__link--adress {
     text-decoration: none;
-    color: var(--address-color);
+    color: var(--address-color); 
+    font-size: 12px;
+            line-height: 1.83;
+            letter-spacing: 0.04em;
     @include mobile {
         
             
             
-            font-size: 12px;
-            line-height: 1.83;
-            letter-spacing: 0.04em;
+           
         }
     
         @include tablet {
@@ -236,7 +238,7 @@ border-bottom: 1px solid #E1E1E1;
     cursor: url(../images/cursor.svg), auto;
 }
 .contacts__week {
-    
+    font-size: 12px;
             line-height: 1.83;
             letter-spacing: 0.04em;
             font-weight: 500;
@@ -245,7 +247,7 @@ border-bottom: 1px solid #E1E1E1;
     
     
     
-            font-size: 12px;
+            
         }
     
         @include tablet {
@@ -261,11 +263,12 @@ border-bottom: 1px solid #E1E1E1;
     letter-spacing: 0.04em;
     font-weight: 500;
     color: var(--button-background-disabled);
+    font-size: 12px;
     @include mobile {
     
     
     
-            font-size: 12px;
+            
             
         }
     
@@ -281,10 +284,11 @@ border-bottom: 1px solid #E1E1E1;
     
     font-weight: 500;
     color: var(--secondary-text-color);
-    @include mobile {
-    
-            font-size: 12px;
+    font-size: 12px;
             line-height: 1.60;
+            @include mobile {
+    
+            
     
             
     
@@ -314,12 +318,12 @@ border-bottom: 1px solid #E1E1E1;
         font-weight: 500;
             
             color: var(--secondary-text-color);
-        
+        line-height: 1.6;
+                font-size: 12px;
             @include mobile {
         
         
-                line-height: 1.6;
-                font-size: 12px;
+                
         
             }
         
@@ -334,15 +338,20 @@ border-bottom: 1px solid #E1E1E1;
             }
         
 }
-.contacts__btns {
+.contacts__link:hover,
+.contacts__link:focus {
+    color: var(--button-background-default)
     
-   
-    @include mobile {
-            display: flex;
+}
+.contacts__btns {
+    display: flex;
                 align-items: center;
                 flex-direction: column;
                 gap: 12px;
                 padding-bottom: 60px;
+   
+    @include mobile {
+            
     
             
         }
