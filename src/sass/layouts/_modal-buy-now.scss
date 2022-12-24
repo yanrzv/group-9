@@ -29,6 +29,7 @@
 }
 .ul-ice-buy-nov {
     display: flex;
+    box-sizing:content-box;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
@@ -74,6 +75,7 @@
     border: 2px solid #F8D24E;
     border-radius: 10px;
     margin: 0 auto;
+    box-sizing: content-box;
     @media screen and (min-width:768px) {
             padding: 32px 54px 32px 54px;
             max-width: 568px;
@@ -157,7 +159,7 @@ input::placeholder {
             background-position-x: center;
             background-position-y: -67px;
             background-repeat: no-repeat;
-
+box-sizing: content-box;
         
 }
 // .li-ice-buy-one::after{
