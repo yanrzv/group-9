@@ -51,11 +51,13 @@
         margin-top: 24px;
         &:hover {
             background-color: #0A8817;
+            outline: none;
         }
         &:focus {
             background-color: #0A8817;
             color: #FFFFFF;
             fill: #FFFFFF;
+            outline: none;
         }
     }
          @include desktop {
@@ -104,6 +106,7 @@
         &:hover,
         &:focus {
             color: #F8D24E;
+            outline: none;
         }
     }
 }
