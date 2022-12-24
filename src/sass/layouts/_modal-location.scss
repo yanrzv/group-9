@@ -1,4 +1,6 @@
 .modal-location {
+    //     opacity: 0;
+    //     visibility: hidden;
     width: 280px;
     min-height: 365px;
     background: #FCFCFC;
@@ -12,7 +14,13 @@
         width: 568px;
         min-height: 458px;
     }
-}
+}  
+
+// .modal.active,
+// .overlay.active {
+//     opacity: 1;
+//     visibility: visible;
+// }
 
 .location-close {
     position: absolute;
