@@ -151,12 +151,13 @@ input::placeholder {
     display: block;
     width: 132px;
     height: 136px;
+    background: #FCFCFC;
         background-image:
                 url(../images/by-now-img/Ellipse102x.jpg);
             background-position-x: center;
-            background-position-y: -60px;
+            background-position-y: -67px;
             background-repeat: no-repeat;
- 
+
         
 }
 // .li-ice-buy-one::after{
@@ -177,8 +178,9 @@ input::placeholder {
     width: 132px;
     height: 132px;
     position: absolute;
-    bottom: 67px;
-
+    bottom: 60px;
+    left: 0;
+    
 }
 // .li-ice-buy-one::after{
 //     position: absolute;
@@ -194,8 +196,6 @@ input::placeholder {
     display:block;
     width: 132px;
     height: 132px;
-    
-   
 }
 .picture-ice-byu-now img{
     width: 100%;
