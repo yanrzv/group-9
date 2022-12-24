@@ -2,26 +2,27 @@
     background-color: var(--primary-background-color);
     padding-bottom: 80px;
 
-    &__list{
+    .advantages__list{
         display: flex;
         flex-direction: column;
-        gap: 30px;
         justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 28px;
         
         
             @include tablet {
             flex-direction: row;
-            flex-wrap: wrap;
+            gap: 80px;
             }
                         @include desktop {
                         flex-direction: row;
-                        flex-wrap: wrap;
+                        gap: 32px;
                         }
             }
 
-            &__icon{
-               
-                position: absolute;
+            .advantages__icon{
+                position: relative;
                 width: 50px;
                 height: 50px;
                 background-color: var(--button-background-default);
@@ -33,26 +34,27 @@
                 @include tablet {
                         display: flex;
                         flex-direction: row;
-                        flex-wrap: wrap;
+                        
                     }
                 
                     @include desktop {
                         display: flex;
                         flex-direction: row;
-                        flex-wrap: wrap;
+                       
                     }
 
 
                     &::before {
                         content:"";
-                        position: relative;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
                         width: 36px;
                         height: 36px;
                         display: inline-block;
                         background-size: 36px;
                         background-repeat: no-repeat;
-                        justify-content: center;
-                        text-align: center;
                         background-image: url("../images/advantages/cow@1x.png");
 
                             @media screen and (min-device-pixel-ratio: 2),
@@ -67,24 +69,23 @@
             }
 
 
-    &__items{
-        width: calc((100% - 0*30px)/1);
+    .advantages__items{
+        width: calc((100% - 0*28px)/1);
         
             @include tablet {
-                width: calc((100% - 1*30px)/2);
+                width: calc((100% - 1*80px)/2);
             }
+
+                        @include tablet {
+                            width: calc((100% - 1*32px)/2);
+                        }
         
-            @include desktop {
-                width: calc((100% - 3*30px)/4);
-            }
-
-
             &:not(:last-child) {
                 margin-bottom: 5px;
                 }
     }
 
-    &__figures{
+    .advantages__figures{
 
             font-style: normal;
             font-weight: 700;
@@ -109,8 +110,7 @@
                         }
     }
 
-    &__description{
-
+    .advantages__description{
         font-style: normal;
             font-weight: 700;
             font-size: 12px;
