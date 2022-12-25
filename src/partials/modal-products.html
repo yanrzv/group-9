@@ -100,20 +100,20 @@ modal-products-title -->
     </article>
     <!-------------------- Форма ----------------------->
     <form name="modal-products-order-form" class="modal-products-form" autocomplete="off">
-      <label class="modal-products-form__label">
-        Name
-        <input type="text" name="username" class="modal-products-form__input" required />
-      </label>
+      <div class="modal-products-form__wrap">
+        <input type="text" name="username" class="modal-products-form__input" id="modal-products-user-name" required />      
+        <label class="modal-products-form__label" for="modal-products-user-name">Name</label>
+      </div>
 
-      <label class="modal-products-form__label">
-        Phone
-        <input type="tel" name="tel" class="modal-products-form__input" required  />
-      </label>
+      <div class="modal-products-form__wrap">
+        <input type="tel" name="tel" class="modal-products-form__input" id="modal-products-tel" required />
+        <label class="modal-products-form__label" for="modal-products-tel">Phone</label>
+      </div>
 
-      <label class="modal-products-form__label">
-        Comment
-        <textarea name="comment" class="modal-products-form__comment"></textarea>
-      </label>
+      <div class="modal-products-form__wrap">
+        <textarea name="comment" class="modal-products-form__comment" id="modal-products-comment"></textarea>
+        <label class="modal-products-form__label" for="modal-products-comment">Comment</label>
+      </div>
 
       <button type="submit" class="btn modal-products-form__btn">Submit</button>
     </form>
