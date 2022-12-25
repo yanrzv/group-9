@@ -3,10 +3,10 @@
     @content;
   }
 }
-@mixin max-mob{
-    @media screen and (max-width: 480px){
-        @content;
-    }
+@mixin max-mob {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
 }
 
 footer {
@@ -117,11 +117,9 @@ footer {
   }
 }
 
-
 .footer__icon {
   fill: var(--primary-background-color);
-transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+  transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__text-tel {
@@ -138,48 +136,44 @@ transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 700;
   font-size: 12px;
   line-height: 1.86;
-    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     color: var(--button-background-default);
-
   }
 }
 
 .copyrights-container {
-  border-top: 1px solid var(--primary-text-color); 
+  border-top: 1px solid var(--primary-text-color);
   display: flex;
   justify-content: center;
 }
 
-.copyrights-mobile{
-    margin-top: 20px;
-    padding: 0 20px 20px 20px;
-    text-align: center;
+.copyrights-mobile {
+  margin-top: 20px;
+  padding: 0 20px 20px 20px;
+  text-align: center;
 
-    @include max-pre-tablet() {
-        width: 190px;
-    }
+  @include max-pre-tablet() {
+    width: 190px;
+  }
 }
 
 .footer__copyrights {
-    
-    font-weight: 700;
-    color: #7a7a7a;
+  font-weight: 700;
+  color: #7a7a7a;
 
-    @include max-pre-tablet(){
-        font-size: 14px;
-        line-height: 1.52;
-    }
-    @include tablet(){
-        font-size: 14px;
-        line-height: 1.86;
-        letter-spacing: 0.02em;
-    }
-    @include desktop() {
-        font-size: 12px;
-    }
-    
+  @include max-pre-tablet() {
+    font-size: 14px;
+    line-height: 1.52;
+  }
+  @include tablet() {
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+  }
+  @include desktop() {
+    font-size: 12px;
+  }
 }
-
