@@ -27,10 +27,14 @@
   color: #fcfcfc;
   background: var(--primary-background-color);
   border-radius: 10px;
-  @media screen and (min-width: 480px) {
+  // @media screen and (min-width: 480px) {
+  //   width: 280px;
+  // }
+  @include mobile {
     width: 280px;
   }
-  @media screen and (min-width: 768px) {
+
+  @include tablet {
     width: 705px;
     padding: 28px 80px 29px 80px;
     border-radius: 24px;
@@ -38,7 +42,7 @@
     font-size: 16px;
     line-height: 29.76px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop{
     width: 968px;
     padding: 43px 109px;
     font-weight: 500;
@@ -58,15 +62,15 @@
   line-height: 37px;
   text-align: center;
   color: var(--secondary-text-color);
-  @media screen and (min-width: 480px) {
+  @include mobile {
     width: 189px;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 172px;
     font-size: 16px;
     line-height: 30px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 151px;
   }
 }
