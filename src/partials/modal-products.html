@@ -32,3 +32,84 @@ modal-products-title -->
     для кнопки додатковий клас - btn , для ссилок - link , для списка - list  -->
 
 <!-- хрестик в спрайті #modal-close -->
+
+
+
+<!-- <div class="modal-products-backdrop is-hidden" data-modal> -->
+  <div class="modal-products">
+    <article>
+      <button type="button" class="btn modal-products__close-btn" data-modal-close>
+          <svg aria-label="закрити" width="12px" height="12px">
+            <use href="./images/sprite.svg#modal-close"></use>
+          </svg>
+      </button> 
+      <h2 class="modal-products__title">Chololate icecream</h2>
+
+      <div class="modal-products__image-wrap">
+        <span class="modal-products__image"></span>
+        <span class="modal-products__bgr"></span>
+      </div>
+
+      <!---------------- Мікроелементи ------------->
+      <ul class="composition-set">
+        <li class="composition-set__item">
+          <span class="composition-set__value">320</span>
+          <p class="composition-set__name">kcal</p>
+        </li>
+        <li class="composition-set__item">
+          <span class="composition-set__value">4g</span>
+          <p class="composition-set__name">Protein...</p>
+        </li>
+        <li class="composition-set__item">
+          <span class="composition-set__value">8,2g</span>
+          <p class="composition-set__name">Fats</p>
+        </li>
+        <li class="composition-set__item">
+          <span class="composition-set__value">40,4g</span>
+          <p class="composition-set__name">Carbs</p>
+        </li>
+      </ul>
+      <!-------------------- Інгрідієнти ----------------------->
+      <h3 class="ingredients__title">Ingredients</h3>
+      <ul class="ingredients-set">
+        <li class="ingredients-set__item">
+          <p>Milk</p>
+          <span>100ml</span>
+        </li>
+        <li class="ingredients-set__item">
+          <p>Belgian chocolate</p>
+          <span>20g</span>
+        </li>
+        <li class="ingredients-set__item">
+          <p>Cream</p>
+          <span>150 ml</span>
+        </li>
+        <li class="ingredients-set__item">
+          <p>Cocoa powder</p>
+          <span>30g</span>
+        </li>
+        <li class="ingredients-set__item">
+          <p>Sugar</p>
+          <span>40g</span>
+        </li>
+        <li class="ingredients-set__item">
+          <p>Vanilla sugar</p>
+          <span">10g</span>
+        </li>
+      </ul>
+    </article>
+    <!-------------------- Форма ----------------------->
+    <form name="products-order-form" autocomplete="off">
+      <label>Name
+        <input type="text" name="username" autofocus required pattern="Ян" />
+      </label>
+      <label>Phone
+        <input type="email" name="email" />
+      </label>
+      <label>Comment
+        <textarea name="comment" rows="10"></textarea>
+      </label>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  <!-- </div> -->
+</div>
