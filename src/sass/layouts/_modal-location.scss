@@ -27,13 +27,13 @@
     top: 12px;
     right: 12px;
     background-color: transparent;
+    &:hover,
+    &:focus {
+        fill: #F8D24E;
+    }
 }
 
 .location-close__icon {
-    &:hover,
-    &:focus {
-        fill:#F8D24E;
-    }
     @include tablet {
         width: 24px;
         height: 24px;
