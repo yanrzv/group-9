@@ -4,8 +4,8 @@
         margin: 0 auto;
         background-color: var(--overlay-color);
         background-image: linear-gradient(to top,
-                var(--button-background-hover),
-                var(--button-background-hover));
+                var(--primary-background-color),
+                var(--primary-background-color));
             
         background-repeat: no-repeat;
         background-size: 100%;
@@ -133,6 +133,10 @@
             top: 40px;
             left: 40px;
         }
+}
+.contacts__title:hover,
+.contacts__title:focus {
+    background-color:var(--address-color) ;
 }
 .contacts__box {
     position: relative;
