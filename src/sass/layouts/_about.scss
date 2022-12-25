@@ -1,0 +1,213 @@
+.about {
+   width: 100%;
+   height: auto;
+   background-color: #84A178;
+   padding-bottom: 50px;
+   @include tablet{
+      padding-bottom: 60px;
+   }
+}
+
+.about-uptitle {
+   color: var(--primary-text-color);
+   font-weight: 700;
+   padding: 61px 35px 12px;
+   @include tablet {
+      font-weight: 800;   
+      letter-spacing: 0.04em;
+      padding: 60px 214px 12px;
+   }
+      @include desktop {
+         padding: 60px 396px 12px;
+      }
+   
+}
+
+.about-title {
+   color: var(--primary-text-color);
+   padding: 0 60px;
+   margin-bottom: 32px;
+   @include tablet {
+      letter-spacing: 0.06em;
+      margin-bottom: 72px;
+   }
+         @include desktop {
+            margin-bottom: 82px;
+         }
+      }
+
+.about-image-ground {
+   width: 279px;
+   height: 278px;  
+   background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+   box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+   border-radius: 140px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 62px;
+   @include tablet {
+      width: 330px;
+      height: 330px;
+      box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);      
+      border-radius: 165px;
+      margin-bottom: 0;
+      }
+         @include desktop {
+            width: 490px;
+            height: 490px;
+            box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+            border-radius: 250px;
+         }
+}
+
+.about-image-wrap {
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+  }
+
+.about-image {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   margin-top: 22px;
+   border-radius: 140px;
+   overflow: hidden;
+   min-width: 279px;
+   @include tablet {
+      min-width: 330px;
+      border-radius: 1228px; 
+      margin-top: 26px;
+      margin-bottom: 60px;
+   }
+      @include desktop {
+         min-width: 490px;
+         border-radius: 1852.2px;
+         margin: 39px 1px 0px 1px;
+   }   
+}
+
+.about-text-up {
+   font-size: 12px;
+   line-height: calc(21 / 12);   
+   text-align: center;
+   letter-spacing: 0.04em;
+   color: var(--primary-text-color);
+   margin: 0px 30px 4px;
+   @include tablet {
+      text-align: left;
+      margin: 0;
+      margin-bottom: 8px;
+         }
+      @include desktop {
+         font-size: 16px;
+         line-height: calc(28 / 16);
+      }
+}
+
+.about-text-down {
+   font-size: 12px;
+   line-height: calc(19 / 12); 
+   text-align: center;
+   color: var(--primary-text-color);
+   letter-spacing: 0.04em;
+   margin: 0px 30px 10px;
+   @include tablet {
+         text-align: left;
+         margin: 0;
+         margin-bottom: 8px;
+      }
+      @include desktop {
+         font-size: 14px;
+         line-height: calc(27 / 14);
+      }
+}
+
+.about-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 164px;
+   height: 42px;
+   padding: 12px 35px 12px 34px;
+   background-color: #F8D24E;
+   border-radius: 10px;
+   margin: 0 auto;
+   &:hover,
+   &:focus {
+      background-color: #0A8817;
+      outline: none;
+   }
+      &[disabled] {
+         color: #000000;;
+         background: #ABABAB;
+         cursor: not-allowed;
+      }
+   @include tablet {
+      margin: 0;
+      }      
+}
+
+.about-button:focus .about-button-text{
+   color: var(--primary-text-color);
+}
+
+.about-button:focus .about-button-icon {
+   fill: var(--primary-text-color);
+}
+
+.about-button-text {
+   display: inline-block;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: calc(18 / 14);
+   color: #000000;
+   text-align: center;
+   margin-right: 4px;   
+}
+
+.about-text-wrap {
+   @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 38px;
+      margin-top: 8px;
+   }
+      @include desktop {
+         margin: 90px 105px 0px 109px;
+      }
+}
+
+.about-content-wrap {
+   @include tablet {
+   display: flex;}
+}
+
+.about-text-extra {
+   font-size: 12px;
+   line-height: calc(23 / 12);
+   color: var(--primary-text-color);
+   letter-spacing: 0.04em;
+   margin-bottom: 32px;
+   padding-right: 40px;
+   @include desktop {
+      font-size: 14px;
+      line-height: calc(27 / 14);
+      padding-right: 0px;
+      margin-bottom: 54px;
+   }
+   @media screen and (max-width: 767px) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;}
+}
