@@ -74,6 +74,9 @@
          width: 24px;
          height: 24px;
       }
+      &:hover, &:focus .modal-readmore-svg {
+         fill: #0a8817;
+      }
 }
 
 .modal-readmore-svg {
