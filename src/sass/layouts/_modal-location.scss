@@ -30,6 +30,10 @@
 }
 
 .location-close__icon {
+    &:hover,
+    &:focus {
+        fill:#F8D24E;
+    }
     @include tablet {
         width: 24px;
         height: 24px;
@@ -65,9 +69,7 @@
 }
 
 .location-open {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
 }
 
 .open-map {
@@ -85,12 +87,26 @@
     justify-content: center;
     margin-top: 24px;
     margin-bottom: 28px;
+    margin-right: 73px;
+    margin-left: 73px;
+    &:hover {
+        background-color: #0A8817;
+        outline: none;
+    }
+    &:focus {
+        background-color: #0A8817;
+        color: #FFFFFF;
+        fill: #FFFFFF;
+        outline: none;
+    }
     @include tablet {
         min-width: 145px;
         font-size: 14px;
         line-height: 1.2;
         margin-top: 32px;
         margin-bottom: 32px;
+        margin-right: 211px;
+        margin-left: 212px;
     }
     
 }
