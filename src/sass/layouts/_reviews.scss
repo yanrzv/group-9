@@ -1,5 +1,5 @@
-// .reviews {
-// }
+.reviews {
+}
 .reviews__foto {
   margin-bottom: 32px;
   max-width: 85px;
@@ -49,6 +49,7 @@
 .reviews__custumer {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 12;
   font-family: 'Montserrat';
   width: 100%;
   font-style: normal;
@@ -68,4 +69,23 @@
   @media screen and (min-width: 1200px) {
     width: 151px;
   }
+}
+.reviews__listmarker {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reviews__marker {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--marker-background-color);
+}
+.reviews__marker-activ {
+  background: var(--primary-background-color);
 }
