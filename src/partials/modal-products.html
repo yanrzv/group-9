@@ -99,17 +99,23 @@ modal-products-title -->
       </ul>
     </article>
     <!-------------------- Форма ----------------------->
-    <form name="products-order-form" autocomplete="off">
-      <label>Name
-        <input type="text" name="username" autofocus required pattern="Ян" />
+    <form name="modal-products-order-form" class="modal-products-form" autocomplete="off">
+      <label class="modal-products-form__label">
+        Name
+        <input type="text" name="username" class="modal-products-form__input" required />
       </label>
-      <label>Phone
-        <input type="email" name="email" />
+
+      <label class="modal-products-form__label">
+        Phone
+        <input type="tel" name="tel" class="modal-products-form__input" required  />
       </label>
-      <label>Comment
-        <textarea name="comment" rows="10"></textarea>
+
+      <label class="modal-products-form__label">
+        Comment
+        <textarea name="comment" class="modal-products-form__comment"></textarea>
       </label>
-      <button type="submit" class="btn">Submit</button>
+
+      <button type="submit" class="btn modal-products-form__btn">Submit</button>
     </form>
   <!-- </div> -->
 </div>
