@@ -1,4 +1,4 @@
-.by-now-title{
+.buy-now-title{
          font-family: 'Seymour One';
         font-style: normal;
         font-weight: 400;
@@ -8,15 +8,13 @@
         text-align: center;
         color: #131313;
         flex-wrap: wrap;
-        padding-bottom: 20px;
-        margin-bottom: 63px;
-
+        margin-bottom: 83px;
         @media screen and (min-width:768px) {
-                margin-bottom: 40px;
+                margin-bottom: 103px;
                 flex-wrap: nowrap;
             }
 }
-.name-ice-buy-nov{
+.name-ice-buy-now{
     font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
@@ -32,25 +30,22 @@
     box-sizing:content-box;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
-
     @media screen and (min-width:768px) {
         flex-direction: row;
         gap: 32px;
     }
 }
-.name-ice-buy-nov{
+.name-ice-buy-now{
     margin-top: 96px;
     margin-bottom: 20px;
     @media screen and (min-width:768px) {
-            margin-top: 26px;
+            margin-top: 95px;
             margin-bottom: 20px;
 }}
 .form-buy-naw{
     display: flex;
     flex-direction: column;
-    margin-top: 11px;
     margin-bottom: 26px;
     color: #131313;
     @media screen and (min-width:768px) {
@@ -75,7 +70,6 @@
     border: 2px solid #F8D24E;
     border-radius: 10px;
     margin: 0 auto;
-    box-sizing: content-box;
     @media screen and (min-width:768px) {
             padding: 32px 54px 32px 54px;
             max-width: 568px;
@@ -133,6 +127,8 @@
         padding: 8px 12px;
         min-height: 65px;
         text-align: start;
+        outline: none;
+        resize: none;
         @media screen and (min-width:768px) {
                 min-width: 368px;
             }
@@ -157,48 +153,29 @@ input::placeholder {
         background-image:
                 url(../images/by-now-img/Ellipse102x.jpg);
             background-position-x: center;
-            background-position-y: -67px;
+            background-position-y: -65px;
             background-repeat: no-repeat;
 box-sizing: content-box;
-        
+margin-bottom: 85px;
+        @media screen and (min-width:768px) {
+                margin-bottom: 40px;
+            }
 }
-// .li-ice-buy-one::after{
-//     content: url(../images/by-now-img/Ellipse102x.jpg);
-//     position: absolute;
-//     border-radius: 50%;
-//     width: 132px;
-//     height: 132px;
-// }
-// .fon-green-buy-now{
-//     position: absolute;
-//     width: 132px;
-//     height: 132px;
-//     bottom:67px;
-// }
+
 .picture-div-byu-now{
-    z-index: -1;
+   
     width: 132px;
     height: 132px;
     position: absolute;
-    bottom: 60px;
-    
+    bottom: 61px;
+    left: -2px;
 }
-// .li-ice-buy-one::after{
-//     position: absolute;
-//     content: '';
-//     display: block;
-//     width: 132px;
-//     height: 136px;
-// border: #84A178;
-
-// }
-
 .picture-ice-byu-now {
     display:block;
     width: 132px;
     height: 132px;
 }
-.picture-ice-byu-now img{
+.picture-ice-byu-now picture{
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -211,3 +188,82 @@ box-sizing: content-box;
     top:17px;
     right: 17px;
 }
+.fon-yellow-buy-now img{
+    border-radius: 50%;
+    width: 132px;
+    height: 132px;
+    position: absolute;
+}
+.picture-ice-byu-now img {
+border-radius: 50%;
+background-color: #EFD478;
+position: absolute;
+}
+.li-ice-buy-too{
+    position: relative;
+    background: #EFD478;
+    border: 2px solid #EFD478;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    border-radius: 15px;
+    display: block;
+        width: 128px;
+        height: 136px;
+        margin-bottom: 85px;
+        box-sizing: content-box;
+    // background: url(../images/sprite.svg#yellow-buy-now);
+    // background-position-x: center;
+    // background-size: 172px 172px;
+        // background-position-y: -6px;
+        background-repeat: no-repeat;
+        z-index: 1;
+        @media screen and (min-width:768px) {
+                margin-bottom: 40px;
+            }
+        }
+
+.fon-yellow-buy-now{
+    left: -2px;
+    position: absolute;
+    bottom: 60px;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
+    #D9D9D9;}
+.picture-div-byu-too{
+    width: 132px;
+    height: 132px;
+    position: absolute;
+    bottom: 67px;
+    z-index: 3;
+    left: -2px;
+}
+
+.li-ice-buy-free{
+        border: 2px solid #D6936D;
+        filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+        border-radius: 15px;
+        position: relative;
+        display: block;
+        width: 128px;
+        height: 136px;
+        background: #FCFCFC;
+        background-image:
+            url(../images/by-now-img/ellipse12.jpg);
+        background-position-x: center;
+        background-position-y: -72px;
+        background-repeat: no-repeat;
+        box-sizing: content-box;
+        margin-bottom: 31px;
+            @media screen and (min-width:768px) {
+                    margin-bottom: 40px;
+                  
+                }
+            }
+    .picture-div-byu-free{
+            width: 132px;
+            height: 132px;
+            position: absolute;
+            bottom: 68px;
+            left: -2px;
+    }
