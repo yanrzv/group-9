@@ -32,3 +32,87 @@
     для кнопки додатковий клас - btn , для ссилок - link , для списка - list  -->
 
     <!-- ссилки в меню: #about , #products , #contacts -->
+
+
+
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header__navigation">
+          <a href="./index.html" class="header__logo link"> 
+            <picture>
+              <source srcset="./images/logo-desk-1x.png 1x, ./images/logo-desk-2x.png 2x" media="(min-width: 1200px)">
+              <source srcset="./images/logo-tab-1x.png 1x, ./images/logo-tab-2x.png 2x" media="(min-width: 768px)">
+              <source srcset="./images/logo-mob-1x.png 1x, ./images/logo-mob-2x.png 2x" media="(max-width: 767px)">
+              <img src="./images/logo-desk-1x.png" class="header-logo__img" alt="Logo-company">
+            </picture>
+          </a>
+          <ul class="site-navigation list">
+            <li class="site-navigation__iteam">
+              <a href="./index.html" class="site-navigation__link link">Home</a>
+            </li>
+            <li class="site-navigation__iteam">
+              <a href="#about" class="site-navigation__link link">How it’s made?</a>
+            </li>
+            <li class="site-navigation__iteam">
+              <a href="#products" class="site-navigation__link link">Our products</a>
+            </li>
+            <li class="site-navigation__iteam">
+              <a href="#contact" class="site-navigation__link link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="button__wrap">
+          <button type="button" class="menu-open btn" data-menu-open>
+            <svg width="32" height="32" class="menu-open__icon">
+              <use href="./images/sprite.svg#menu-burger"></use>
+            </svg>
+          </button>
+            <button type="button" class="header__button btn">
+              Buy now 
+              <svg width="12" height="12" class="header-button__icon"> 
+                <use href="./images/sprite.svg#arrow-small"></use>
+              </svg>
+            </button>
+        </div>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <a href="./index.html" class="mob-menu__logo link">
+              <picture>
+                <source srcset="./images/logo-tab-1x.png 1x, ./images/logo-tab-2x.png 2x" media="(min-width: 768px)">
+                <source srcset="./images/logo-mob-1x.png 1x, ./images/logo-mob-2x.png 2x" media="(max-width: 767px)">
+                <img src="./images/logo-tab-1x.png" class="header-logo__img" alt="Logo-company">
+              </picture>
+            </a>
+            <button type="button" class="menu-close btn" data-menu-close>
+              <svg width="32" height="32" class="menu-close__icon">
+                <use href="./images/sprite.svg#menu-close"></use>
+              </svg>
+            </button>
+          </div>
+              <ul class="menu-navigation list">
+                <li class="menu-navigation__iteam">
+                  <a href="./index.html" class="menu-navigation__link link">Home</a>
+                </li>
+                <li class="menu-navigation__iteam">
+                  <a href="#about" class="menu-navigation__link link">How it’s made?</a>
+                </li>
+                <li class="menu-navigation__iteam">
+                  <a href="#products" class="menu-navigation__link link">Our products</a>
+                </li>
+                <li class="menu-navigation__iteam">
+                  <a href="#contact" class="menu-navigation__link link">Contact</a>
+                </li>
+              </ul>
+          <div class="menu-button__wrap">
+            <button type="button" class="mob-menu__button btn">
+              Buy now
+              <svg width="12" height="12" class="mob-menu__icon">
+                <use href="./images/sprite.svg#arrow-small"></use>
+              </svg>
+            </button> 
+          </div>
+        </div>
+      </div>
+    </header>
