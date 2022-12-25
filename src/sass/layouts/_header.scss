@@ -158,16 +158,13 @@
     background-color: transparent;
     fill: #FCFCFC;
     margin-top: 16px;
-    @include tablet {
-        margin-top: 32px;
-        margin-right: 12px;
-    }
-}
-
-.menu-close__icon {
     &:hover,
     &:focus {
         fill: #F8D24E;
+    }
+    @include tablet {
+        margin-top: 32px;
+        margin-right: 12px;
     }
 }
 
