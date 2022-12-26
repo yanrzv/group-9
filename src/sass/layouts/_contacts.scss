@@ -134,6 +134,10 @@
             left: 40px;
         }
 }
+.contacts__title:hover,
+.contacts__title:focus {
+    background-color:var(--address-color) ;
+}
 .contacts__box {
     position: relative;
         top: 67px;
