@@ -29,3 +29,69 @@
     для кнопки додатковий клас - btn , для ссилок - link , для списка - list  -->
 
 <!-- стрілка в спрайті #arrow-big -->
+
+<section class="main-title">
+  <div class="hero-container container">
+    <h1 class="hero-title">Ice cream <br/> made with <br/> passion</h1>
+      <div class="hero-list">
+        <a class="hero-button" href="#" type="button">Products</a>
+        <a class="hero-link" href="#">How it`s made?</a>
+      </div>
+      <div class="hero-image">
+        <picture class="hero-icecream">
+          <source
+          srcset="./images/creams-deskx1.png 1x, ./images/creams-deskx2.png 2x"
+          media="(min-width: 1200px)"
+          />
+      <source
+          srcset="./images/creams-tabx1.png 1x, ./images/creams-tabx2.png 2x"
+          media="(min-width: 768px)"
+          />
+      <img
+          src="./images/creams-deskx2.png"
+          alt="Lot of icecream"
+          />
+        </picture>
+          <p class="hero-text">
+          Lorem ipsum dolor sit amet, <br/> consectetur adipiscing elit, <br/> sed do eiusmod tempor <br/> incididunt ut labore et
+            <svg class="hero-arrow" width="40" height="16">
+              <use href="./images/sprite.svg#arrow-big"></use>
+            </svg>
+          </p>
+      </div>
+      <picture class="big-ice">
+        <source
+        srcset="./images/ice-deskx1.png 1x, ./images/ice-deskx2.png 2x"
+        media="(min-width: 1200px)"
+        />
+    <source
+        srcset="./images/ice-tabx1.png 1x, ./images/ice-tabx2.png 2x"
+        media="(min-width: 768px)"
+        />
+    <source
+        srcset="./images/ice-mobx1.png 1x, ./images/ice-mobx2.png 2x"
+        media="(max-width: 767px)"
+        />
+    <img
+        src="./images/ice-deskx1.png"
+        alt="Big icecream"
+        />
+      </picture>
+      <div class="number-list">
+      <ul class="">
+        <li class="numbers">
+          <svg width="52" height="56">
+            <use href="./images/hero-numbers.svg#icon-21"></use>
+          </svg>
+          <p class="side">cafes</p>
+        </li>
+        <li class="numbers">
+          <svg width="59" height="56">
+            <use href="./images/hero-numbers.svg#icon-2"></use>
+          </svg>
+          <p class="side">food trucks</p>
+        </li>
+      </ul>
+      </div>
+  </div>
+</section>
