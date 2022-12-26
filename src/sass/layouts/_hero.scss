@@ -1,36 +1,62 @@
 .main-title{
     background-color: var(--primary-background-color);
-    height: 591px;
-    background-image: url(../images/dots.png);
+    background-image: url(../images/dots-mob.png);
     background-repeat: no-repeat;
     background-position: bottom;
-    padding-top: 45px;
     position: relative;
+
+    @include tablet {
+    background-image: url(../images/dots-tab.png);
+    }
+
+    @include desktop {
+    height: 591px;
+    background-image: url(../images/dots.png);
+    }
+}
+.hero-container{
+    // position: relative;
+    background-size: contain;
+    height: 453px;
 }
 .hero-title{
+    color:#FCFCFC;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.2692;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding-top: 46px;
+
+    @include desktop {
     color:#FCFCFC;
     font-weight: 400;
     font-size: 38px;
     line-height: 1.26315;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    margin-bottom: 28px;
+    margin-right: 54px;
+    }
 }
 .hero-list{
+    margin-top: 25px;
+
+    @include desktop {
     display: flex;
     align-items: center;
+    }
 }
 .hero-button{
     border: 2px solid var(--button-background-default);
     border-radius: 10px;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 1.2857;
+    font-size: 12px;
+    line-height: 1.25;
     text-align: center;
     text-decoration: none;
     color: var(--secondary-text-color);
     padding: 12px 34px;
-    margin-right: 34px;
+    margin-right: 12px;
     cursor: url(../images/cursor.svg), auto;
     background-color: var(--primary-background-color);
     cursor: pointer;
@@ -40,11 +66,20 @@
     &:focus{
         color: #FCFCFC;
     }
+
+    @include tablet {
+    font-size: 14px;
+    line-height: 1.2857;
+    }
+
+    @include desktop {
+    margin-right: 34px;
+    }
 }
 .hero-link{
     font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21428;
+    font-size: 12px;
+    line-height: 1.25;
     text-align: center;
     text-decoration-line: underline;
     color: var(--button-background-default);
@@ -55,14 +90,31 @@
     &:focus{
         color: #FCFCFC;
     }
+
+    @include tablet {
+    font-size: 14px;
+    line-height: 1.21428;
+    }
 }
 .hero-image{
+    display: none;
+
+    @include tablet {
     display: flex;
     align-items: center;
     margin-top: 42px;
+    }
 }
 .hero-icecream{
     margin-right: 16px;
+    position: absolute;
+    bottom: 12px;
+    left: 32px;
+
+    @include desktop {
+    bottom: 65px;
+    left: 16px;
+    }
 }
 .hero-text{
     display: flex;
@@ -71,6 +123,17 @@
     font-size: 14px;
     line-height: 140%;
     color: #FCFCFC;
+
+    @include tablet {
+    font-size: 12px;
+    color: #FCFCFC;
+    margin-left: 216px;
+    }
+
+    @include desktop {
+        margin-left: 257px;
+        margin-top: 109px;
+    }
 }
 .hero-arrow{
     color: #FCFCFC;
@@ -80,11 +143,43 @@
 }
 .big-ice{
     position: absolute;
-    top: 5%;
-    right: 23%;
-}
-.numbers{
+    bottom: 0;
+    right: 60px;
+
+
+    @include tablet {
+    right: 92px;
     position: absolute;
-    top: 10%;
-    right: 20%;
+    }
+    @include desktop {
+    }
+}
+.number-list{
+    display: none;
+
+    @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 28px;
+    right: 0;
+    }
+    @include desktop {
+    gap: 16px;
+    }
+}
+.side{
+    @include tablet {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+    color: #FCFCFC;
+    }
+
+    @include desktop {
+    font-size: 14px;
+    line-height: 1.2142;
+    }
 }
