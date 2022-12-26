@@ -3,7 +3,7 @@
     background-image: url(../images/dots-mob.png);
     background-repeat: no-repeat;
     background-position: bottom;
-    position: relative;
+    // position: relative;
 
     @include tablet {
     background-image: url(../images/dots-tab.png);
@@ -15,12 +15,12 @@
     }
 }
 .hero-container{
-    // position: relative;
+    position: relative;
     background-size: contain;
     height: 453px;
 }
 .hero-title{
-    color:#FCFCFC;
+    color: var(--primary-text-color);
     font-weight: 400;
     font-size: 26px;
     line-height: 1.2692;
@@ -29,7 +29,7 @@
     padding-top: 46px;
 
     @include desktop {
-    color:#FCFCFC;
+    color: var(--primary-text-color);
     font-weight: 400;
     font-size: 38px;
     line-height: 1.26315;
@@ -40,6 +40,7 @@
 }
 .hero-list{
     margin-top: 25px;
+    align-items: center;
 
     @include desktop {
     display: flex;
@@ -64,7 +65,7 @@
         border-color: var(--button-background-hover);
     }
     &:focus{
-        color: #FCFCFC;
+        color: var(--primary-text-color);
     }
 
     @include tablet {
@@ -88,7 +89,7 @@
         color: var(--button-background-hover);
     }
     &:focus{
-        color: #FCFCFC;
+        color: var(--primary-text-color);
     }
 
     @include tablet {
@@ -107,14 +108,6 @@
 }
 .hero-icecream{
     margin-right: 16px;
-    position: absolute;
-    bottom: 12px;
-    left: 32px;
-
-    @include desktop {
-    bottom: 65px;
-    left: 16px;
-    }
 }
 .hero-text{
     display: flex;
@@ -122,23 +115,21 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    color: #FCFCFC;
+    color: var(--primary-text-color);
 
     @include tablet {
     font-size: 12px;
-    color: #FCFCFC;
-    margin-left: 216px;
+    color: var(--primary-text-color);
+    gap: 20px;
     }
 
     @include desktop {
-        margin-left: 257px;
-        margin-top: 109px;
     }
 }
 .hero-arrow{
-    color: #FCFCFC;
+    color: var(--primary-text-color);
     align-items: center;
-    fill: #FCFCFC;
+    fill: var(--primary-text-color);
     // border: 2px solid #FCFCFC;
 }
 .big-ice{
@@ -152,6 +143,7 @@
     position: absolute;
     }
     @include desktop {
+    bottom: -30%;
     }
 }
 .number-list{
@@ -163,7 +155,7 @@
     gap: 20px;
     position: absolute;
     top: 28px;
-    right: 0;
+    right: 15px;
     }
     @include desktop {
     gap: 16px;
@@ -174,8 +166,8 @@
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
-    text-align: right;
-    color: #FCFCFC;
+    text-align: center;
+    color: var(--primary-text-color);
     }
 
     @include desktop {
