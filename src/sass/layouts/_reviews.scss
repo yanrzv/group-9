@@ -1,5 +1,30 @@
 // .reviews {
 // }
+.reviews {
+    padding-bottom: 60px;
+}
+
+.swiper {
+    width: 280px;
+    
+    @include tablet {
+        width: 705px;
+    }
+
+    @include desktop {
+    width: 968px;
+    height: 365px;
+    margin: 0 auto;
+    }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0;
+}
+
 .reviews__foto {
   margin-bottom: 32px;
   max-width: 85px;
