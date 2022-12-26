@@ -1,5 +1,4 @@
 .modal-readmore {
-
    width: 280px;
    height: 459px;
    padding: 28px;
@@ -13,11 +12,6 @@
 
    }
 }
-//Зберіг сюди, щоб не шукати потім\\
-// .modal.active,
-// .overlay.active {
-//     opacity: 1;
-//     visibility: visible;
 
 .modal-readmore-title {
    text-align: center;
@@ -69,7 +63,7 @@
          height: 24px;
       }
       &:hover, &:focus .modal-readmore-svg {
-         fill: #0a8817;
+         fill: #F8D24E;
       }
 }
 
