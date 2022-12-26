@@ -1,16 +1,38 @@
-
-  <!--
-    ❗️❗️❗️ The path to images from the HTML partial
-    is the same as from the index.html file
-  -->
-
-  <!-- 
-    ❗️❗️❗️ Не додавай в css назви стилів: container, list, link, btn, section-title, 
-    section-uptitle.
-    вони уже є глобально і це може змінити верстку іншим.
-
-    Додай додатковий div з класом container, для нього уже прописані стилі.
-
- Медіа-правила є в міксінах, тому додавай через @include mobile, @include tablet, 
- @include desktop
-   -->
+<section class="gallery">
+  <h3 class="visually-hidden">gallery</h3>
+  <div class="container gallery-position">
+    <ul class="autoplay">
+      <li class="img_gallery">
+        <img
+          class="card_gallery"
+          alt="icecream"
+          srcset="
+            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-1_ice1-L.png     1013w,
+            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-1_ice1-L-@2x.png 2026w,
+            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-2_ice1-M.png      704w,
+            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-2_ice1-M-@2x.png 1408w,
+            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-2_ice1-S.png      279w,
+            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-2_ice1-S-2x.png   558w
+          "
+          sizes="(min-width:1200px) 1013px, (min-width:768px) 704px, (min-width:480px) 279px,
+        100vw"
+          src="./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-2_ice1-S.png"
+        />
+      </li>
+      <li class="img_gallery">
+        <img
+          class="card_gallery"
+          src="./images/gallery/kenta-kikuchi-LZ6BTZnizD8-unsplash-1_icecream2-SS.png"
+          alt="icecream"
+        />
+      </li>
+      <li class="img_gallery">
+        <img
+          class="card_gallery"
+          src="./images/gallery/courtney-cook-QYsRxRPygwU-unsplash-1_icecream-M.png"
+          alt="icecream"
+        />
+      </li>
+    </ul>
+  </div>
+</section>
