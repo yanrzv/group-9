@@ -20,19 +20,22 @@ footer {
   }
 }
 .footer__title-wrap {
-  margin-bottom: 60px;
-  @include mobile {
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-width: 352px;
-  }
-  @include tablet {
-    margin-bottom: 32px;
-  }
-  @include desktop {
     margin-bottom: 60px;
-    max-width: 100%;
-  }
+
+    @include mobile {
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 352px;
+    }
+
+    @include tablet {
+        margin-bottom: 32px;
+    }
+
+    @include desktop {
+        margin-bottom: 60px;
+        max-width: 100%;
+    }
 }
 .footer__soc-wrap {
   margin-bottom: 40px;
