@@ -62,12 +62,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
             document.querySelector('.modal.active').classList.remove('active');
             document.querySelector('.overlay').classList.remove('active');
+            document.querySelector('body').classList.remove('no-scroll');
         };
     }, false);
 
 
     overlay.addEventListener('click', function() {
         document.querySelector('.modal.active').classList.remove('active');
+        document.querySelector('body').classList.remove('no-scroll');
         this.classList.remove('active');
     });
 
