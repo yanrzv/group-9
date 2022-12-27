@@ -55,14 +55,16 @@
 }
 
 .location-map {
-    padding-left: 28px;
-    padding-right: 28px;
-    width: 100%;
+    margin-left: 28px;
+    margin-right: 28px;
+    width: 224px;
     height: 199px;
+    border-radius: 10px;
     @include tablet {
-        padding-left: 60px;
-        padding-right: 60px;
+        width: 448px;
         height: 260px;
+        margin-left: 60px;
+        margin-right: 60px;
     }
 }
 
