@@ -1,4 +1,12 @@
 .contacts {
+    outline: 1px rgb(90, 39, 3);
+    padding-bottom: 60px;
+    @include tablet {
+        padding-bottom: 40px;
+    }
+    @include desktop {
+        padding-bottom: 120px;
+    }
     display: flex;
         
         margin: 0 auto;
@@ -349,26 +357,25 @@ border-bottom: 1px solid #E1E1E1;
                 align-items: center;
                 flex-direction: column;
                 gap: 12px;
-                padding-bottom: 60px;
-   
-    @include mobile {
+                // padding-bottom: 60px;
+
+    // @include mobile {
             
     
             
-        }
+    //     }
     
         @include tablet {
             display: flex;
                 justify-content: center;
                 flex-direction: row;
                 gap: 16px;
-                padding-bottom: 40px;
-    
+                // padding-bottom: 40px;
         }
     
-        @include desktop {
-            padding-bottom: 120px;
-        }
+        // @include desktop {
+        //     padding-bottom: 120px;
+        // }
 }
 .contacts__location {
     display: flex;

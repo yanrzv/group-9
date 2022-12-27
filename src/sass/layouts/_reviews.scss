@@ -1,18 +1,21 @@
 // .reviews {
 // }
 .reviews {
+  outline: 1px solid yellow;
     padding-top: 40px;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
+    padding-bottom: 40px;
 
     @include tablet {
         padding-top: 50px;
-        padding-bottom: 40px;
+        // padding-bottom: 40px;
+        padding-bottom: 80px;
     }
     @include desktop{
         padding-top: 70px;
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
+        padding-bottom: 100px;
     }
-
 }
 
 .reviews-swiper.swiper {
