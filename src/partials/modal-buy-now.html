@@ -1,33 +1,78 @@
+<div class="container container-buy-naw">
+  <button type="button" class="menu-clouse-byu" ><svg class="menu-clouse-byu-now" width="13" height="13">
+      <use href="./images/sprite.svg#clouse-buy-now"></use>
+    </svg></button>
+<h2 class="buy-now-title">Buy now</h2>
+<ul class="ul-ice-buy-nov">
+  <Li class="li-ice-buy-one">
+    <div class="picture-div-byu-now">
+    <picture class="picture-ice-byu-now">
+      <sourse srcset="
+                    ./images/by-now-img/Ice-1-1200-780bynow.jpg 1x,
+                    ./images/by-now-img/Ice-1-1200-780bynow-2x.jpg 2x" media="(min-width: 1200px)" />
+      <sourse srcset="
+                    ./images/by-now-img/Ice-1-1200-780bynow.jpg 1x,
+                    ./images/by-now-img/Ice-1-1200-780bynow-2x.jpg 2x" media="(min-width: 768px)" />
+      <sourse srcset="
+                    ./images/by-now-img/Ice-1-480px-bynow.jpg 1x,
+                    ./images/by-now-img/Ice-1-480px-bynow-2x.jpg 2x" media="(min-width: 480px)" />
+      <img src="./images/by-now-img/Ice-1.jpg" alt="три морожена" />
+    </picture>
+    </div>
+    <p class="name-ice-buy-now">ice cream</p>
+  </Li>
+  <Li class="li-ice-buy-too">
+    <div class="picture-div-byu-too">
+    <picture class="picture-ice-byu-now">
+      <sourse srcset="
+                      ./images/by-now-img/Ice-2-1200-780bynow.jpg 1x,
+                      ./images/by-now-img/Ice-2-1200-780bynow-2x.jpg 2x" media="(min-width: 1200px)" />
+      <sourse srcset="
+                      ./images/by-now-img/Ice-2-1200-780bynow.jpg 1x,
+                      ./images/by-now-img/Ice-2-1200-780bynow-2x.jpg 2x" media="(min-width: 768px)" />
+      <sourse srcset="
+                      ./images/by-now-img/Ice-2-480pxbynow.jpg 1x,
+                      ./images/by-now-img/Ice-2-480pxbynow-2x.jpg 2x" media="(min-width: 480px)" />
+      <img class="" src="./images/by-now-img/Ice-2.jpg" alt="Мороженое со льдом" />
+    </picture>
+    </div>
+    <svg class="fon-yellow-buy-now" width="132" height="132">
+      <use href="./images/sprite.svg#yellow-buy-now" >
+      </use>
+    </svg>
+    <p class="name-ice-buy-now">ice coffee</p>
+  </Li>
+  <Li class="li-ice-buy-free">
+    <div class="picture-div-byu-free">
+    <picture  class="picture-ice-byu-now">
 
-  <!--
-    ❗️❗️❗️ The path to images from the HTML partial
-    is the same as from the index.html file
-  -->
+      <sourse srcset="
+                      ./images/by-now-img/Ice-3-1200-780bynow.jpg 1x,
+                      ./images/by-now-img/Ice-3-1200-780bynow-2x.jpg 2x" media="(min-width: 1200px)" />
+      <sourse srcset="
+                      ./images/by-now-img/Ice-3-1200-780bynow.jpg 1x,
+                      ./images/by-now-img/Ice-3-1200-780bynow-2x.jpg 2x" media="(min-width: 768px)" />
+      <sourse srcset="
+                      ./images/by-now-img/Ice-3-480pxbynow.jpg 1x,
+                      ./images/by-now-img/Ice-3-480pxbynow-2x.jpg" media="(min-width: 480px)" />
+      <img src="./images/by-now-img/Ice-3.jpg" alt="шоколадное мороженое" />
+    </picture>
+    </div>
+    <p class="name-ice-buy-now">milkshake</p>
+  </Li>
+</ul>
+<form class="form-buy-naw" action="">
+    <lable for="name" class="label-name-lable-buy"></lable>
+    <input name="" id="name" class="label-name-input-buy" placeholder="Name" type="name"></input>
 
-  <!-- 
-    ❗️❗️❗️ Не додавай в css назви стилів: container, list, link, btn, 
-    вони уже є глобально і це може змінити верстку іншим. 
-
-    В твоїй секції нема section-title, використай modal-title (він уже є в css)
-    
-    Додав змінні для деяких кольорів, тому використовуй:
-    1. для світлого шрифта колір var(--primary-text-color);
-    2. для темного шрифта колір var(--secondary-texet-color);
-    3. дефолтний колір кнопки var(--button-background-default);
-    4. ховер для кнопки var(--button-background-hover);
-    5. колір вимкненої кнопки var(--button-background-disabled);
-
-    Глобально додав шрифти, тому не треба вказувати font-family. 
-
-    Не додавай клас modal-container, або modal-wrap, modal-form, modal-input,
-     modal-button або щось подібне. 
-    Хтось може використати такі ж назви. Краще додавай класи з назвою своєї модалки.
-
- Медіа-правила є в міксінах, тому додавай через @include mobile, @include tablet, 
- @include desktop
- 
-    Глобально додав скидання стилів і додав курсор при ховері, тому використовуй 
-    для кнопки додатковий клас - btn , для ссилок - link , для списка - list  -->
-
-<!-- хрестик в спрайті #modal-close -->
+    <lable for="phone" class="label-name-lable-buy"></lable>
+    <input name="" id="phone" class="label-name-input-buy" placeholder="Phone" type="tel"></input>
+    <lable for="comment" class="label-name-lable-buy"></lable>
+    <textarea name="" id="comment" class="label-comment-input-buy" placeholder="Comment" type="comment"></textarea>
+    </form>
+    <div class="div-btn-buy-now">
+    <button class="button-buy-nav" type="submit">Submit
+      </button>
+      </div>
+    </div>
 
