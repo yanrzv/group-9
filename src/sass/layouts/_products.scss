@@ -12,11 +12,9 @@
     font-weight: 400;
     color: var(--secondary-text-color);
     margin-bottom: 148px;
-
     @include tablet {
         margin-bottom: 200px;
     }
-
     @include desktop {
         margin-bottom: 303px;
     }
@@ -37,7 +35,6 @@
         min-height: 420px;
         padding: 123px 40px 16px 40px;
         border-radius: 24px;
-
         @include tablet {
             flex-basis: calc((100% - 32px) / 3);
             min-height: 428px;
@@ -46,14 +43,12 @@
         @media screen and (min-width: 480px) and (max-width: 767px) {
             border-radius: 15.7808px;
         }
-
         @include desktop {
             flex-basis: calc((100% - 29px) / 3);
             min-height: 536px;
             padding: 165px 64px 60px 64px;
         }
     }
-
     &__item:not(:last-child) {
         @media screen and (max-width: 767px) {
             margin-bottom: 168px;
@@ -94,11 +89,9 @@
         background-size: contain;
         background-repeat: no-repeat;
         z-index: 1;
-
         @include tablet {
             top: -120px;
         }
-
         @include desktop {
             width: 302px;
             height: 302px;
@@ -248,9 +241,16 @@
 // ---------------- Кнопка ---------------------
 
 .products-btn {
-    margin: 0;
-    padding: 0;
-    border: none;
+    position: absolute;
+    width: 121px;
+    height: 48px;
+    bottom: 0;
+    left: 50%;   
+    transform: translateX(-50%);
+    background-color: transparent;
+    @include desktop {
+        bottom: 44px;
+    }
 
     &__icon {
         position: absolute;
@@ -258,12 +258,22 @@
         left: 50%;
         transform: translateX(-50%);
         cursor: url(../images/cursor.svg), auto;
-        
+        transition: transform 250ms linear, fill 250ms linear;
         @include tablet {
             bottom: 12px;
         }
         @include desktop {
-            bottom: 60px;
+            bottom: 16px;
         }
+    }
+    &__icon:hover,
+    &__icon:focus {
+        fill: rgb(102, 67, 2);
+        transform: scale(1.01);
+    }
+    &:hover .products-btn__icon,
+    &:focus .products-btn__icon {
+        transform: scale(1.01);
+        fill: rgb(102, 67, 2);
     }
 }
