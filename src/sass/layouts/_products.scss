@@ -271,7 +271,8 @@
         fill: rgb(102, 67, 2);
         transform: scale(1.01);
     }
-    &:hover .products-btn__icon {
+    &:hover .products-btn__icon,
+    &:focus .products-btn__icon {
         transform: scale(1.01);
         fill: rgb(102, 67, 2);
     }
