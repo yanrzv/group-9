@@ -1,41 +1,9 @@
-<!--
-    ❗️❗️❗️ The path to images from the HTML partial
-    is the same as from the index.html file
-  -->
-
-<!-- 
-    ❗️❗️❗️ Не додавай в css назви стилів: container, list, link, btn, 
-    вони уже є глобально і це може змінити верстку іншим. 
-
-    В твоїй секції нема section-title, краще використай main-title, або 
-    задай стиль для заголовка через селектор тега, він все-одно не повториться
-    на сайті.
-    
-    Додав змінні для деяких кольорів, тому використовуй:
-    1. для світлого шрифта колір var(--primary-text-color);
-    2. для темного шрифта колір var(--secondary-texet-color);
-    3. дефолтний колір кнопки var(--button-background-default);
-    4. ховер для кнопки var(--button-background-hover);
-    5. колір вимкненої кнопки var(--button-background-disabled);
-
-    Глобально додав шрифти, тому не треба вказувати font-family. 
-
-    Додай додатковий div з класом container, для нього уже прописані стилі.
-
- Медіа-правила є в міксінах, тому додавай через @include mobile, @include tablet, 
- @include desktop
- 
-    Глобально додав скидання стилів і додав курсор при ховері, тому використовуй 
-    для кнопки додатковий клас - btn , для ссилок - link , для списка - list  -->
-
-<!-- стрілка в спрайті #arrow-big -->
-
 <section class="main-title">
   <div class="hero-container container">
     <h1 class="hero-title">Ice cream <br/> made with <br/> passion</h1>
       <div class="hero-list">
-        <a class="hero-button" href="#" type="button">Products</a>
-        <a class="hero-link" href="#">How it`s made?</a>
+        <a class="hero-button link" href="#products" type="button">Products</a>
+        <a class="hero-link link" href="#about">How it`s made?</a>
       </div>
       <div class="hero-image">
         <picture class="hero-icecream">
@@ -54,9 +22,11 @@
         </picture>
           <p class="hero-text">
           Lorem ipsum dolor sit amet, <br/> consectetur adipiscing elit, <br/> sed do eiusmod tempor <br/> incididunt ut labore et
-            <svg class="hero-arrow" width="40" height="16">
-              <use href="./images/sprite.svg#arrow-big"></use>
-            </svg>
+            <a class="hero-arrow-link link" href="#about">
+                <svg class="hero-arrow" width="40" height="16">
+                  <use href="./images/sprite.svg#arrow-big"></use>
+                </svg>
+            </a>
           </p>
       </div>
       <picture class="big-ice">
