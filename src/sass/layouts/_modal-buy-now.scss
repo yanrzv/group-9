@@ -1,3 +1,43 @@
+.container-buy-naw {
+    position: relative;
+    padding: 28px 28px 29px 28px;
+    max-width: 280px;
+    background: #FCFCFC;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    margin: 0 auto;
+
+    @media screen and (min-width:768px) {
+        padding: 32px 54px 32px 54px;
+        max-width: 568px;
+    }
+}
+
+// .menu-clouse-byu {
+//     background: #FCFCFC;
+//     margin-right: auto;
+//     border: none;
+//     position: absolute;
+//     top: 17px;
+//     right: 17px;
+// }
+
+.modal-buy-now__close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-color: transparent;
+
+        &:hover,
+        &:focus {
+            fill: var(--button-background-hover);
+            transform: scale(1.5);
+        }
+}
+
 .buy-now-title{
          font-family: 'Seymour One';
         font-style: normal;
@@ -43,124 +83,126 @@
             margin-top: 95px;
             margin-bottom: 20px;
 }}
-.form-buy-naw{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 26px;
-    
-    color: #131313;
-    @media screen and (min-width:768px) {
-            margin-top: 19px;
-            margin-bottom: 32px;
-            justify-content: center;
-            align-items: center;
+//.form-buy-naw{
+//    display: flex;
+//    flex-direction: column;
+//    align-items: center;
+//    margin-bottom: 26px;
+//  
+//   color: #131313;
+//   @media screen and (min-width:768px) {
+//           margin-top: 19px;
+//            margin-bottom: 32px;
+//            justify-content: center;
+//           align-items: center;
+//
+//        }
+//}
+//.label-name-input-buy{
+//   margin-bottom: 12px;
+//    @media screen and (min-width:768px) {
+//           margin-bottom: 16px;
+//       }
+//}
+//.container-buy-naw{
+// position: absolute;
+// padding: 28px 28px 29px 28px;
+//  width: calc(100% - 40px);
+//  min-width:280px;
+//  background: #FCFCFC;
+//   border: 2px solid #F8D24E;
+//   border-radius: 10px;
+//   margin: 0 auto;
+//   height: 100vh;
+//   overflow: auto;
+//   z-index: 40;
+//    @include mobile {
+//       max-width: 440px;
+//   }
+//
+//   @media screen and (min-width:768px) {
+//          padding: 32px 54px 32px 54px;
+//           max-width: 568px;
+//       }
+//}
+//.button-buy-nav{
+//    background: #F8D24E;
+//    border-radius: 10px;
+//    font-family: 'Montserrat';
+//        font-style: normal;
+//        font-weight: 600;
+//        font-size: 14px;
+//        line-height: 1.2;
+//        display: flex;
+//        justify-content: center;
+//        align-items: center;
+//        text-align: center;
+//        color: #131313;
+//        border: none;
+//    width: 121px;
+//    height: 42px;
+//
+//   &:hover, &:focus {
+//        background-color: var(--button-background-hover);
+//    }
+//}
+//.div-btn-buy-now{
+//    display: flex;
+//    justify-content: center;
+//    align-items: center;
+//}
+//.label-name-input-buy{
+//    width: 100%;
+//    background: rgba(248, 210, 78, 0.1);
+//    border: 1px solid #84A178;
+//    border-radius: 10px;
+//    font-family: 'Montserrat';
+//        font-style: normal;
+//        font-weight: 400;
+//        font-size: 12px;
+//        line-height: 140%;
+//        color: #131313;
+//        padding: 8px 12px;
+//        min-height: 32px;
+//       @include mobile {
+//           max-width: 340px;
+//        }
+//
+//        @media screen and (min-width:768px) {
+//                max-width: 368px;
+//            }
+//}
+//.label-comment-input-buy{
+//    width: 100%;
+//        background: rgba(248, 210, 78, 0.1);
+//        border: 1px solid #84A178;
+//        border-radius: 10px;
+//       font-family: 'Montserrat';
+//        font-style: normal;
+//        font-weight: 400;
+//        font-size: 12px;
+//        line-height: 140%;
+//        padding: 8px 12px;
+//        min-height: 65px;
+//        text-align: start;
+//       outline: none;
+//       resize: none;
 
-        }
-}
-.label-name-input-buy{
-    margin-bottom: 12px;
-    @media screen and (min-width:768px) {
-            margin-bottom: 16px;
-        }
-}
-.container-buy-naw{
-    position: absolute;
-    padding: 28px 28px 29px 28px;
-    width: calc(100% - 40px);
-    min-width:280px;
-    background: #FCFCFC;
-    border: 2px solid #F8D24E;
-    border-radius: 10px;
-    margin: 0 auto;
-    height: 100vh;
-    overflow: auto;
-    z-index: 40;
-    @include mobile {
-        max-width: 440px;
-    }
+//        @include mobile {
+//                max-width: 340px;
+//            }
+//       @media screen and (min-width:768px) {
+//              min-width: 368px;
+//            }
+// }
+// textarea::placeholder {
+//    color: #131313;
+// }
+// input::placeholder {
+//    color: #131313;
 
-    @media screen and (min-width:768px) {
-            padding: 32px 54px 32px 54px;
-            max-width: 568px;
-        }
-}
-.button-buy-nav{
-    background: #F8D24E;
-    border-radius: 10px;
-    font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: #131313;
-        border: none;
-    width: 121px;
-    height: 42px;
 
-    &:hover, &:focus {
-        background-color: var(--button-background-hover);
-    }
-}
-.div-btn-buy-now{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.label-name-input-buy{
-    width: 100%;
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-    font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 140%;
-        color: #131313;
-        padding: 8px 12px;
-        min-height: 32px;
-        @include mobile {
-            max-width: 340px;
-        }
 
-        @media screen and (min-width:768px) {
-                max-width: 368px;
-            }
-}
-.label-comment-input-buy{
-    width: 100%;
-        background: rgba(248, 210, 78, 0.1);
-        border: 1px solid #84A178;
-        border-radius: 10px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 140%;
-        padding: 8px 12px;
-        min-height: 65px;
-        text-align: start;
-        outline: none;
-        resize: none;
-
-        @include mobile {
-                max-width: 340px;
-            }
-        @media screen and (min-width:768px) {
-                min-width: 368px;
-            }
-}
-textarea::placeholder {
-    color: #131313;
-}
-input::placeholder {
-    color: #131313;
-}
 .li-ice-buy-one{
     border-bottom: 2px solid #96AF8C;
     border-left: 2px solid #96AF8C;
@@ -202,14 +244,7 @@ margin-bottom: 85px;
     height: 100%;
     border-radius: 50%;
 }
-.menu-clouse-byu{
-    background: #FCFCFC;
-    margin-right: auto;
-    border: none;
-    position: absolute;
-    top:17px;
-    right: 17px;
-}
+
 .fon-yellow-buy-now img{
     border-radius: 50%;
     width: 132px;
@@ -279,7 +314,6 @@ position: absolute;
         margin-bottom: 31px;
             @media screen and (min-width:768px) {
                     margin-bottom: 40px;
-                  
                 }
             }
     .picture-div-byu-free{
@@ -289,3 +323,217 @@ position: absolute;
             bottom: 68px;
             left: -2px;
     }
+
+// .form-buy-naw{
+//     display: flex;
+//     flex-direction: column;
+//     margin-bottom: 26px;
+//     color: #131313;
+//     @media screen and (min-width:768px) {
+//             margin-top: 19px;
+//             margin-bottom: 32px;
+//             justify-content: center;
+//             align-items: center;
+//         }
+// }
+// .label-name-input-buy{
+//     margin-bottom: 12px;
+//     @media screen and (min-width:768px) {
+//             margin-bottom: 16px;
+//         }
+// }
+// .label-name-input-buy{
+//    max-width: 224px;
+//     background: rgba(248, 210, 78, 0.1);
+//     border: 1px solid #84A178;
+//     border-radius: 10px;
+//     font-family: 'Montserrat';
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 12px;
+//         line-height: 140%;
+//         color: #131313;
+//         padding: 8px 12px;
+//         min-height: 32px;
+//         @media screen and (min-width:768px) {
+//                 min-width: 368px;
+//             }
+// }
+// .button-buy-nav{
+//     background: #F8D24E;
+//     border-radius: 10px;
+//     font-family: 'Montserrat';
+//         font-style: normal;
+//         font-weight: 600;
+//         font-size: 14px;
+//         line-height: 1.2;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         text-align: center;
+//         color: #131313;
+//         border: none;
+//     width: 121px;
+//     height: 42px;
+// }
+// .div-btn-buy-now{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .label-comment-input-buy{
+//     max-width: 224px;
+//         background: rgba(248, 210, 78, 0.1);
+//         border: 1px solid #84A178;
+//         border-radius: 10px;
+//         font-family: 'Montserrat';
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 12px;
+//         line-height: 140%;
+//         padding: 8px 12px;
+//         min-height: 65px;
+//         text-align: start;
+//         outline: none;
+//         resize: none;
+//         @media screen and (min-width:768px) {
+//                 min-width: 368px;
+//             }
+// }
+// textarea::placeholder {
+//     color: #131313;
+// }
+// input::placeholder {
+//     color: #131313;
+// }
+
+//-------------------- Форма -----------------------
+.modal-buy-now-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include tablet {
+        align-items: center;
+    }
+
+    &__wrap {
+        position: relative;
+    }
+
+    &__input {
+        height: 42px;
+        width: 100%;
+        padding-left: 10px;
+        background: rgba(248, 210, 78, 0.1);
+        border: 1px solid var(--primary-background-color);
+        border-radius: 10px;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @include tablet {
+            width: 368px;
+        }
+
+        &:hover,
+        &:focus {
+            border-color: var(--button-background-hover);
+        }
+
+        &::placeholder {
+            color: var(--secondary-text-color);
+        }
+    }
+
+    &__label {
+        display: none;
+        position: absolute;
+        top: 11px;
+        left: 10px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(20 / 14);
+        color: var(--secondary-text-color);
+    }
+
+    &__comment {
+        height: 84px;
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 10px;
+        background: rgba(248, 210, 78, 0.1);
+        border: 1px solid var(--primary-background-color);
+        border-radius: 10px;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        resize: none;
+
+        @include tablet {
+            width: 368px;
+        }
+
+        &:hover,
+        &:focus {
+            border-color: var(--button-background-hover);
+        }
+        &::placeholder {
+            color: var(--secondary-text-color);
+        }
+    }
+
+    &__input:focus-within,
+    &__comment:focus-within {
+        border: none;
+        outline: 1px solid var(--button-background-hover);
+    }
+
+    &__input:not(:placeholder-shown)+.modal-buy-now-form__label,
+    &__comment:not(:placeholder-shown)+.modal-buy-now-form__label {
+        display: block;
+
+        @media screen and (max-width: 767px) {
+            top: -15px;
+            color: var(--primary-background-color);
+            font-weight: 400;
+            font-size: 10px;
+            line-height: calc(12 / 10);
+        }
+
+        @include tablet {
+            left: -80px;
+        }
+    }
+
+    // --------------Кнопка----------------
+    &__btn {
+        width: 132px;
+        height: 42px;
+        margin-top: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--button-background-default);
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: calc(17 / 14);
+        color: var(--secondary-text-color);
+
+        @include tablet {
+            width: 121px;
+        }
+
+        &:hover {
+            background-color: var(--button-background-hover);
+        }
+
+        &:focus {
+            color: #fff;
+        }
+
+        &:disabled {
+            background-color: #ABABAB;
+        }
+    }
+}

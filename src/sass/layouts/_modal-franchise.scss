@@ -119,12 +119,14 @@
             margin-bottom: 32px;
         }
 }
+// Форма
 
-.franchise-form {
+.modal-franchise-form {
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 12px;
     @include tablet {
         display: flex;
             align-items: center;
@@ -132,26 +134,40 @@
         }
 }
 
-.franchise-form__input-list {
-    width: 100%;
-    margin-bottom: 12px;
-    display: flex;
-    @include tablet {
-            
-            margin-bottom: 16px;
-        }
-}
-.franchise-form__wrapper {
+
+// .franchise-form__input-list {
+//     margin-bottom: 12px;
+//     display: flex;
+//     @include tablet {       
+//             margin-bottom: 16px;
+//         }
+// }
+//.franchise-form__input-list {
+//  width: 100%;
+//margin-bottom: 12px;
+//display: flex;
+//@include tablet {
+//  margin-bottom: 16px;
+//}
+//}
+
+// .franchise-form__wrapper {
+
+.modal-franchise-form__wrap {
     width: 100%;
     position: relative;
-    margin: 0 auto;
-}
-.franchise-form__input {
-    margin: 0 auto;
+    margin: 0 auto
+
+
+
+.modal-franchise-form__input {
+        margin: 0 auto;
         width: 100%;
+//      width: 224px;
         height: 32px;
         padding: 8px 12px;
-        border: 1px solid var(--button-background-hover);
+//      border: 1px solid var(--button-background-hover);
+        border: 1px solid var(--primary-background-color);
         background-color:    rgba(248, 210, 78, 0.1);
         border-radius: 10px;
         outline: none;
@@ -167,14 +183,16 @@
                     height: 42px;
                 }
 }
-.franchise-form__input:hover,
-.franchise-form__input:focus {
-    border-color: var(--button-background-default);
+.modal-franchise-form__input:hover,
+.modal-franchise-form__input:focus {
+    // border-color: var(--button-background-default);
+    border-color: var(--button-background-hover);
 }
-.franchise-form__input::placeholder {
+.modal-franchise-form__input::placeholder {
     color: var(--secondary-text-color);
 }
-.franchise-form__textarea {
+// .modal-franchise-form__textarea {
+.modal-franchise-form-comment {
     padding: 8px 12px;
         width: 100%;
         height: 64px;
@@ -182,7 +200,8 @@
         font-size: 12px;
         line-height: 1.4;
         color: var(--secondary-text-color);
-        border: 1px solid var(--button-background-hover);
+        // border: 1px solid var(--button-background-hover);
+        border: 1px solid var(--primary-background-color);
         background-color: rgba(248, 210, 78, 0.1);
         border-radius: 10px;
         outline: none;
@@ -196,15 +215,44 @@
         }
         
 }
-.franchise-form__textarea::placeholder {
+// .modal-franchise-form__textarea::placeholder {
+.modal-franchise-form-comment {
             color:var(--secondary-text-color) ;
-        }
+}
     
-.franchise-form__textarea:hover,
-.franchise-form__textarea:focus {
-            border-color: var(--button-background-default);
+// .modal-franchise-form__textarea:hover,
+// .modal-franchise-form__textarea:focus {
+.modal-franchise-form-comment:hover,
+.modal-franchise-form-comment:focus {
+    border-color: var(--button-background-hover);
+}
+
+.modal-franchise-form__input:not(:placeholder-shown)+.modal-franchise-form__label,
+.modal-franchise-form__comment:not(:placeholder-shown)+.modal-franchise-form__label {
+            display: block;
+            @media screen and (max-width: 767px) {
+                top: -11px;
+                color: var(--primary-background-color);
+                font-weight: 400;
+                font-size: 10px;
+                line-height: calc(12 / 10);
+            }
+            @include tablet {
+                left: -80px;
+            }
         }
-.franchise-form__button {
+.modal-franchise-form__label {
+        display: none;
+        position: absolute;
+        top: 11px;
+        left: 10px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(20 / 14);
+        color: var(--secondary-text-color);
+        }
+
+.modal-franchise-form__button {
         display: flex;
         justify-content: center;
         color: var(--secondary-text-color);
@@ -216,20 +264,21 @@
         font-size: 14px;
         line-height: 1.29;
         letter-spacing: 0.06em;
-    
         text-align: center;
         padding: 12px 40px;
         width: 114px;
         height: 42px;
-    
     }
     
-        .franchise-form__button:hover {
+.modal-franchise-form__button:hover {
         background-color: var(--button-background-hover);
     }
     
-   .franchise-form__button:focus {
+.modal-franchise-form__button:focus {
         color: #fff;
         fill: #fff;
         background-color: var(--button-background-hover);
     }
+.modal-franchise-form__button:disabled {
+    background-color: #ABABAB;
+}

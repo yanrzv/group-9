@@ -214,6 +214,9 @@
         &:focus {
             border-color: var(--button-background-hover);
         }
+        &::placeholder {
+            color: var(--secondary-text-color);
+        }
     }
     
     &__label {
@@ -243,6 +246,9 @@
         &:hover,
         &:focus {
             border-color: var(--button-background-hover);
+        }
+        &::placeholder {
+            color: var(--secondary-text-color);
         }
     }
 
@@ -282,7 +288,7 @@
         font-weight: 600;
         font-size: 14px;
         line-height: calc(17 / 14);
-        columns: var(--secondary-text-color);
+        color: var(--secondary-text-color);
         @include tablet {
             width: 121px;
         }
