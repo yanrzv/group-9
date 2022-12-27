@@ -1,7 +1,17 @@
 .advantages {
 background-color: var(--primary-background-color);
-padding-bottom: 80px;
+padding-bottom: 16px;
+
+@include tablet {
+    padding-bottom: 30px;
 }
+
+@include desktop {
+    padding-bottom: 40px;
+}
+}
+
+
 
 .advantages__list{
 display: flex;
