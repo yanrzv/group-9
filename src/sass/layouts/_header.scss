@@ -123,13 +123,13 @@
   
   background: #85a279;
   z-index: 40;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 700ms cubic-bezier(0.4, 0, 0.2, 1);
 
 &.is-hidden {
         background-color: transparent;
         opacity: 0;
         pointer-events: none;
-        right: -100%;
+        transform: translateX(-100%);
     }
   @include tablet {
     background: #97af8d;
