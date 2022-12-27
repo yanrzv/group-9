@@ -1,11 +1,18 @@
 .container-buy-naw {
-    position: relative;
+    // position: fixed;
     padding: 28px 28px 29px 28px;
-    max-width: 280px;
+    min-width: 280px;
+    width: calc(100% - 40px);
     background: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
     margin: 0 auto;
+    height: 100vh;
+    max-height: 960px;
+    overflow: auto;
+    z-index: 40;
+
+
 
     @media screen and (min-width:768px) {
         padding: 32px 54px 32px 54px;
