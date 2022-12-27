@@ -2,7 +2,7 @@
   <div class="modal-products modal" data-modal="4">
     <article>
       <button type="button" class="btn modal-products__close-btn js-modal-close">
-          <svg aria-label="закрити" width="20x" height="20px">
+          <svg aria-label="закрити" width="20px" height="20px">
             <use href="./images/sprite.svg#modal-close"></use>
           </svg>
       </button> 
@@ -64,21 +64,20 @@
     <!-------------------- Форма ----------------------->
     <form name="modal-products-order-form" class="modal-products-form" autocomplete="off">
       <div class="modal-products-form__wrap">
-        <input type="text" name="username" class="modal-products-form__input" id="modal-products-user-name" required />      
+        <input type="text" name="username" class="modal-products-form__input" placeholder="Name" id="modal-products-user-name" required />      
         <label class="modal-products-form__label" for="modal-products-user-name">Name</label>
       </div>
 
       <div class="modal-products-form__wrap">
-        <input type="tel" name="tel" class="modal-products-form__input" id="modal-products-tel" required />
+        <input type="tel" name="tel" class="modal-products-form__input" placeholder="Phone" id="modal-products-tel" required />
         <label class="modal-products-form__label" for="modal-products-tel">Phone</label>
       </div>
 
       <div class="modal-products-form__wrap">
-        <textarea name="comment" class="modal-products-form__comment" id="modal-products-comment"></textarea>
+        <textarea name="comment" class="modal-products-form__comment" placeholder="Comment" id="modal-products-comment"></textarea>
         <label class="modal-products-form__label" for="modal-products-comment">Comment</label>
       </div>
 
       <button type="submit" class="btn modal-products-form__btn">Submit</button>
     </form>
-  <!-- </div> -->
 </div>
