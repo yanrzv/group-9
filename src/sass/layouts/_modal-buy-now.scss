@@ -11,13 +11,20 @@
     max-height: 960px;
     overflow: auto;
     z-index: 40;
-
+background-image: url(../images/by-now-img/backgroud.jpg);
 
 
     @media screen and (min-width:768px) {
         padding: 32px 54px 32px 54px;
         max-width: 568px;
+        background-image: url(../images/by-now-img/Backgroundtab.jpg);
     }
+           @media screen and (min-width:1200px) {
+             
+               background-image: url(../images/by-now-img/Backgrouddeskto.jpg);
+           }
+  
+                
 }
 
 // .menu-clouse-byu {
