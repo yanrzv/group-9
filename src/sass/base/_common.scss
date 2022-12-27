@@ -1,8 +1,60 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
+
 }
+
+
+
+.body {
+    background-image: url('../images/background/bg-mob-1x.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed
+
+}
+
+@include retina {
+    .body {
+        background-image: url('../images/background/bg-mob-2x.jpg');
+    }
+}
+
+@include tablet {
+    .body { 
+        background-image: url('../images/background/bg-tab-1x.jpg');
+            @include retina-tab {
+            background-image: url('../images/background/bg-tab-2x.jpg');
+        }
+    }
+}
+
+@include desktop {
+    .body {
+        background-image: url('../images/background/bg-desk-1x.jpg');
+
+        @include retina-desk {
+            background-image: url('../images/background/bg-desk-2x.jpg');
+        }
+    }
+}
+
+
+        /* Перевизначаємо шлях до 2x зображення,
+        якщо щільність екрану мінімум 2 */
+//         @media (min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx) {
+//             .box {
+//                 background-image: url('photo@2x.png');
+//             }
+//         }
+// }
 
 h1, 
 h2, 

@@ -1,31 +1,140 @@
+<!-- Додай секції id="contacts" -->
+<section class="contacts" id="contact">
+  <div class="contacts__container container">
+    <h2 class="visually-hidden">Contacts</h2>
+    <ul class="contacts__restaurants">
+      <li class="contacts__categories">
 
-  <!--
-    ❗️❗️❗️ The path to images from the HTML partial
-    is the same as from the index.html file
-  -->
+        <span class="contacts__title">cafe</span>
 
-  <!-- 
-    ❗️❗️❗️ Не додавай в css назви стилів: container, list, link, btn, section-title, 
-    section-uptitle.
-    вони уже є глобально і це може змінити верстку іншим. В твому випадку для секції
-    додай стиль visually-hidden (він уже прописаний).
-    
-    Додав змінні для деяких кольорів, тому використовуй:
-    1. для світлого шрифта колір var(--primary-text-color);
-    2. для темного шрифта колір var(--secondary-texet-color);
-    3. дефолтний колір кнопки var(--button-background-default);
-    4. ховер для кнопки var(--button-background-hover);
-    5. колір вимкненої кнопки var(--button-background-disabled);
 
-     Глобально додав скидання стилів і додав курсор при ховері, тому використовуй 
-    для кнопки додатковий клас - btn , для ссилок - link , для списка - list 
+        <ul class="contacts__box">
+          <li>
+            <div>
+              <p class="contacts__cities">Chicago</p>
+            </div>
+          </li>
 
-    Додай додатковий div з класом container, для нього уже прописані стилі.
 
- Медіа-правила є в міксінах, тому додавай через @include mobile, @include tablet, 
- @include desktop
-  -->
+          <li class="contacts__adress">
+            <a href="https://goo.gl/maps/papps6fs2TLJiucG6" target="_blank" rel="noopener noreferrer nofollow"
+              class="contacts__link--adress">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a>
+          </li>
+          <li class="contacts__adress">
 
-  <!-- Стрілка в спрайті #arrow-small -->
+            <p class="contacts__week">Monday - Friday</p>
+            <span class="contacts__time">06:00 AM - 10:00 PM</span>
+            <p class="contacts__week">Saturday - Sunday</p>
+            <span class="contacts__time">08:00 AM - 16:00 PM</span>
+          </li>
+          <li>
+            <div class="contacts__auth">
+              <ul>
+                <li class="contacts__tel">
+                  <a href="tel:+61(0)383766284" class="contacts__link">+61(0) 383 766 284</a>
+                </li>
+                <li class="contacts__mail">
+                  <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+                </li>
+              </ul>
+            </div>
+          </li>
 
-  <!-- Додай секції id="contacts" -->
+
+
+        </ul>
+      </li>
+      <li class="contacts__categories">
+        <span class="contacts__title">food track</span>
+        <ul class="contacts__box">
+          <li>
+            <div>
+              <p class="contacts__cities">Los Angeles</p>
+            </div>
+          </li>
+
+
+          <li class="contacts__adress">
+            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow"
+              class="contacts__link--adress">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a>
+          </li>
+          <li class="contacts__adress">
+
+            <p class="contacts__week">Monday - Friday</p>
+            <span class="contacts__time">06:00 AM - 10:00 PM</span>
+            <p class="contacts__week">Saturday - Sunday</p>
+            <span class="contacts__time">08:00 AM - 16:00 PM</span>
+          </li>
+          <li>
+            <div class="contacts__auth">
+              <ul>
+                <li class="contacts__tel">
+                  <a href="tel:+61(0)383766284" class="contacts__link">+61(0) 383 766 284</a>
+                </li>
+                <li class="contacts__mail">
+                  <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+
+        </ul>
+      </li>
+      <li class="contacts__categories">
+        <span class="contacts__title">cafe</span>
+        <ul class="contacts__box">
+          <li>
+            <div>
+              <p class="contacts__cities">New York</p>
+            </div>
+
+          </li>
+
+          <li class="contacts__adress">
+            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow"
+              class="contacts__link--adress">726 Sterling Pl, Brooklyn, NY 11222, USA</a>
+          </li>
+          <li class="contacts__adress">
+
+            <p class="contacts__week">Monday - Friday</p>
+            <span class="contacts__time">06:00 AM - 10:00 PM</span>
+            <p class="contacts__week">Saturday - Sunday</p>
+            <span class="contacts__time">08:00 AM - 16:00 PM</span>
+          </li>
+          <li>
+            <div class="contacts__auth">
+              <ul>
+                <li class="contacts__tel">
+                  <a href="tel:+61(0)383766284" class="contacts__link">+61(0) 383 766 284</a>
+                </li>
+                <li class="contacts__mail">
+                  <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+
+        </ul>
+      </li>
+    </ul>
+    <div class="contacts__btns">
+      <button class="btn contacts__location js-open-modal" type="submit" data-modal="1">
+        Our Locations
+        <svg class="contacts__icon" width="12" height="12">
+          <use href="./images/sprite.svg#arrow-small"></use>
+        </svg>
+      </button>
+      <button class="btn contacts__franchise" type="submit" data-modal-open>
+        Franchise
+        <svg class="contacts__icon" width="12" height="12">
+          <use href="./images/sprite.svg#arrow-small"></use>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+
+</section>

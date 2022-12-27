@@ -1,0 +1,258 @@
+.header {
+  background-color: #84a178;
+}
+
+.header__container {
+  display: flex;
+}
+
+.header__navigation {
+  display: flex;
+  margin-right: auto;
+}
+
+.header__logo {
+  margin-top: 12px;
+  @include tablet {
+    margin-top: 20px;
+  }
+  @include desktop {
+    margin-top: 8px;
+  }
+}
+
+.menu-open {
+  background-color: transparent;
+  fill: #ffffff;
+  margin-top: 17px;
+  @include tablet {
+    margin-top: 29px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.header__button {
+  display: none;
+  @include tablet {
+    display: flex;
+    min-width: 152px;
+    height: 42px;
+    background-color: #f8d24e;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #000000;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 32px;
+    margin-top: 24px;
+    &:hover {
+      background-color: #0a8817;
+      outline: none;
+    }
+    &:focus {
+      background-color: #0a8817;
+      color: #ffffff;
+      fill: #ffffff;
+      outline: none;
+    }
+  }
+  @include desktop {
+    margin-top: 28px;
+    margin-left: 204px;
+  }
+}
+
+.header-button__icon {
+  @include tablet {
+    display: flex;
+    margin-left: 4px;
+  }
+}
+
+.button__wrap {
+  @include tablet {
+    display: flex;
+  }
+  @include desktop {
+    align-items: flex-end;
+  }
+}
+
+.site-navigation {
+  display: none;
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+    margin-left: 308px;
+    gap: 28px;
+  }
+}
+
+.site-navigation__link {
+  @include desktop {
+    color: #fcfcfc;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    padding-top: 40px;
+    padding-bottom: 13px;
+    display: block;
+    &:hover,
+    &:focus {
+      color: #f8d24e;
+      outline: none;
+    }
+  }
+}
+
+// -----------------------------
+
+.mob-menu {
+    display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  
+  background: #85a279;
+  z-index: 40;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&.is-hidden {
+        background-color: transparent;
+        opacity: 0;
+        pointer-events: none;
+        right: -100%;
+    }
+  @include tablet {
+    background: #97af8d;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.mob-menu > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.mob-menu-top {
+  display: flex;
+  flex-direction: row;
+}
+
+.mob-menu__logo {
+  margin-right: auto;
+  margin-top: 12px;
+  margin-left: 12px;
+  @include tablet {
+    margin-top: 20px;
+  }
+}
+
+.menu-close {
+  background-color: transparent;
+  fill: #fcfcfc;
+  margin-top: 16px;
+  &:hover,
+  &:focus {
+    fill: #f8d24e;
+  }
+  @include tablet {
+    margin-top: 32px;
+    margin-right: 12px;
+  }
+}
+
+.menu-navigation {
+  text-align: center;
+  margin-top: 51px;
+  @include tablet {
+    margin-top: 76px;
+  }
+}
+
+.menu-navigation__iteam:not(:last-child) {
+  margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 40px;
+  }
+}
+
+.menu-navigation__iteam:last-child {
+  margin-bottom: 110px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+
+.menu-navigation__link {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.22;
+  color: #fcfcfc;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:active {
+    color: #131313;
+  }
+  &:hover,
+  &:focus {
+    color: #f8d24e;
+    outline: none;
+  }
+  @include tablet {
+    font-size: 48px;
+    line-height: 1.23;
+  }
+}
+
+.menu-button__wrap {
+  display: flex;
+  justify-content: center;
+  @include tablet {
+    display: none;
+  }
+}
+
+.mob-menu__button {
+  display: flex;
+  min-width: 152px;
+  height: 42px;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #000000;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 64px;
+  &:hover {
+    background-color: #0a8817;
+    outline: none;
+  }
+  &:focus {
+    background-color: #0a8817;
+    color: #ffffff;
+    fill: #ffffff;
+    outline: none;
+  }
+}
+
+.mob-menu__icon {
+  margin-left: 4px;
+}
+
+// ------------------------
+

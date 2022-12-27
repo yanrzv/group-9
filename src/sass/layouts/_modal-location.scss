@@ -1,0 +1,115 @@
+
+.modal-location {
+    //     opacity: 0;
+    //     visibility: hidden;
+    width: 280px;
+    min-height: 365px;
+    background: #FCFCFC;
+    border-radius: 10px;
+    
+    border: 2px solid #F8D24E;
+    @include tablet {
+        width: 568px;
+        min-height: 458px;
+    }
+}  
+
+// .modal.active,
+// .overlay.active {
+//     opacity: 1;
+//     visibility: visible;
+// }
+
+.location-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: transparent;
+    &:hover,
+    &:focus {
+        fill: #F8D24E;
+    }
+}
+
+.location-close__icon {
+    @include tablet {
+        width: 24px;
+        height: 24px;
+    }
+
+}
+
+.location-title {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #131313;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    @include tablet {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+}
+
+.location-map {
+    margin-left: 28px;
+    margin-right: 28px;
+    width: 224px;
+    height: 199px;
+    border-radius: 10px;
+    @include tablet {
+        width: 448px;
+        height: 260px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+.location-open {
+    display: inline-block;
+}
+
+.open-map {
+    display: flex;
+    min-width: 134px;
+    height: 42px;
+    background-color: #F8D24E;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #131313;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 28px;
+    margin-right: 73px;
+    margin-left: 73px;
+    &:hover {
+        background-color: #0A8817;
+        outline: none;
+    }
+    &:focus {
+        background-color: #0A8817;
+        color: #FFFFFF;
+        fill: #FFFFFF;
+        outline: none;
+    }
+    @include tablet {
+        min-width: 145px;
+        font-size: 14px;
+        line-height: 1.2;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        margin-right: 211px;
+        margin-left: 212px;
+    }
+    
+}
+
+
+

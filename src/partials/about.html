@@ -1,10 +1,73 @@
+<section id="about" class="about">
+  <div class="container">
+    <p class="section-uptitle about-uptitle">tradition and love</p>
+    <h2 class="section-title about-title">how it’s made?</h2>
+    <div class="about-content-wrap">
+      <div class="about-image-wrap">
+        <div class="about-image-ground"></div>
+        <div class="about-image">
+          <picture>
+            <source
+              srcset="
+                ./images/cow-about-dtop-1x.jpg 1x,
+                ./images/cow-about-dtop-2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/cow-about-tab-1x.jpg 1x,
+                ./images/cow-about-tab-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/cow-about-mob-1x.jpg 1x,
+                ./images/cow-about-mob-2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./images/cow-about-dtop-1x.jpg"
+              alt="Корівка"
+              width="100%"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="about-text-wrap">
+        <p class="about-text-up">
+          Ice is a place where you will become not only a little happier, but
+          also healthier. Health is the main value for us, and we follow it when
+          creating our handmade desserts.
+        </p>
+        <p class="about-text-down">
+          We use traditional recipes and 100% natural ingredients. Our products
+          are so natural that they can be given to children from the age of
+          three years. Sweets lovers can expect 55 types of ice cream, 15 types
+          of coffee and 23 milkshakes.
+        </p>
+        <p class="about-text-extra">
+          This is enough to choose ice cream and coffee for any mood!
+        </p>
+        <button type="button" class="btn about-button js-open-modal" data-modal="2">
+          <span class="about-button-text">Read more</span>
+          <svg class="about-button-icon" width="12px" height="12px">
+            <use href="/src/images/sprite.svg#arrow-small"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!--
+<!--
     ❗️❗️❗️ The path to images from the HTML partial
     is the same as from the index.html file
   -->
 
-  <!-- 
+<!-- 
     ❗️❗️❗️ Не додавай в css назви стилів: container, list, link, btn, section-title, 
     section-uptitle.
     вони уже є глобально і це може змінити верстку іншим. Тобі треба додати 
@@ -29,8 +92,8 @@
     Глобально додав скидання стилів і додав курсор при ховері, тому використовуй 
     для кнопки додатковий клас - btn , для ссилок - link , для списка - list  -->
 
-    <!-- стрілка в спрайті #arrow-small -->
+<!-- стрілка в спрайті #arrow-small -->
 
-    <!-- іконки з коровою, гирьою і морозивом - це вже інша секція  -->
+<!-- іконки з коровою, гирьою і морозивом - це вже інша секція  -->
 
-    <!-- Додай секції id="about" -->
+<!-- Додай секції id="about" -->

@@ -1,0 +1,279 @@
+.products-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.products-uptitle {
+    color: var(--secondary-text-color);
+    margin-bottom: 12px;
+}
+
+.products-title {
+    font-weight: 400;
+    color: var(--secondary-text-color);
+    margin-bottom: 148px;
+    @include tablet {
+        margin-bottom: 200px;
+    }
+    @include desktop {
+        margin-bottom: 303px;
+    }
+}
+// ---------------- Сітка з трьох карток з товарами ---------------------
+.products-card-set {
+    @include tablet {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+    @include desktop {
+        gap: 29px;
+    }
+
+    &__item {
+        position: relative;
+        min-height: 420px;
+        padding: 123px 40px 16px 40px;
+        border-radius: 24px;
+        @include tablet {
+            flex-basis: calc((100% - 32px) / 3);
+            min-height: 428px;
+            padding: 108px 26px 12px 26px;
+        }
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+            border-radius: 15.7808px;
+        }
+        @include desktop {
+            flex-basis: calc((100% - 29px) / 3);
+            min-height: 536px;
+            padding: 165px 64px 60px 64px;
+        }
+    }
+    &__item:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 168px;
+        }
+    }
+// ---------------- Фон карток з товарами ---------------------
+    &__item:first-child {
+        background-color: #AEC6A5;
+
+        @include tablet {
+            box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+        }
+
+        @include desktop {
+            box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        }
+    }
+
+    &__item:nth-child(2) {
+        background-color: #EFD478;
+    }
+
+    &__item:nth-child(3) {
+        background-color: var(--address-color);
+    }
+
+// ---------------- Фонові зображення ---------------------
+
+    &__item::before {
+        position: absolute;
+        top: -108px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 1;
+        @include tablet {
+            top: -120px;
+        }
+        @include desktop {
+            width: 302px;
+            height: 302px;
+            top: -183px;
+        }
+    }
+
+    &__item:first-child::before {
+        background-image: url('../images/products-ice-cream-mob-tab.png');
+        @include retina {
+            background-image: url('../images/products-ice-cream-mob-tab@2x.png');
+        }
+
+        @include desktop {
+            background-image: url('../images/products-ice-cream-desk.png');
+            @include retina {
+                background-image: url('../images/products-ice-cream-desk@2x.png');
+            }
+        }
+    }
+
+    &__item:nth-child(2)::before {
+        background-image: url('../images/products-ice-coffee-mob-tab.png');
+            @include retina {
+                background-image: url('../images/products-ice-coffee-mob-tab@2x.png');
+            }
+        
+        @include desktop {
+            background-image: url('../images/products-ice-coffee-desk.png');
+            @include retina {
+                background-image: url('../images/products-ice-coffee-desk@2x.png');
+            }
+        }
+    }
+
+    &__item:nth-child(3)::before {
+        background-image: url('../images/products-milkshakes-mob-tab.png');
+            @include retina {
+                background-image: url('../images/products-milkshakes-mob-tab@2x.png');
+            }
+        
+        @include desktop {
+            background-image: url('../images/products-milkshakes-desk.png');
+            @include retina {
+                background-image: url('../images/products-milkshakes-desk@2x.png');
+            }
+        }
+    }
+
+// ---------------- Фон з тінню під фоновими зображеннями ---------------------
+
+    &__item::after {
+        content: "";    
+        position: absolute;
+        top: -97px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @include tablet {
+            top: -108px;
+        }
+
+        @include desktop {
+            top: -167px;        
+            width: 302px;
+            height: 302px;
+        }
+    }
+
+    &__item:first-child::after {
+        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+        @include tablet {
+            box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+        }
+        @include desktop {
+            box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+        }
+    }
+
+    &__item:nth-child(2)::after {
+        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+        
+
+        @include tablet {
+            box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+        }
+
+        @include desktop {
+            box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+        }
+    }
+
+    &__item:nth-child(3)::after {
+        background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+
+        @include tablet {
+            box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+        }
+
+        @include desktop {
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+// ---------------- Назва і опис товару ---------------------
+
+.products-card-set__title {
+    margin-bottom: 40px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+
+    @include tablet {
+        font-size: 22px;
+        line-height: calc(27 / 22);
+    }
+
+    @include desktop {
+        margin-bottom: 66px;
+        font-size: 30px;
+        line-height: calc(37 / 30);
+    }
+}
+
+.products-card-set__desk {
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--secondary-text-color);
+}
+
+// ---------------- Кнопка ---------------------
+
+.products-btn {
+    position: absolute;
+    width: 121px;
+    height: 48px;
+    bottom: 0;
+    left: 50%;   
+    transform: translateX(-50%);
+    background-color: transparent;
+    @include desktop {
+        bottom: 44px;
+    }
+
+    &__icon {
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: url(../images/cursor.svg), auto;
+        transition: transform 250ms linear, fill 250ms linear;
+        @include tablet {
+            bottom: 12px;
+        }
+        @include desktop {
+            bottom: 16px;
+        }
+    }
+    &__icon:hover,
+    &__icon:focus {
+        fill: rgb(102, 67, 2);
+        transform: scale(1.01);
+    }
+    &:hover .products-btn__icon,
+    &:focus .products-btn__icon {
+        transform: scale(1.01);
+        fill: rgb(102, 67, 2);
+    }
+}
