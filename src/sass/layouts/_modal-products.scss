@@ -247,6 +247,9 @@
         &:focus {
             border-color: var(--button-background-hover);
         }
+        &::placeholder {
+            color: var(--secondary-text-color);
+        }
     }
 
     &__input:focus-within,

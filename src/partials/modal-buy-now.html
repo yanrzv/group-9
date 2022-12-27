@@ -1,5 +1,8 @@
 <div class="container container-buy-naw">
-  <button type="button" class="menu-clouse-byu" ><svg class="menu-clouse-byu-now" width="13" height="13">
+  <!-- <button type="button" class="menu-clouse-byu" > -->
+  <button type="button" class="btn modal-buy-now__close-btn" >
+    <!-- <svg class="menu-clouse-byu-now" width="13" height="13"> -->
+    <svg class="menu-clouse-byu-now" width="15" height="15">
       <use href="./images/sprite.svg#clouse-buy-now"></use>
     </svg></button>
 <h2 class="buy-now-title">Buy now</h2>
@@ -61,7 +64,8 @@
     <p class="name-ice-buy-now">milkshake</p>
   </Li>
 </ul>
-<form class="form-buy-naw" action="">
+
+<!-- <form class="form-buy-naw" action="">
     <lable for="name" class="label-name-lable-buy"></lable>
     <input name="" id="name" class="label-name-input-buy" placeholder="Name" type="name"></input>
 
@@ -73,6 +77,27 @@
     <div class="div-btn-buy-now">
     <button class="button-buy-nav" type="submit">Submit
       </button>
+      </div> -->
+    <form name="modal-buy-now-form" class="modal-buy-now-form" autocomplete="off">
+      <div class="modal-buy-now-form__wrap">
+        <input type="text" name="username" class="modal-buy-now-form__input" placeholder="Name"
+          id="modal-buy-now-form-user-name" required />
+        <label class="modal-buy-now-form__label" for="modal-buy-now-form-user-name">Name</label>
       </div>
+    
+      <div class="modal-buy-now-form__wrap">
+        <input type="tel" name="tel" class="modal-buy-now-form__input" placeholder="Phone" id="modal-buy-now-form-tel"
+          required />
+        <label class="modal-buy-now-form__label" for="modal-buy-now-form-tel">Phone</label>
+      </div>
+    
+      <div class="modal-buy-now-form__wrap">
+        <textarea name="comment" class="modal-buy-now-form__comment" placeholder="Comment"
+          id="modal-buy-now-comment"></textarea>
+        <label class="modal-buy-now-form__label" for="modal-buy-now-comment">Comment</label>
+      </div>
+    
+      <button type="submit" class="btn modal-buy-now-form__btn">Submit</button>
+    </form>
     </div>
 
