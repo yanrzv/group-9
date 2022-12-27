@@ -8,10 +8,15 @@
     background-color: var(--primary-text-color);
     border-radius: 10px;
     border: 2px solid var(--button-background-default);
-    @include tablet {
-        width: 568px;       
+    width: calc(100% - 40px);
+
+    @include mobile {
+        width: 440px;
         padding: 32px 40px;
     }
+    @include tablet {
+        width: 568px;
+}
 
     &__close-btn {
         position: absolute;
