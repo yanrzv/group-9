@@ -30,9 +30,9 @@
 
 <!-- хрестик в спрайті #modal-close -->
 <!-- modal-franchise-->
-<div class="backdrop-franchise is-hidden" data-modal>
-  <div class="modal-franchise">
-    <button class="modal-franchise__close--button" type="button" data-modal-close>
+<!-- <div class="backdrop-franchise is-hidden" data-modal="1"> -->
+  <div class="modal-franchise modal">
+    <button class="modal-franchise__close--button js-modal-close" type="button">
       <span class="modal-franchise__img">
         <svg class="modal-franchise__icon" width="20" height="20">
           <use href="./images/sprite.svg#menu-close"></use>
@@ -47,12 +47,12 @@
         information
         below and we will reach out for additional information. We appreciate your patience.</p>
     </div>
-    <form class="franchise-form" action="franchise-form" autocomplete="off" novalidate>
+
+    <!-- <form class="franchise-form" action="franchise-form" autocomplete="off" novalidate>
       <div class="franchise-form__input-list">
         <div class="franchise-form__wrapper">
           <input class="franchise-form__input" id="person-name" type="text" name="person-name" placeholder="Name"
             required />
-
         </div>
       </div>
       <div class="franchise-form__input-list">
@@ -70,12 +70,36 @@
       </div>
 
       <textarea class="franchise-form__textarea" name="person-comment" id="person-comment"
-        placeholder="Comment"></textarea>
+        placeholder="Comment"></textarea> -->
 
+    <form name="modal-franchise-form" class="modal-franchise-form" autocomplete="off">
+      <div class="modal-franchise-form__wrap">
+        <input type="text" name="username" class="modal-franchise-form__input" placeholder="Name"
+          id="modal-franchise-form-user-name" required />
+        <label class="modal-franchise-form__label" for="modal-franchise-form-user-name">Name</label>
+      </div>
+    
+      <div class="modal-franchise-form__wrap">
+        <input type="tel" name="tel" class="modal-franchise-form__input" placeholder="Phone" id="modal-franchise-form-tel"
+          required />
+        <label class="modal-franchise-form__label" for="modal-franchise-form-tel">Phone</label>
+      </div>
 
-      <button class="btn franchise-form__button" type="submit" data-modal-open>
+      <div class="modal-franchise-form__wrap">
+        <input type="email" name="email" class="modal-franchise-form__input" placeholder="Email" id="modal-franchise-form-mail"
+          required />
+        <label class="modal-franchise-form__label" for="modal-franchise-form-email">Email</label>
+      </div>
+    
+      <div class="modal-franchise-form_wrap">
+        <textarea name="comment" class="modal-franchise-form__comment" placeholder="Comment"
+          id="modal-franchise-form-comment"></textarea>
+        <label class="modal-franchise-form__label" for="modal-franchise-form-comment">Comment</label>
+      </div>
+
+      <button class="btn franchise-form__button" type="submit">
         Submit
       </button>
     </form>
   </div>
-</div>
+<!-- </div> -->
