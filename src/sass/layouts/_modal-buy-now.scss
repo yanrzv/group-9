@@ -46,7 +46,9 @@
 .form-buy-naw{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 26px;
+    
     color: #131313;
     @media screen and (min-width:768px) {
             margin-top: 19px;
@@ -65,11 +67,19 @@
 .container-buy-naw{
     position: absolute;
     padding: 28px 28px 29px 28px;
-    max-width:280px;
+    width: calc(100% - 40px);
+    min-width:280px;
     background: #FCFCFC;
     border: 2px solid #F8D24E;
     border-radius: 10px;
     margin: 0 auto;
+    height: 100vh;
+    overflow: auto;
+    z-index: 40;
+    @include mobile {
+        max-width: 440px;
+    }
+
     @media screen and (min-width:768px) {
             padding: 32px 54px 32px 54px;
             max-width: 568px;
@@ -91,6 +101,10 @@
         border: none;
     width: 121px;
     height: 42px;
+
+    &:hover, &:focus {
+        background-color: var(--button-background-hover);
+    }
 }
 .div-btn-buy-now{
     display: flex;
@@ -98,7 +112,7 @@
     align-items: center;
 }
 .label-name-input-buy{
-   max-width: 224px;
+    width: 100%;
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84A178;
     border-radius: 10px;
@@ -110,12 +124,16 @@
         color: #131313;
         padding: 8px 12px;
         min-height: 32px;
+        @include mobile {
+            max-width: 340px;
+        }
+
         @media screen and (min-width:768px) {
-                min-width: 368px;
+                max-width: 368px;
             }
 }
 .label-comment-input-buy{
-    max-width: 224px;
+    width: 100%;
         background: rgba(248, 210, 78, 0.1);
         border: 1px solid #84A178;
         border-radius: 10px;
@@ -129,6 +147,10 @@
         text-align: start;
         outline: none;
         resize: none;
+
+        @include mobile {
+                max-width: 340px;
+            }
         @media screen and (min-width:768px) {
                 min-width: 368px;
             }
