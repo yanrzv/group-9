@@ -2,12 +2,17 @@
 // }
 .reviews {
     padding-top: 40px;
-    padding-bottom: 64px;
+    padding-bottom: 20px;
 
     @include tablet {
-        padding-top: 40px;
-        padding-bottom: 20px;
+        padding-top: 50px;
+        padding-bottom: 40px;
     }
+    @include desktop{
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
 }
 
 .swiper {
