@@ -1,130 +1,79 @@
-<!--
-    ❗️❗️❗️ The path to images from the HTML partial
-    is the same as from the index.html file
-  -->
-
-<!-- 
-    ❗️❗️❗️ Не додавай в css назви стилів: container, list, link, btn, section-title, 
-    section-uptitle.
-    вони уже є глобально і це може змінити верстку іншим. В твому випадку для секції
-    додай стиль visually-hidden (він уже прописаний).
-    
-    Додав змінні для деяких кольорів, тому використовуй:
-    1. для світлого шрифта колір var(--primary-text-color);
-    2. для темного шрифта колір var(--secondary-texet-color);
-    3. дефолтний колір кнопки var(--button-background-default);
-    4. ховер для кнопки var(--button-background-hover);
-    5. колір вимкненої кнопки var(--button-background-disabled);
-
-    Глобально додав шрифти, тому не треба вказувати font-family. 
-
-    Додай додатковий div з класом container, для нього уже прописані стилі.
-
- Медіа-правила є в міксінах, тому додавай через @include mobile, @include tablet, 
- @include desktop
- 
-      -->
-<!-- <div class="swiper">
-  <!-- Additional required wrapper -->
-  <!-- <div class="swiper-wrapper">
-    <!-- Slides -->
-    <!-- <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    ...
-  </div> -->
-  <!-- If we need pagination -->
-  <!-- <div class="swiper-pagination"></div> -->
-
-  <!-- If we need navigation buttons -->
-  <!-- <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div> -->
-
-  <!-- If we need scrollbar -->
-  <!-- <div class="swiper-scrollbar"></div>
-</div> --> 
-
-
 <section class="reviews">
   <div class="container">
-
-   
     <div class="swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div>
-                <img
-                  class="reviews__foto"
-                  srcset="
-                    ./images/imgreviewEmily@1x.jpg 1x,
-                    ./images/imgreviewEmily@2x.jpg 2x
-                  "
-                  src="./images/imgreviewEmily@1x.jpg"
-                  width="85"
-                  height="85"
-                  alt="foto Emily"
-                  style="display: block"
-                />
-              </div>
-              <p class="reviews__text">
-                I love visiting your cafe. You prepare the most delicious ice cream in
-                Los Angeles! In addition, you have beautiful serving, cozy atmosphere
-                and polite staff.
-              </p>
-              <h3 class="reviews__custumer">Emily, Los Angeles</h3>
-            </div>
-        
-            <div class="swiper-slide">
-              <div>
-                <img
-                  class="reviews__foto"
-                  srcset="
-                    ./images/imgreviewBryan@1x.jpg 1x,
-                    ./images/imgreviewBryan@2x.jpg 2x
-                  "
-                  src="./images/imgreviewBryan@1x.jpg"
-                  width="85"
-                  height="85"
-                  alt="foto Bryan"
-                  style="display: block"
-                />
-              </div>
-              <p class="reviews__text">
-                Every day we come to you with friends after classes in college. We love
-                your ice cream and casual atmosphere!
-              </p>
-              <h3 class="reviews__custumer">Bryan, New-York</h3>
-        
-            </div>
-        
-            <div class="swiper-slide">
-              <div>
-                <img
-                  class="reviews__foto"
-                  srcset="
-                    ./images/imgreviewDiana@2x.jpg 1x,
-                    ./images/imgreviewDiana@2x.jpg 2x
-                  "
-                  src="./images/imgreviewDiana@1x.jpg"
-                  width="85"
-                  height="85"
-                  alt="foto Diana"
-                  style="display: block"
-                />
-              </div>
-              <p class="reviews__text">
-                Ice cream is my passion! I love your chocolate hazelnut ice cream! And I
-                really like the excellent service - always served politely and quickly!
-              </p>
-              <h3 class="reviews__custumer">Diana, Chicago</h3>
-              
-            </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div>
+            <img
+              class="reviews__foto"
+              srcset="
+                ./images/imgreviewEmily@1x.jpg 1x,
+                ./images/imgreviewEmily@2x.jpg 2x
+              "
+              src="./images/imgreviewEmily@1x.jpg"
+              width="85"
+              height="85"
+              alt="foto Emily"
+              style="display: block"
+            />
+          </div>
+          <div class="reviews__text">
+            I love visiting your cafe. You prepare the most delicious ice cream
+            in Los Angeles! In addition, you have beautiful serving, cozy
+            atmosphere and polite staff.
+          </div>
+          <p class="reviews__custumer">Emily, Los Angeles</p>
         </div>
-        <div class="swiper-pagination"></div>
+
+        <div class="swiper-slide">
+          <div>
+            <img
+              class="reviews__foto"
+              srcset="
+                ./images/imgreviewBryan@1x.jpg 1x,
+                ./images/imgreviewBryan@2x.jpg 2x
+              "
+              src="./images/imgreviewBryan@1x.jpg"
+              width="85"
+              height="85"
+              alt="foto Bryan"
+              style="display: block"
+            />
+          </div>
+          <div class="reviews__text">
+            Every day we come to you with friends after classes in college. We
+            love your ice cream and casual atmosphere!
+          </div>
+          <p class="reviews__custumer">Bryan, New-York</p>
+        </div>
+
+        <div class="swiper-slide">
+          <div>
+            <img
+              class="reviews__foto"
+              srcset="
+                ./images/imgreviewDiana@2x.jpg 1x,
+                ./images/imgreviewDiana@2x.jpg 2x
+              "
+              src="./images/imgreviewDiana@1x.jpg"
+              width="85"
+              height="85"
+              alt="foto Diana"
+              style="display: block"
+            />
+          </div>
+          <div class="reviews__text">
+            Ice cream is my passion! I love your chocolate hazelnut ice cream!
+            And I really like the excellent service - always served politely and
+            quickly!
+          </div>
+          <p class="reviews__custumer">Diana, Chicago</p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>
-
 
 <!-- <div class="reviews__listmarker">
         <div class="reviews__marker"></div>
