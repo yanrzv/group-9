@@ -83,6 +83,125 @@
             margin-top: 95px;
             margin-bottom: 20px;
 }}
+//.form-buy-naw{
+//    display: flex;
+//    flex-direction: column;
+//    align-items: center;
+//    margin-bottom: 26px;
+//  
+//   color: #131313;
+//   @media screen and (min-width:768px) {
+//           margin-top: 19px;
+//            margin-bottom: 32px;
+//            justify-content: center;
+//           align-items: center;
+//
+//        }
+//}
+//.label-name-input-buy{
+//   margin-bottom: 12px;
+//    @media screen and (min-width:768px) {
+//           margin-bottom: 16px;
+//       }
+//}
+//.container-buy-naw{
+// position: absolute;
+// padding: 28px 28px 29px 28px;
+//  width: calc(100% - 40px);
+//  min-width:280px;
+//  background: #FCFCFC;
+//   border: 2px solid #F8D24E;
+//   border-radius: 10px;
+//   margin: 0 auto;
+//   height: 100vh;
+//   overflow: auto;
+//   z-index: 40;
+//    @include mobile {
+//       max-width: 440px;
+//   }
+//
+//   @media screen and (min-width:768px) {
+//          padding: 32px 54px 32px 54px;
+//           max-width: 568px;
+//       }
+//}
+//.button-buy-nav{
+//    background: #F8D24E;
+//    border-radius: 10px;
+//    font-family: 'Montserrat';
+//        font-style: normal;
+//        font-weight: 600;
+//        font-size: 14px;
+//        line-height: 1.2;
+//        display: flex;
+//        justify-content: center;
+//        align-items: center;
+//        text-align: center;
+//        color: #131313;
+//        border: none;
+//    width: 121px;
+//    height: 42px;
+//
+//   &:hover, &:focus {
+//        background-color: var(--button-background-hover);
+//    }
+//}
+//.div-btn-buy-now{
+//    display: flex;
+//    justify-content: center;
+//    align-items: center;
+//}
+//.label-name-input-buy{
+//    width: 100%;
+//    background: rgba(248, 210, 78, 0.1);
+//    border: 1px solid #84A178;
+//    border-radius: 10px;
+//    font-family: 'Montserrat';
+//        font-style: normal;
+//        font-weight: 400;
+//        font-size: 12px;
+//        line-height: 140%;
+//        color: #131313;
+//        padding: 8px 12px;
+//        min-height: 32px;
+//       @include mobile {
+//           max-width: 340px;
+//        }
+//
+//        @media screen and (min-width:768px) {
+//                max-width: 368px;
+//            }
+//}
+//.label-comment-input-buy{
+//    width: 100%;
+//        background: rgba(248, 210, 78, 0.1);
+//        border: 1px solid #84A178;
+//        border-radius: 10px;
+//       font-family: 'Montserrat';
+//        font-style: normal;
+//        font-weight: 400;
+//        font-size: 12px;
+//        line-height: 140%;
+//        padding: 8px 12px;
+//        min-height: 65px;
+//        text-align: start;
+//       outline: none;
+//       resize: none;
+
+//        @include mobile {
+//                max-width: 340px;
+//            }
+//       @media screen and (min-width:768px) {
+//              min-width: 368px;
+//            }
+// }
+// textarea::placeholder {
+//    color: #131313;
+// }
+// input::placeholder {
+//    color: #131313;
+
+
 
 .li-ice-buy-one{
     border-bottom: 2px solid #96AF8C;
