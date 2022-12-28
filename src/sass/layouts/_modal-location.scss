@@ -33,9 +33,11 @@
     top: 12px;
     right: 12px;
     background-color: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        fill: #F8D24E;
+        fill: var(--button-background-hover);
+        transform: scale(1.5);
     }
 }
 
