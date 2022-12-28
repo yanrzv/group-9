@@ -11,6 +11,7 @@
     max-height: 960px;
     overflow: auto;
     z-index: 40;
+    
     @include tablet {
         padding: 32px 54px;
         max-width: 568px;
@@ -442,7 +443,7 @@ position: absolute;
 
         &:hover,
         &:focus {
-            border-color: var(--button-background-hover);
+            border: 2px solid var(--button-background-hover);
         }
 
         &::placeholder {
@@ -456,9 +457,13 @@ position: absolute;
         top: 11px;
         left: 10px;
         font-weight: 400;
-        font-size: 14px;
-        line-height: calc(20 / 14);
+        font-size: 12px;
+        line-height: calc(17 / 12);
         color: var(--secondary-text-color);
+        @include tablet {
+            font-size: 14px;
+            line-height: calc(20 / 14);
+        }
     }
 
     &__comment {
@@ -478,7 +483,7 @@ position: absolute;
 
         &:hover,
         &:focus {
-            border-color: var(--button-background-hover);
+            border: 2px solid var(--button-background-hover);
         }
         &::placeholder {
             color: var(--secondary-text-color);

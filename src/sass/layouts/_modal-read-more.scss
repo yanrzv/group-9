@@ -6,22 +6,20 @@
    background: #FCFCFC;
    border: 2px solid #F8D24E;
    border-radius: 10px;   
+
     @include mobile {
         width: 440px;
     }
+
 
    @include tablet {
       width: 568px;
       height: 449px;
       padding: 32px 60px;
-
+   
+   
    }
 }
-//Зберіг сюди, щоб не шукати потім\\
-// .modal.active,
-// .overlay.active {
-//     opacity: 1;
-//     visibility: visible;
 
 .modal-readmore-title {
    text-align: center;
@@ -84,7 +82,7 @@ margin: 0 auto;
          height: 24px;
       }
       &:hover, &:focus .modal-readmore-svg {
-         fill: #0a8817;
+         fill: #F8D24E;
       }
 }
 
