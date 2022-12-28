@@ -42,13 +42,13 @@
 
     <form name="modal-franchise-form" class="modal-franchise-form" autocomplete="off" onsubmit="return postToGoogle();">
       <div class="modal-franchise-form__wrap">
-        <input type="text" name="username" class="modal-franchise-form__input" placeholder="Name"
+        <input type="text" name="entry.52533572" class="modal-franchise-form__input" placeholder="Name"
           id="modal-franchise-form-user-name" required />
         <label class="modal-franchise-form__label" for="modal-franchise-form-user-name">Name</label>
       </div>
     
       <div class="modal-franchise-form__wrap">
-        <input type="tel" name="tel" class="modal-franchise-form__input" placeholder="Phone" id="modal-franchise-form-tel"
+        <input type="tel" name="entry.340297665" class="modal-franchise-form__input" placeholder="Phone" id="modal-franchise-form-tel"
           required />
         <label class="modal-franchise-form__label" for="modal-franchise-form-tel">Phone</label>
       </div>
@@ -72,31 +72,26 @@
   
 <script>
     function postToGoogle() {
-                var field1 = $('#modal-franchise-form-user-name').val()
-                var field4 = $('#modal-franchise-form-tel').val()
-                var field2 = $('#modal-franchise-form-mail').val()
-                var field3 = $('#modal-franchise-form-comment').val()
-                var url = 'thank-you.html?pixel=' + pixel
+    let gName = settingObjForm.postParams.first_name;
+    let gSurname = settingObjForm.postParams.last_name;
+    let gEmail = settingObjForm.postParams.email;
+    let gPhone = settingObjForm.postParams.phone;
 
-                $.ajax({
-                    url: 'https://docs.google.com/forms/d/e/1FAIpQLSdaLYsbRprZodOieBoW5kSfpv01rDttcpu8lw86hHW0avXUEg/formResponse',
-                    data: {
-                        'entry.52533572': field1,
-                        'entry.340297665': field2,
-                        'entry.22222222': field3,
-                        'entry.33333333': field4,
-                    },
-                    type: 'POST',
-                    dataType: 'xml',
-                    success: function () {
-                        window.location = url
-                    },
-                    error: function () {
-                        window.location = url
-                    },
-                })
-                return false
-            }
+  
+    $.ajax({
+      url: "https://docs.google.com/forms/d/e/1FAIpQLSdaLYsbRprZodOieBoW5kSfpv01rDttcpu8lw86hHW0avXUEg/formResponse",
+      data: {
+        "entry.52533572": gName,
+        "entry.340297665": gSurname,
+        "entry.23443234": gEmail,
+        "entry.23432234": gPhone,
+      },
+      type: "POST",
+      dataType: "xml",
+      success: function (d) {}
+    });
+    return false;
+  }
 
 </script>
 
