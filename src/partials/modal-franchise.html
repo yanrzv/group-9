@@ -1,22 +1,25 @@
+<div class="modal-franchise modal" data-modal="7">
+  <button class="btn modal-products__close-btn js-modal-close" type="button">
+    <span class="modal-franchise__img">
+      <svg class="modal-franchise__icon" width="20" height="20">
+        <use href="./images/sprite.svg#menu-close"></use>
+      </svg>
+    </span>
+  </button>
+  <h2 class="modal-franchise__text">
+    Thank you for your interest in owning an Ice Cream shop
+  </h2>
+  <div class="modal-franchise__description">
+    <p class="">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+  </div>
 
-  <div class="modal-franchise modal" data-modal="7">
-    <button class="btn modal-products__close-btn js-modal-close" type="button">
-      <span class="modal-franchise__img">
-        <svg class="modal-franchise__icon" width="20" height="20">
-          <use href="./images/sprite.svg#menu-close"></use>
-        </svg>
-      </span>
-    </button>
-    <h2 class="modal-franchise__text">Thank you for your interest in owning an Ice Cream shop</h2>
-    <div class="modal-franchise__description">
-      <p class="">Due to the overwhelming volume of franchise requests we are not accepting
-        new franchisee applications at this time. Once
-        the application process resumes, we will contact you for further information. Please fill out the contact
-        information
-        below and we will reach out for additional information. We appreciate your patience.</p>
-    </div>
-
-    <!-- <form class="franchise-form" action="franchise-form" autocomplete="off" novalidate>
+  <!-- <form class="franchise-form" action="franchise-form" autocomplete="off" novalidate>
       <div class="franchise-form__input-list">
         <div class="franchise-form__wrapper">
           <input class="franchise-form__input" id="person-name" type="text" name="person-name" placeholder="Name"
@@ -40,33 +43,75 @@
       <textarea class="franchise-form__textarea" name="person-comment" id="person-comment"
         placeholder="Comment"></textarea> -->
 
-    <form name="modal-franchise-form" class="modal-franchise-form" autocomplete="off">
-      <div class="modal-franchise-form__wrap">
-        <input type="text" name="username" class="modal-franchise-form__input" placeholder="Name"
-          id="modal-franchise-form-user-name" required />
-        <label class="modal-franchise-form__label" for="modal-franchise-form-user-name">Name</label>
-      </div>
-    
-      <div class="modal-franchise-form__wrap">
-        <input type="tel" name="tel" class="modal-franchise-form__input" placeholder="Phone" id="modal-franchise-form-tel"
-          required />
-        <label class="modal-franchise-form__label" for="modal-franchise-form-tel">Phone</label>
-      </div>
+  <form
+    name="modal-franchise-form"
+    class="modal-franchise-form"
+    autocomplete="off"
+  >
+    <div class="modal-franchise-form__wrap">
+      <input
+        type="text"
+        name="username"
+        class="modal-franchise-form__input"
+        placeholder="Name"
+        id="modal-franchise-form-user-name"
+        required
+      />
+      <label
+        class="modal-franchise-form__label"
+        for="modal-franchise-form-user-name"
+        >Name</label
+      >
+    </div>
 
-      <div class="modal-franchise-form__wrap">
-        <input type="email" name="email" class="modal-franchise-form__input" placeholder="Email" id="modal-franchise-form-mail"
-          required />
-        <label class="modal-franchise-form__label" for="modal-franchise-form-email">Email</label>
-      </div>
-    
-      <div class="modal-franchise-form__wrap">
-        <textarea name="comment" class="modal-franchise-form__comment" placeholder="Comment" id="modal-franchise-form-comment"></textarea>
-        <label class="modal-franchise-form__label" for="modal-franchise-form-comment">Comment</label>
-      </div>
+    <div class="modal-franchise-form__wrap">
+      <input
+        type="tel"
+        name="tel"
+        class="modal-franchise-form__input"
+        placeholder="Phone"
+        id="modal-franchise-form-tel"
+        required
+        pattern="^\+380\d{3}\d{2}\d{2}\d{2}$"
+        title="+380ххххххххх"
+      />
+      <label class="modal-franchise-form__label" for="modal-franchise-form-tel"
+        >Phone</label
+      >
+    </div>
 
-      <button class="btn modal-franchise-form__button" type="submit">
-        Submit
-      </button>
-    </form>
-  </div>
-  
+    <div class="modal-franchise-form__wrap">
+      <input
+        type="email"
+        name="email"
+        class="modal-franchise-form__input"
+        placeholder="Email"
+        id="modal-franchise-form-mail"
+        required
+      />
+      <label
+        class="modal-franchise-form__label"
+        for="modal-franchise-form-email"
+        >Email</label
+      >
+    </div>
+
+    <div class="modal-franchise-form__wrap">
+      <textarea
+        name="comment"
+        class="modal-franchise-form__comment"
+        placeholder="Comment"
+        id="modal-franchise-form-comment"
+      ></textarea>
+      <label
+        class="modal-franchise-form__label"
+        for="modal-franchise-form-comment"
+        >Comment</label
+      >
+    </div>
+
+    <button class="btn modal-franchise-form__button" type="submit">
+      Submit
+    </button>
+  </form>
+</div>

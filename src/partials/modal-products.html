@@ -1,95 +1,125 @@
+<div class="modal-products modal" data-modal="4">
+  <article>
+    <button type="button" class="btn modal-products__close-btn js-modal-close">
+      <svg aria-label="закрити" width="20px" height="20px">
+        <use href="./images/sprite.svg#modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-products__title">Chololate icecream</h2>
 
-  <div class="modal-products modal" data-modal="4">
-    <article>
-      <button type="button" class="btn modal-products__close-btn js-modal-close">
-          <svg aria-label="закрити" width="20px" height="20px">
-            <use href="./images/sprite.svg#modal-close"></use>
-          </svg>
-      </button> 
-      <h2 class="modal-products__title">Chololate icecream</h2>
+    <div class="modal-products__image-wrap">
+      <span class="modal-products__image"></span>
+      <span class="modal-products__bgr"></span>
+    </div>
 
-      <div class="modal-products__image-wrap">
-        <span class="modal-products__image"></span>
-        <span class="modal-products__bgr"></span>
-      </div>
+    <!---------------- Мікроелементи ------------->
+    <ul class="composition-set">
+      <li class="composition-set__item">
+        <span class="composition-set__value">320</span>
+        <p class="composition-set__name">kcal</p>
+      </li>
+      <li class="composition-set__item">
+        <span class="composition-set__value">4g</span>
+        <p class="composition-set__name">Protein...</p>
+      </li>
+      <li class="composition-set__item">
+        <span class="composition-set__value">8,2g</span>
+        <p class="composition-set__name">Fats</p>
+      </li>
+      <li class="composition-set__item">
+        <span class="composition-set__value">40,4g</span>
+        <p class="composition-set__name">Carbs</p>
+      </li>
+    </ul>
+    <!-------------------- Інгрідієнти ----------------------->
+    <h3 class="ingredients__title">Ingredients</h3>
+    <ul class="ingredients-set">
+      <li>
+        <div class="ingredients-set__item">
+          <p>Milk</p>
+          <span>100ml</span>
+        </div>
+      </li>
+      <li>
+        <div class="ingredients-set__item">
+          <p>Belgian chocolate</p>
+          <span>20g</span>
+        </div>
+      </li>
+      <li>
+        <div class="ingredients-set__item">
+          <p>Cream</p>
+          <span>150 ml</span>
+        </div>
+      </li>
+      <li>
+        <div class="ingredients-set__item">
+          <p>Cocoa powder</p>
+          <span>30g</span>
+        </div>
+      </li>
+      <li>
+        <div class="ingredients-set__item">
+          <p>Sugar</p>
+          <span>40g</span>
+        </div>
+      </li>
+      <li>
+        <div class="ingredients-set__item">
+          <p>Vanilla sugar</p>
+          <span>10g</span>
+        </div>
+      </li>
+    </ul>
+  </article>
+  <!-------------------- Форма ----------------------->
+  <form
+    name="modal-products-order-form"
+    class="modal-products-form"
+    autocomplete="off"
+  >
+    <div class="modal-products-form__wrap">
+      <input
+        type="text"
+        name="username"
+        class="modal-products-form__input"
+        placeholder="Name"
+        id="modal-products-user-name"
+        required
+      />
+      <label class="modal-products-form__label" for="modal-products-user-name"
+        >Name</label
+      >
+    </div>
 
-      <!---------------- Мікроелементи ------------->
-      <ul class="composition-set">
-        <li class="composition-set__item">
-          <span class="composition-set__value">320</span>
-          <p class="composition-set__name">kcal</p>
-        </li>
-        <li class="composition-set__item">
-          <span class="composition-set__value">4g</span>
-          <p class="composition-set__name">Protein...</p>
-        </li>
-        <li class="composition-set__item">
-          <span class="composition-set__value">8,2g</span>
-          <p class="composition-set__name">Fats</p>
-        </li>
-        <li class="composition-set__item">
-          <span class="composition-set__value">40,4g</span>
-          <p class="composition-set__name">Carbs</p>
-        </li>
-      </ul>
-      <!-------------------- Інгрідієнти ----------------------->
-      <h3 class="ingredients__title">Ingredients</h3>
-      <ul class="ingredients-set">
-        <li>
-          <div class="ingredients-set__item">
-              <p>Milk</p>
-              <span>100ml</span>
-          </div>
-        </li>
-        <li>
-          <div class="ingredients-set__item">
-              <p>Belgian chocolate</p>
-              <span>20g</span>
-          </div>
-        </li>
-        <li>
-          <div class="ingredients-set__item">
-              <p>Cream</p>
-              <span>150 ml</span>
-          </div>
-        </li>
-        <li>
-          <div class="ingredients-set__item">
-              <p>Cocoa powder</p>
-              <span>30g</span>
-          </div>
-        </li>
-        <li>
-          <div class="ingredients-set__item">
-              <p>Sugar</p>
-              <span>40g</span>
-          </div>
-        </li>
-        <li>
-          <div class="ingredients-set__item">
-              <p>Vanilla sugar</p>
-              <span>10g</span>
-          </div>
-        </li>
-      </ul>
-    </article>
-    <!-------------------- Форма ----------------------->
-    <form name="modal-products-order-form" class="modal-products-form" autocomplete="off">
-      <div class="modal-products-form__wrap">
-        <input type="text" name="username" class="modal-products-form__input" placeholder="Name" id="modal-products-user-name" required />      
-        <label class="modal-products-form__label" for="modal-products-user-name">Name</label>
-      </div>
+    <div class="modal-products-form__wrap">
+      <input
+        type="tel"
+        name="tel"
+        class="modal-products-form__input"
+        placeholder="Phone"
+        id="modal-products-tel"
+        required
+        pattern="^\+380\d{3}\d{2}\d{2}\d{2}$"
+        title="+380ххххххххх"
+      />
+      <label class="modal-products-form__label" for="modal-products-tel"
+        >Phone</label
+      >
+    </div>
 
-      <div class="modal-products-form__wrap">
-        <input type="tel" name="tel" class="modal-products-form__input" placeholder="Phone" id="modal-products-tel" required />
-        <label class="modal-products-form__label" for="modal-products-tel">Phone</label>
-      </div>
+    <div class="modal-products-form__wrap">
+      <textarea
+        name="comment"
+        class="modal-products-form__comment"
+        placeholder="Comment"
+        id="modal-products-comment"
+      ></textarea>
+      <label class="modal-products-form__label" for="modal-products-comment"
+        >Comment</label
+      >
+    </div>
 
-      <div class="modal-products-form__wrap">
-        <textarea name="comment" class="modal-products-form__comment" placeholder="Comment" id="modal-products-comment"></textarea>
-        <label class="modal-products-form__label" for="modal-products-comment">Comment</label>
-      </div>
-
-      <button type="submit" class="btn modal-products-form__btn">Submit</button>
-    </form>
+    <button type="submit" class="btn modal-products-form__btn">Submit</button>
+  </form>
 </div>
