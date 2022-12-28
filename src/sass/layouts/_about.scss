@@ -3,24 +3,33 @@
    height: auto;
    background-color: #84A178;
    padding-bottom: 89px;
+   padding-top: 61px;
+   padding-bottom: 50px;
    @include tablet{
+      padding-top: 60px;
+      padding-bottom: 86px;
+   }
+   @include desktop {
       padding-bottom: 99px;
    }
+   // @include desktop {
+   // }
 }
 
 .about-uptitle {
    color: var(--primary-text-color);
    font-weight: 700;
-   padding: 61px 35px 12px;
+   // padding: 61px 35px 12px;
+   margin-bottom: 12px;
+
    @include tablet {
       font-weight: 800;   
       letter-spacing: 0.04em;
-      padding: 60px 214px 12px;
+      // padding: 60px 214px 12px;
    }
-      @include desktop {
-         padding: 60px 396px 12px;
-      }
-   
+      // @include desktop {
+      //    padding: 60px 396px 12px;
+      // }
 }
 
 .about-title {

@@ -14,10 +14,17 @@
     background-image: url(../images/dots.png);
     }
 }
-.hero-container{
+.hero-container {
     position: relative;
     background-size: contain;
     height: 453px;
+    padding-top: 50px;
+    @include tablet {
+        padding-top: 14px;
+    }
+    @include desktop {
+        padding-top: 45px;
+    }
 }
 .hero-title{
     color: var(--primary-text-color);
@@ -26,7 +33,7 @@
     line-height: 1.2692;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding-top: 46px;
+    // padding-top: 46px;
 
     @include desktop {
     color: var(--primary-text-color);
@@ -148,7 +155,7 @@
     position: absolute;
     }
     @include desktop {
-    bottom: -30%;
+    bottom: -30.5%;
     }
 }
 .number-list{
