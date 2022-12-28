@@ -58,9 +58,8 @@
     color: var(--secondary-text-color);
     padding: 12px 34px;
     margin-right: 12px;
-    cursor: url(../images/cursor.svg), auto;
     background-color: var(--primary-background-color);
-    cursor: pointer;
+    transition: color .25s cubic-bezier(.4,0,.2,1);
     &:hover{
         border-color: var(--button-background-hover);
     }
@@ -84,7 +83,7 @@
     text-align: center;
     text-decoration-line: underline;
     color: var(--button-background-default);
-    cursor: pointer;
+    transition: color .25s cubic-bezier(.4,0,.2,1);
     &:hover{
         color: var(--button-background-hover);
     }
