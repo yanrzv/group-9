@@ -69,29 +69,42 @@
                 }
     }
 .contacts__categories {
+    display: flex;
+    flex-direction: column;
         background-color: var(--primary-text-color);
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
         transition: ease-in-out .3s;
-        width: 280px;
-                    height: 412px;
+        width: calc(100% - 40px);
+        
+        padding: 40px 32px 24px 32px;
+                    // height: 412px;
                     margin-bottom: 16px;
+                    box-sizing: border-box;
         @include mobile {
-            
-            
+            width: 440px;
+            // align-items: stretch;
             
         }
         
             @include tablet {
                 width: 224px;
-                height: 537px;
+                // height: 537px;
                 margin-bottom: 0;
+                padding: 40px 24px;
+                
                 
             }
         
             @include desktop {
+                padding: 40px 40px;
                 width: 368px;
-                height: 542px;
+                // height: 542px;
+                // align-items: center;
+            }
+            @media screen and (min-width: 768px) and (max-width: 1199px) {
+                // height: 537px;
+                
             }
 }
 // .contacts__categories:hover,
@@ -100,64 +113,81 @@
 //         0px 1px 1px rgb(0 0 0 / 14%), 
 //         0px 2px 1px rgb(0 0 0 / 20%);
 // }
+
+.address-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+
+    @include tablet {
+        
+        flex-direction: column;
+    }
+}
+
 .contacts__title {
     position: relative;
-    
+    display: inline-block;
     text-transform: uppercase;
-    
+    padding: 4px 22px;
     background-color: var(--button-background-default);
     border-radius: 4px;
-    padding: 4px 14px; 
-    top: 40px;
-        left: 32px;
+    // padding: 4px 14px; 
+    // top: 40px;
+    //     left: 32px;
         font-size: 12px;
         line-height: 1.2;
         letter-spacing: 0.04em;
         font-weight: 500;
+        margin-bottom: 20px;
     @include mobile {
            
             
         }
     
         @include tablet {
-            top: 40px;
-            left: 24px;
+            // top: 40px;
+            // left: 24px;
+            padding: 4px 14px;
             font-size: 16px;
             line-height: 1.38;
             letter-spacing: 0.04em;
             font-weight: 500;
+            margin-bottom: 32px;
 
         }
     
         @include desktop {
-            top: 40px;
-            left: 40px;
+            // top: 40px;
+            // left: 40px;
+            padding: 4px 14px;
         }
 }
 
 .contacts__box {
-    position: relative;
-        top: 67px;
-        left: 32px;
-        max-width: 216px;
+    // position: relative;
+    //     top: 67px;
+    //     left: 32px;
+        // max-width: 216px;
+        // margin: 0 auto;
     @include mobile {
             
     
         }
     
         @include tablet {
-            position: relative;
-            top: 75px;
-                left: 24px;
-                max-width: 158px;
+            // position: relative;
+            // top: 75px;
+            //     left: 24px;
+                // max-width: 158px;
         }
     
         @include desktop {
             
-            position: relative;
-                top: 75px;
-                left: 40px;
-                max-width: 288px;
+            // position: relative;
+            //     top: 75px;
+            //     left: 40px;
+                // max-width: 288px;
         }
     
 }
@@ -186,10 +216,23 @@
 }
 
 .contacts__adress {
-margin-bottom: 24px;
-            padding-bottom: 24px;
+    position: relative;
+    // margin-bottom: 48px;
+  &:not(:last-child) {
+    margin-bottom: 48px;
+  }
 
-border-bottom: 1px solid #E1E1E1;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #E1E1E1;
+    left: 0;
+    bottom: -24px;
+  }
+
+// border-bottom: 1px solid #E1E1E1;
 @include mobile {
         
 
@@ -197,7 +240,7 @@ border-bottom: 1px solid #E1E1E1;
 
     @include tablet {
         margin-bottom: 32px;
-            padding-bottom: 32px;
+            // padding-bottom: 32px;
     }
 
     @include desktop {
