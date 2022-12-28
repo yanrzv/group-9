@@ -13,18 +13,18 @@
     z-index: 40;
     overflow-y: scroll;
     scroll-behavior: smooth;
-background-image: url(../images/by-now-img/backgroud.jpg);
+// background-image: url(../images/by-now-img/backgroud.jpg);
 
 
     @media screen and (min-width:768px) {
         padding: 32px 54px 32px 54px;
         max-width: 568px;
-        background-image: url(../images/by-now-img/Backgroundtab.jpg);
+        // background-image: url(../images/by-now-img/Backgroundtab.jpg);
     }
-           @media screen and (min-width:1200px) {
+        //    @media screen and (min-width:1200px) {
              
-               background-image: url(../images/by-now-img/Backgrouddeskto.jpg);
-           }
+        //        background-image: url(../images/by-now-img/Backgrouddeskto.jpg);
+        //    }
   
                 
 }
