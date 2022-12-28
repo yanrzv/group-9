@@ -11,6 +11,8 @@
     max-height: 960px;
     overflow: auto;
     z-index: 40;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 background-image: url(../images/by-now-img/backgroud.jpg);
 
 
