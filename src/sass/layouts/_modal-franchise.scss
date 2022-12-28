@@ -28,9 +28,9 @@
     // transform: translate(-50%, -50%) scale(1);
     min-width: 280px;
     width: calc(100% - 40px);
-    // height: 560px;
-    // max-height: 100vh;
-    // overflow: auto;
+    height: 100vh;
+        max-height: 560px;
+        overflow: auto;
     background-color: var(--primary-text-color);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 28px; 

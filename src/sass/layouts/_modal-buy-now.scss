@@ -1,5 +1,8 @@
 .container-buy-naw {
     // position: fixed;
+    height: 100vh;
+        max-height: 960px;
+        overflow: auto;
     padding: 28px 28px 29px 28px;
     min-width: 280px;
     width: calc(100% - 40px);
@@ -7,12 +10,16 @@
     border: 2px solid #F8D24E;
     border-radius: 10px;
     margin: 0 auto;
-    overflow: auto;
+    // overflow: auto;
     z-index: 40;
+    @include mobile {
+            width: 440px;
+            padding: 32px 40px;
+        }
     
     @include tablet {
         padding: 32px 54px;
-        max-width: 568px;
+        width: 568px;
         height: 644px;
     }
 }
