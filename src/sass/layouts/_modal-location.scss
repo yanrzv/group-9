@@ -7,7 +7,7 @@
     // min-height: 365px;
     background: #FCFCFC;
     border-radius: 10px;
-
+    text-align: center;
     padding: 28px;
     
     border: 2px solid #F8D24E;
@@ -85,7 +85,7 @@
 }
 
 .open-map {
-    display: flex;
+    display: inline-flex;
     min-width: 134px;
     height: 42px;
     background-color: #F8D24E;
@@ -94,13 +94,14 @@
     font-size: 12px;
     line-height: 1.25;
     color: #131313;
-    text-align: center;
+    // text-align: center;
     align-items: center;
     justify-content: center;
     margin-top: 24px;
     // margin-bottom: 28px;
     margin-right: auto;
     margin-left: auto;
+    
     &:hover {
         background-color: #0A8817;
         outline: none;
