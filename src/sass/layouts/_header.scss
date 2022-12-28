@@ -1,5 +1,12 @@
 .header {
   background-color: #84a178;
+    padding-top: 12px;
+      @include tablet {
+        padding-top: 20px;
+      }
+      @include desktop {
+        padding-top: 8px;
+      }
 }
 
 .header__container {
@@ -9,25 +16,25 @@
 .header__navigation {
   display: flex;
   margin-right: auto;
+  align-items: flex-end;
 }
 
-.header__logo {
-  margin-top: 12px;
-  @include tablet {
-    margin-top: 20px;
-  }
-  @include desktop {
-    margin-top: 8px;
-  }
-}
+// .header__logo {
+
+// }
 
 .menu-open {
   background-color: transparent;
   fill: #ffffff;
-  margin-top: 17px;
+  display: flex;
+  padding-top: 5px;
   @include tablet {
-    margin-top: 29px;
+    align-items: center;
   }
+  // margin-top: 17px;
+  // @include tablet {
+  //   margin-top: 29px;
+  // }
 
   @include desktop {
     display: none;
@@ -38,8 +45,12 @@
   display: none;
   @include tablet {
     display: flex;
-    min-width: 152px;
+  }
+  min-width: 152px;
+  @include desktop {
     height: 42px;
+    margin-left: 204px;
+  }
     background-color: #f8d24e;
     border-radius: 10px;
     font-weight: 600;
@@ -50,7 +61,7 @@
     align-items: center;
     justify-content: center;
     margin-left: 32px;
-    margin-top: 24px;
+    // margin-top: 24px;
     &:hover {
       background-color: #0a8817;
       outline: none;
@@ -61,11 +72,9 @@
       fill: #ffffff;
       outline: none;
     }
-  }
-  @include desktop {
-    margin-top: 28px;
-    margin-left: 204px;
-  }
+  // @include desktop {
+  //   // margin-top: 28px;
+  // }
 }
 
 .header-button__icon {
@@ -78,6 +87,7 @@
 .button__wrap {
   @include tablet {
     display: flex;
+    padding-top: 4px;
   }
   @include desktop {
     align-items: flex-end;
@@ -92,6 +102,7 @@
     align-items: center;
     margin-left: 308px;
     gap: 28px;
+    padding-bottom: 13px;
   }
 }
 
@@ -101,8 +112,8 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
-    padding-top: 40px;
-    padding-bottom: 13px;
+    // padding-top: 40px;
+    // padding-bottom: 13px;
     display: block;
     &:hover,
     &:focus {
