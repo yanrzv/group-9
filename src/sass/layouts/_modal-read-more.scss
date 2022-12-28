@@ -1,11 +1,14 @@
 .modal-readmore {
 
    width: calc(100% - 40px);
-   height: 459px;
+   height: 100vh;
+   max-height: 459px;
    padding: 28px;
    background: #FCFCFC;
    border: 2px solid #F8D24E;
    border-radius: 10px;
+   overflow-y: scroll;
+   overflow-x: hidden;
 
     @include mobile {
         width: 440px;
@@ -14,7 +17,7 @@
 
    @include tablet {
       width: 568px;
-      height: 449px;
+      max-height: 459px;
       padding: 32px 60px;
    
    
