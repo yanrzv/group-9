@@ -120,7 +120,22 @@
 }
 .hero-icecream{
     margin-right: 16px;
+    animation: plateRotation 100s ease-in-out 900ms infinite alternate;
 }
+@keyframes plateRotation {
+    0% {
+        transform: rotate(0deg);    
+        transform-origin: bottom left;
+    }
+    50% {
+        transform-origin: left center;
+    }
+    100% {
+        transform: rotate(360deg);
+        transform-origin: bottom center;
+    }
+}
+
 .hero-text{
     display: flex;
     flex-direction: column;

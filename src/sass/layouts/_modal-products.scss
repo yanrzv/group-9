@@ -9,7 +9,6 @@
     border-radius: 10px;
     border: 2px solid var(--button-background-default);
     width: calc(100% - 40px);
-
     @include mobile {
         width: 440px;
         padding: 32px 40px;
@@ -218,6 +217,12 @@
         }
         &::placeholder {
             color: var(--secondary-text-color);
+        }
+        &:valid:not(:placeholder-shown) {
+            background-color: rgba(153, 205, 50, 0.315);
+        }
+        &:not(:valid):not(:placeholder-shown) {
+            background-color: rgba(184, 59, 59, 0.24);
         }
     }
     
