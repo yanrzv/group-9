@@ -1,37 +1,75 @@
 <section class="gallery">
   <h3 class="visually-hidden">gallery</h3>
   <div class="container gallery-position">
-    <ul class="autoplay">
-      <li class="img_gallery">
-        <img
+    <ul class="gallery-card-set autoplay">
+      <li class="gallery-card-set__item">
+        <picture>
+          <source
+            srcset="./images/gallery/blueberry-ice-cream-L.png 1x, ./images/gallery/blueberry-ice-cream-L-@2x.png 2x"
+            media="(min-width: 1200px)"
+            />
+          <source
+            srcset="./images/gallery/blueberry-ice-cream-M.png 1x, ./images/gallery/blueberry-ice-cream-M-@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/gallery/blueberry-ice-cream-S.png 1x, ./images/gallery/blueberry-ice-cream-S-@2x.png 2x"
+            media="(max-width: 767px)"
+          />
+          
+          <img 
+          src="./images/gallery/blueberry-ice-cream-L.png" 
+          alt="icecream with blueberry" 
+          width="100%" />
+        </picture>
+        <!-- <img
           class="card_gallery"
           alt="icecream"
           srcset="
-            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-1_ice1-L.png     1013w,
-            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-1_ice1-L-@2x.png 2026w,
-            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-2_ice1-M.png      704w,
-            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-2_ice1-M-@2x.png 1408w,
-            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-2_ice1-S.png      280w,
-            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-2_ice1-S-2x.png   560w
+            ./images/gallery/brooke-lark-L.png      1013w,
+            ./images/gallery/brooke-lark-L-@2x.png  2026w,
+            ./images/gallery/brooke-lark-M.png      704w,
+            ./images/gallery/brooke-lark-M-@2x.png  1408w,
+            ./images/gallery/brooke-lark-S.png      280w,
+            ./images/gallery/brooke-lark-S-@2x.png  560w
           "
           sizes="(min-width: 1200px) 1013vw, (min-width: 768px) 704vw, (min-width: 480px) 280vw,
         100vw"
-          src="./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-1_ice1-L.png"
-        />
+          src="./images/gallery/brooke-lark-L.png"
+        /> -->
       </li>
-      <li class="img_gallery">
-        <img
+      <li class="gallery-card-set__item">
+        <picture class="gallery-card-set__image">
+          <source 
+            srcset="./images/gallery/cherry-ice-cream-L.png 1x, ./images/gallery/cherry-ice-cream-L-@2x.png 2x"
+          />
+          <img 
+            src="./images/gallery/cherry-ice-cream-L.png" 
+            alt="icecream with cherry" 
+            width="100%" 
+            />
+        </picture>
+        <!-- <img
           class="card_gallery"
           src="./images/gallery/kenta-kikuchi-LZ6BTZnizD8-unsplash-1_icecream2-M.png"
           alt="icecream"
-        />
+        /> -->
       </li>
-      <li class="img_gallery">
-        <img
+      <li class="gallery-card-set__item">
+        <picture class="gallery-card-set__image">
+          <source srcset="./images/gallery/ice-cream-with-sprinkles-L.png 1x, ./images/gallery/ice-cream-with-sprinkles-L-@2x.png 2x"
+
+          />
+          <img 
+            src="./images/gallery/ice-cream-with-sprinkles-L.png" 
+            alt="icecream with sprinkles" 
+            width="100%" />
+        </picture>
+        <!-- <img
           class="card_gallery"
           src="./images/gallery/courtney-cook-QYsRxRPygwU-unsplash-1_icecream-M.png"
           alt="icecream"
-        />
+        /> -->
       </li>
     </ul>
   </div>
