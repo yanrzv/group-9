@@ -126,14 +126,14 @@
 @keyframes plateRotation {
     0% {
         transform: rotate(0deg);
-        transform-origin: left;
-    }
-    50% {
         transform-origin: center;
     }
+    // 50% {
+    //     transform-origin: center;
+    // }
     100% {
         transform: rotate(360deg);
-        transform-origin: bottom center;
+        transform-origin: center;
     }
 }
 
