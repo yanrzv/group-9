@@ -1,38 +1,69 @@
 <section class="gallery">
   <h3 class="visually-hidden">gallery</h3>
-  <div class="container gallery-position">
-    <ul class="autoplay">
-      <li class="img_gallery">
-        <img
-          class="card_gallery"
-          alt="icecream"
+  <div class="container">
+    <ul class="gallery-card-set autoplay">
+      <li class="gallery-card-set__item">
+        <picture class="gallery-card-set__image">
+          <source 
+            srcset="
+            ./images/gallery/gallery-blueberry-ice-cream-S.png 440w, 
+            ./images/gallery/gallery-blueberry-ice-cream-S-@2x.png 880w
+            "
+            media="(max-width: 767px)"
+            sizes="(min-width: 480px) 100vw"          
+          />      
+          <source 
+            srcset="
+            ./images/gallery/gallery-blueberry-ice-cream-M.png 704w, 
+            ./images/gallery/gallery-blueberry-ice-cream-M-@2x.png 1408w
+            "
+            media="(min-width: 768px)"
+            sizes="(min-width: 768px) 50vw, 100vw"          
+          />
+          <source 
+            srcset="
+            ./images/gallery/gallery-blueberry-ice-cream-L.png 1013w, 
+            ./images/gallery/gallery-blueberry-ice-cream-L-@2x.png 2026w
+            "
+            media="(min-width: 1200px)"
+            sizes="(min-width: 1200px) 33vw, 100vw"            
+          />
+          <img 
+            src="./images/gallery/gallery-blueberry-ice-cream-L.png" 
+            alt="icecream with blueberry" 
+          >
+        </picture>
+      </li>
+
+      <li class="gallery-card-set__item">
+        <picture class="gallery-card-set__image">
+          <source 
+            srcset="
+            ./images/gallery/gallery-cherry-ice-cream-L.png 1013w, 
+            ./images/gallery/gallery-cherry-ice-cream-L-@2x.png 2026w
+            "
+          />
+          <img 
+            src="./images/gallery/gallery-cherry-ice-cream-L.png" 
+            alt="icecream with cherry" 
+          >
+        </picture>
+      </li>
+      
+      <li class="gallery-card-set__item">
+        <picture class="gallery-card-set__image">
+          <source 
           srcset="
-            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-1_ice1-L.png     1013w,
-            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-1_ice1-L-@2x.png 2026w,
-            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-2_ice1-M.png      704w,
-            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-2_ice1-M-@2x.png 1408w,
-            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-2_ice1-S.png      280w,
-            ./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-2_ice1-S-2x.png   560w
+          ./images/gallery/gallery-sprinkle-ice-cream-L.png 1013w, 
+          ./images/gallery/gallery-sprinkle-ice-cream-L-@2x.png 2026w
           "
-          sizes="(min-width: 1200px) 1013vw, (min-width: 768px) 704vw, (min-width: 480px) 280vw,
-        100vw"
-          src="./images/gallery/brooke-lark-8beTH4VkhLI-unsplash-1_ice1-L.png"
-        />
-      </li>
-      <li class="img_gallery">
-        <img
-          class="card_gallery"
-          src="./images/gallery/kenta-kikuchi-LZ6BTZnizD8-unsplash-1_icecream2-M.png"
-          alt="icecream"
-        />
-      </li>
-      <li class="img_gallery">
-        <img
-          class="card_gallery"
-          src="./images/gallery/courtney-cook-QYsRxRPygwU-unsplash-1_icecream-M.png"
-          alt="icecream"
-        />
-      </li>
+          />
+          <img 
+            src="./images/gallery/gallery-sprinkle-ice-cream-L.png" 
+            alt="icecream with sprinkles" 
+          >
+        </picture>
+      </li>        
     </ul>
   </div>
 </section>
