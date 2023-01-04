@@ -42,25 +42,50 @@
 
     <form name="modal-franchise-form" class="modal-franchise-form" autocomplete="off">
       <div class="modal-franchise-form__wrap">
-        <input type="text" name="username" class="modal-franchise-form__input" placeholder="Name"
-          id="modal-franchise-form-user-name" required />
+        <input 
+          name="username" 
+          type="text" 
+          class="modal-franchise-form__input" 
+          placeholder="Name"
+          pattern="[A-Za-z]{2,}" 
+          title="Two or more letters A-Z/a-z"
+          id="modal-franchise-form-user-name" 
+          required />
         <label class="modal-franchise-form__label" for="modal-franchise-form-user-name">Name</label>
       </div>
     
       <div class="modal-franchise-form__wrap">
-        <input type="tel" name="tel" class="modal-franchise-form__input" placeholder="Phone" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" title="+380 (50) 222-22-22" id="modal-franchise-form-tel"
+        <input 
+          name="tel" 
+          type="tel" 
+          class="modal-franchise-form__input" 
+          placeholder="Phone" 
+          pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" 
+          title="+38 (050) 222-22-22" 
+          id="modal-franchise-form-tel"
           required />
         <label class="modal-franchise-form__label" for="modal-franchise-form-tel">Phone</label>
       </div>
 
       <div class="modal-franchise-form__wrap">
-        <input type="email" name="email" class="modal-franchise-form__input" placeholder="Email" id="modal-franchise-form-mail"
+        <input 
+          name="email" 
+          type="email" 
+          class="modal-franchise-form__input" 
+          placeholder="Email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+          title="characters@characters.at least 2 letters 'a-z'" 
+          id="modal-franchise-form-mail"
           required />
         <label class="modal-franchise-form__label" for="modal-franchise-form-email">Email</label>
       </div>
     
       <div class="modal-franchise-form__wrap">
-        <textarea name="comment" class="modal-franchise-form__comment" placeholder="Comment" id="modal-franchise-form-comment"></textarea>
+        <textarea 
+          name="comment" 
+          class="modal-franchise-form__comment" 
+          placeholder="Comment" 
+          id="modal-franchise-form-comment"></textarea>
         <label class="modal-franchise-form__label" for="modal-franchise-form-comment">Comment</label>
       </div>
 
