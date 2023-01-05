@@ -105,6 +105,12 @@
     }
 }
 
+.hero-image-hidden {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
 .hero-arrow-link {
     width: 40px;
     height: 16px;
@@ -119,8 +125,13 @@
     }
 }
 .hero-icecream{
-    margin-right: 16px;
-    animation: plateRotation 80s ease-in-out infinite alternate;
+    display: none;
+    @include tablet {
+        display: block;
+        margin-right: 16px;
+            animation: plateRotation 80s ease-in-out infinite alternate;
+    }
+    
 }
 
 @keyframes plateRotation {
