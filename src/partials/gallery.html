@@ -4,64 +4,100 @@
     <ul class="gallery-card-set autoplay">
       <li class="gallery-card-set__item">
         <picture class="gallery-card-set__image">
-          <source 
+          <source
             srcset="
-            ./images/gallery/gallery-blueberry-ice-cream-S.png 440w, 
-            ./images/gallery/gallery-blueberry-ice-cream-S-@2x.png 880w
-            "
-            media="(max-width: 767px)"
-            sizes="(min-width: 480px) 100vw"          
-          />      
-          <source 
-            srcset="
-            ./images/gallery/gallery-blueberry-ice-cream-M.png 704w, 
-            ./images/gallery/gallery-blueberry-ice-cream-M-@2x.png 1408w
-            "
-            media="(min-width: 768px)"
-            sizes="(min-width: 768px) 50vw, 100vw"          
-          />
-          <source 
-            srcset="
-            ./images/gallery/gallery-blueberry-ice-cream-L.png 1013w, 
-            ./images/gallery/gallery-blueberry-ice-cream-L-@2x.png 2026w
+              ./images/background/desk-1-1x.jpg 1x,
+              ./images/background/desk-1-2x.jpg 2x
             "
             media="(min-width: 1200px)"
-            sizes="(min-width: 1200px) 33vw, 100vw"            
           />
-          <img 
-            src="./images/gallery/gallery-blueberry-ice-cream-L.png" 
-            alt="icecream with blueberry" 
-          >
+          <source
+            srcset="
+              ./images/background/tab-1-1x.jpg 1x,
+              ./images/background/tab-1-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/background/mob-1-1x.jpg 1x,
+              ./images/background/mob-1-2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="slider-gallery__img lazyload"
+            src="./images/background/desk-1-2x.jpg"
+            alt="ice cream"
+            loading="lazy"
+            width="1013"
+          />
         </picture>
       </li>
 
       <li class="gallery-card-set__item">
         <picture class="gallery-card-set__image">
-          <source 
+          <source
             srcset="
-            ./images/gallery/gallery-cherry-ice-cream-L.png 1013w, 
-            ./images/gallery/gallery-cherry-ice-cream-L-@2x.png 2026w
+              ./images/background/desk-2-1x.jpg 1x,
+              ./images/background/desk-2-2x.jpg 2x
             "
+            media="(min-width: 1200px)"
           />
-          <img 
-            src="./images/gallery/gallery-cherry-ice-cream-L.png" 
-            alt="icecream with cherry" 
-          >
+          <source
+            srcset="
+              ./images/background/tab-2-1x.jpg 1x,
+              ./images/background/tab-2-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/background/mob-2-1x.jpg 1x,
+              ./images/background/mob-2-2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="slider-gallery__img lazyload"
+            src="./images/background/desk-2-2x.jpg"
+            alt="ice cream"
+            loading="lazy"
+            width="1013"
+          />
         </picture>
       </li>
       
       <li class="gallery-card-set__item">
         <picture class="gallery-card-set__image">
-          <source 
-          srcset="
-          ./images/gallery/gallery-sprinkle-ice-cream-L.png 1013w, 
-          ./images/gallery/gallery-sprinkle-ice-cream-L-@2x.png 2026w
-          "
+          <source
+            srcset="
+              ./images/background/desk-3-1x.jpg 1x,
+              ./images/background/desk-3-2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
           />
-          <img 
-            src="./images/gallery/gallery-sprinkle-ice-cream-L.png" 
-            alt="icecream with sprinkles" 
-          >
+          <source
+            srcset="
+              ./images/background/tab-3-1x.jpg 1x,
+              ./images/background/tab-3-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/background/mob-3-1x.jpg 1x,
+              ./images/background/mob-3-2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="slider-gallery__img lazyload"
+            src="./images/background/desk-3-2x.jpg"
+            alt="ice cream"
+            loading="lazy"
+            width="1013"
+          />
         </picture>
       </li>        
     </ul>
