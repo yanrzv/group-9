@@ -5,59 +5,79 @@
     </svg>
   </button>
 <h2 class="buy-now-title">Buy now</h2>
-<ul class="ul-ice-buy-nov">
-  <li class="li-ice-buy-one">
-    <div class="picture-div-byu-now">
-    <picture class="picture-ice-byu-now">
-      <source srcset="
-                    ./images/by-now-img/Ice-1-1200-780bynow.jpg 1x,
-                    ./images/by-now-img/Ice-1-1200-780bynow-2x.jpg 2x" media="(min-width: 1200px)" />
-      <source srcset="
-                    ./images/by-now-img/Ice-1-1200-780bynow.jpg 1x,
-                    ./images/by-now-img/Ice-1-1200-780bynow-2x.jpg 2x" media="(min-width: 768px)" />
-      <source srcset="
-                    ./images/by-now-img/Ice-1-480px-bynow.jpg 1x,
-                    ./images/by-now-img/Ice-1-480px-bynow-2x.jpg 2x" media="(min-width: 480px)" />
-      <img src="./images/by-now-img/Ice-1.jpg" alt="ice cream" loading="lazy"/>
-    </picture>
+<ul class="buy-now-card-set">
+
+
+  <li class="buy-now-card-set__item">
+    <div class="buy-now-visual">
+      <span class="buy-now-visual__bgr-circle buy-now-visual__bgr-circle--green"></span>
+      <img class="buy-now-visual__img" 
+        srcset="
+          ./images/buy-now/buy-now-ice-cream.jpg 1x,
+          ./images/buy-now/buy-now-ice-cream@2x.jpg 2x" 
+        src="./images/buy-now/buy-now-ice-cream.jpg" 
+        alt="ice cream"
+        loading="lazy"
+      />
     </div>
-    <p class="name-ice-buy-now">ice cream</p>
+    <h3 class="buy-now-card-set__title">ice cream</h3>
+    <form>
+      <label>
+        <input 
+          type="checkbox"
+          name="ice cream"
+          value="ice cream"
+          />
+      </label>
+    </form>
   </li>
-  <li class="li-ice-buy-too">
-    <div class="picture-div-byu-too">
-    <picture class="picture-ice-byu-now">
-      <source srcset="
-                      ./images/by-now-img/Ice-2-1200-780bynow.jpg 1x,
-                      ./images/by-now-img/Ice-2-1200-780bynow-2x.jpg 2x" media="(min-width: 1200px)" />
-      <source srcset="
-                      ./images/by-now-img/Ice-2-1200-780bynow.jpg 1x,
-                      ./images/by-now-img/Ice-2-1200-780bynow-2x.jpg 2x" media="(min-width: 768px)" />
-      <source srcset="
-                      ./images/by-now-img/Ice-2-480pxbynow.jpg 1x,
-                      ./images/by-now-img/Ice-2-480pxbynow-2x.jpg 2x" media="(min-width: 480px)" />
-      <img src="./images/by-now-img/Ice-2.jpg" alt="ice cream" loading="lazy"/>
-    </picture>
+
+  <li class="buy-now-card-set__item">
+    <div class="buy-now-visual">
+      <span class="buy-now-visual__bgr-circle buy-now-visual__bgr-circle--yellow"></span>
+      <img class="buy-now-visual__img"
+        srcset="
+          ./images/buy-now/buy-now-ice-coffee.jpg 1x,
+          ./images/buy-now/buy-now-ice-coffee@2x.jpg 2x" 
+        src="./images/buy-now/buy-now-ice-coffee.jpg" 
+        alt="ice-coffe" 
+        loading="lazy"
+      />
     </div>
-    <svg class="fon-yellow-buy-now" width="132" height="132">
-    </svg>
-    <p class="name-ice-buy-now">ice coffee</p>
+    <h3 class="buy-now-card-set__title">ice coffee</h3>
+    <form>
+      <label>
+        <input 
+          type="checkbox"
+          name="ice coffee"
+          value="ice coffee"
+          checked
+          />
+      </label>
+    </form>
   </li>
-  <li class="li-ice-buy-free">
-    <div class="picture-div-byu-free">
-    <picture  class="picture-ice-byu-now">
-      <source srcset="
-                      ./images/by-now-img/Ice-3-1200-780bynow.jpg 1x,
-                      ./images/by-now-img/Ice-3-1200-780bynow-2x.jpg 2x" media="(min-width: 1200px)" />
-      <source srcset="
-                      ./images/by-now-img/Ice-3-1200-780bynow.jpg 1x,
-                      ./images/by-now-img/Ice-3-1200-780bynow-2x.jpg 2x" media="(min-width: 768px)" />
-      <source srcset="
-                      ./images/by-now-img/Ice-3-480pxbynow.jpg 1x,
-                      ./images/by-now-img/Ice-3-480pxbynow-2x.jpg 2x" media="(min-width: 480px)" />
-      <img src="./images/by-now-img/Ice-3.jpg" alt="coffee ice cream" loading="lazy"/>
-    </picture>
+
+  <li class="buy-now-card-set__item">
+    <div class="buy-now-visual">
+      <span class="buy-now-visual__bgr-circle buy-now-visual__bgr-circle--orange"></span>
+      <img class="buy-now-visual__img"
+        srcset="
+          ./images/buy-now/buy-now-milkshake.jpg 1x,
+          ./images/buy-now/buy-now-milkshake@2x.jpg 2x" 
+        src="./images/buy-now/buy-now-milkshake.jpg" 
+        alt="milkshake" 
+        loading="lazy"
+      />
     </div>
-    <p class="name-ice-buy-now">milkshake</p>
+    <h3 class="buy-now-card-set__title">milkshake</h3>
+    <form>
+      <label>
+        <input type="checkbox"  
+        name="milkshake" 
+        value="milkshake" 
+      />
+      </label>
+    </form>
   </li>
 </ul>
 

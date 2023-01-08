@@ -1,5 +1,5 @@
 .container-buy-now {
-        overflow: auto;
+    overflow: auto;
     padding: 28px 28px 29px 28px;
     min-width: 280px;
     width: calc(100% - 40px);
@@ -40,167 +40,228 @@
 }
 
 .buy-now-title{
-        font-family: 'Seymour One';
-        font-style: normal;
-        font-weight: 400;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    text-align: center;
+    color: var(--secondary-text-color);
+    margin-bottom: 83px;
+    @include tablet {
         font-size: 20px;
-        line-height: 1.4;
-        align-items: center;
-        text-align: center;
-        color: #131313;
-        flex-wrap: wrap;
-        margin-bottom: 83px;
-        @media screen and (min-width:768px) {
-                margin-bottom: 103px;
-                flex-wrap: nowrap;
-            }
+        line-height: calc(28 / 20);
+        margin-bottom: 103px;
+    }
 }
-.name-ice-buy-now{
-    font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.25;
-        text-align: center;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: #131313;
-}
-.ul-ice-buy-nov {
-    display: flex;
-    box-sizing:content-box;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    @media screen and (min-width:768px) {
-        flex-direction: row;
+
+// Картки з продуктами
+
+.buy-now-card-set {
+    // display: flex;
+    // box-sizing:content-box;
+    // justify-content: center;
+    // flex-direction: column;
+    // align-items: center;
+    margin-bottom: 31px;
+    @include tablet {
+        display: flex;
         gap: 32px;
+        margin-bottom: 40px;
     }
 }
-.name-ice-buy-now{
-    margin-top: 96px;
-    margin-bottom: 20px;
-    @media screen and (min-width:768px) {
-            margin-top: 95px;
-            margin-bottom: 20px;
-}}
 
-.li-ice-buy-one{
-    border-bottom: 2px solid #96AF8C;
-    border-left: 2px solid #96AF8C;
-    border-right: 2px solid #96AF8C;
-    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-    border-radius: 15px;
+.buy-now-card-set__item {
     position: relative;
-    display: block;
-    width: 128px;
-    height: 136px;
-    background: #FCFCFC;
-        background-image:
-                url(../images/by-now-img/Ellipse102x.jpg);
-            background-position-x: center;
-            background-position-y: -65px;
-            background-repeat: no-repeat;
-box-sizing: content-box;
-margin-bottom: 85px;
-        @media screen and (min-width:768px) {
-                margin-bottom: 40px;
-            }
-}
-
-.picture-div-byu-now{
     width: 132px;
-    height: 132px;
-    position: absolute;
-    bottom: 61px;
-    left: -2px;
-}
-.picture-ice-byu-now {
-    display:block;
-    width: 132px;
-    height: 132px;
-}
-.picture-ice-byu-now picture{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-
-.fon-yellow-buy-now img{
-    border-radius: 50%;
-    width: 132px;
-    height: 132px;
-    position: absolute;
-}
-.picture-ice-byu-now img {
-border-radius: 50%;
-background-color: #EFD478;
-position: absolute;
-}
-.li-ice-buy-too{
-    position: relative;
-    background: #EFD478;
-    border: 2px solid #EFD478;
-    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
-    border-radius: 15px;
-    display: block;
-        width: 128px;
-        height: 136px;
-        margin-bottom: 85px;
-        box-sizing: content-box;
-        background-repeat: no-repeat;
-        z-index: 1;
-        @media screen and (min-width:768px) {
-                margin-bottom: 40px;
-            }
+    height: 135; 
+    border-radius: 15px; 
+    // display: block;
+    // width: 128px;
+    // height: 136px;   
+    // background: #FCFCFC;  
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 20px; 
         }
-
-.fon-yellow-buy-now{
-    left: -2px;
+    }
+    &:first-child {
+        border-bottom: 2px solid #96AF8C;
+        border-left: 2px solid #96AF8C;
+        border-right: 2px solid #96AF8C;
+        // filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+        // background-image: url(../images/by-now-img/Ellipse102x.jpg);
+        // background-position-x: center;
+        // background-position-y: -65px;
+        // background-repeat: no-repeat;
+        // box-sizing: content-box;
+    }
+    &:nth-child(2) {
+        border-bottom: 2px solid #EFD478;
+        border-left: 2px solid #EFD478;
+        border-right: 2px solid #EFD478;
+        // box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    }
+    &:nth-child(3) {
+        border-bottom: 2px solid #D6936D;
+        border-left: 2px solid #D6936D;
+        border-right: 2px solid #D6936D;
+        // filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+        // background-image: url(../images/by-now-img/ellipse12.jpg);
+        // background-position-x: center;
+        // background-position-y: -72px;
+        // background-repeat: no-repeat;    
+    }
+}
+// .buy-now-visual {
+//     width: 132px;
+// }
+.buy-now-visual__bgr-circle {
     position: absolute;
-    bottom: 60px;
-    border-radius: 50%;
-    z-index: 2;
-    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
-    #D9D9D9;}
-    
-.picture-div-byu-too{
+    top: -56px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
     width: 132px;
     height: 132px;
-    position: absolute;
-    bottom: 67px;
-    z-index: 3;
-    left: -2px;
+    border-radius: 50%;
+    &--green {
+        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    }
+    &--yellow {
+        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);        
+    }
+    &--orange {
+        background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+    }
 }
 
-.li-ice-buy-free{
-        border: 2px solid #D6936D;
-        filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-        border-radius: 15px;
-        position: relative;
-        display: block;
-        width: 128px;
-        height: 136px;
-        background: #FCFCFC;
-        background-image:
-            url(../images/by-now-img/ellipse12.jpg);
-        background-position-x: center;
-        background-position-y: -72px;
-        background-repeat: no-repeat;
-        box-sizing: content-box;
-        margin-bottom: 31px;
-            @media screen and (min-width:768px) {
-                    margin-bottom: 40px;
-                }
-            }
-    .picture-div-byu-free{
-            width: 132px;
-            height: 132px;
-            position: absolute;
-            bottom: 68px;
-            left: -2px;
-    }
+.buy-now-visual__img img {
+    position: absolute;
+    top: -63px;
+    display: inline-flex;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    
+}
+
+.buy-now-card-set__title {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    padding-top: 95px;
+}
+
+
+
+// .picture-div-byu-now{
+//     width: 132px;
+//     height: 132px;
+//     position: absolute;
+//     bottom: 61px;
+//     left: -2px;
+// }
+// .picture-ice-byu-now {
+//     display:block;
+//     width: 132px;
+//     height: 132px;
+// }
+// .picture-ice-byu-now picture{
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 50%;
+// }
+
+// .fon-yellow-buy-now img{
+//     border-radius: 50%;
+//     width: 132px;
+//     height: 132px;
+//     position: absolute;
+// }
+// .picture-ice-byu-now img {
+// border-radius: 50%;
+// background-color: #EFD478;
+// position: absolute;
+// }
+
+// .fon-yellow-buy-now{
+//     left: -2px;
+//     position: absolute;
+//     bottom: 60px;
+//     border-radius: 50%;
+//     z-index: 2;
+//     box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+//     background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
+//     #D9D9D9;}
+    
+
+// .picture-div-byu-too{
+//     width: 132px;
+//     height: 132px;
+//     position: absolute;
+//     bottom: 67px;
+//     z-index: 3;
+//     left: -2px;
+// }
+
+// .picture-div-byu-free{
+//             width: 132px;
+//             height: 132px;
+//             position: absolute;
+//             bottom: 68px;
+//             left: -2px;
+//     }
+
+    // &__label-terms {
+    //     position: relative;
+    //     @include font (null, 12px, 1.7);
+    //     color: var(--secondary-text-color);
+    //     margin-top: 10px;
+    //     margin-bottom: 30px;
+    //     display: block;
+    //     padding-left: 37px;
+    // }
+
+    // &__agreement-link {
+    //     text-decoration: underline;
+    //     color: var(--primary-accent-bg-and-text-color);
+    //     display: inline-block;
+    // }
+
+    // &__checkbox {
+    //     position: absolute;
+    //     width: 1px;
+    //     height: 1px;
+    //     margin: -1px;
+    //     border: 0;
+    //     padding: 0;
+    //     clip: rect(0 0 0 0);
+    //     overflow: hidden;
+    // }
+
+    // &__checkbox-icon {
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 14px;
+    //     transform: translateY(-50%);
+    //     width: 16px;
+    //     height: 15px;
+    //     border: 2px solid var(--primary-text-color);
+    //     border-radius: 2px;
+    //     transition: background-color 250ms var(--transition-timing-function), border-color 250ms var(--transition-timing-function);
+
+    //     .application-form__checkbox:checked ~ & {
+    //         background-color: var(--primary-accent-bg-and-text-color);
+    //         border: 1px solid transparent;
+    //     }
+
+
 
 //-------------------- Форма -----------------------
 .modal-buy-now-form {
