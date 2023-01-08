@@ -16,18 +16,20 @@
           ./images/buy-now/buy-now-ice-cream.jpg 1x,
           ./images/buy-now/buy-now-ice-cream@2x.jpg 2x" 
         src="./images/buy-now/buy-now-ice-cream.jpg" 
-        alt="ice cream"
+        alt="ice-cream"
         loading="lazy"
       />
     </div>
-    <h3 class="buy-now-card-set__title">ice cream</h3>
     <form>
-      <label>
-        <input class="buy-now-card-set-checkbox"
-          type="checkbox"
-          name="ice cream"
-          value="ice cream"
-          />
+      <input 
+        class="buy-now-card-set__input" 
+        type="checkbox" 
+        name="ice-cream" 
+        value="ice-cream" 
+        id="ice-cream"
+      />
+      <label for="ice-cream" class="buy-now-card-set__label buy-now-card-set__label--green">
+        <h3 class="buy-now-card-set__title">ice cream</h3>
       </label>
     </form>
   </li>
@@ -44,15 +46,18 @@
         loading="lazy"
       />
     </div>
-    <h3 class="buy-now-card-set__title">ice coffee</h3>
     <form>
-      <label>
-        <input 
+      <input 
+          class="buy-now-card-set__input"
           type="checkbox"
-          name="ice coffee"
-          value="ice coffee"
+          name="ice-coffee"
+          value="ice-coffee"
+          id="ice-coffee"
           checked
-          />
+          />      
+      <label 
+        for="ice-coffee" class="buy-now-card-set__label buy-now-card-set__label--yellow">
+          <h3 class="buy-now-card-set__title">ice coffee</h3>
       </label>
     </form>
   </li>
@@ -69,13 +74,16 @@
         loading="lazy"
       />
     </div>
-    <h3 class="buy-now-card-set__title">milkshake</h3>
     <form>
-      <label>
-        <input type="checkbox"  
+      <input 
+        class="buy-now-card-set__input" 
+        type="checkbox" 
         name="milkshake" 
         value="milkshake" 
+        id="milkshake" 
       />
+      <label for="milkshake" class="buy-now-card-set__label buy-now-card-set__label--orange">
+          <h3 class="buy-now-card-set__title">milkshake</h3>
       </label>
     </form>
   </li>

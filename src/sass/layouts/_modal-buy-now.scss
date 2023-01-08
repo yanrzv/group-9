@@ -114,13 +114,14 @@
     width: 132px;
     height: 132px;
     border-radius: 50%;
+    z-index: 1;
     &--green {
         background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
         box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
     }
     &--yellow {
         background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-        box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);        
+        box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
     }
     &--orange {
         background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
@@ -135,13 +136,13 @@
     width: 132px;
     height: 132px;
     border-radius: 50%;
+    z-index: 1;
     transition: top 300ms linear;
     .buy-now-card-set__item:hover &,
     .buy-now-card-set__item:focus & {
         top: -56px;
     }
 }
-
 .buy-now-card-set__title {
     font-family: 'Montserrat';
     font-size: 16px;
@@ -155,7 +156,7 @@
 
 // Чекбокси
 
-.buy-now-card-set-checkbox {
+.buy-now-card-set__input {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -166,24 +167,27 @@
     overflow: hidden;
 }
 
+.buy-now-card-set__label {
+    position: absolute;
+    top: 0;
+    width: 128px;
+    height: 133px;
+    display: block;
+    border-radius: 13px;
+}
 
-    // &__checkbox-icon {
-    //     position: absolute;
-    //     top: 50%;
-    //     left: 14px;
-    //     transform: translateY(-50%);
-    //     width: 16px;
-    //     height: 15px;
-    //     border: 2px solid var(--primary-text-color);
-    //     border-radius: 2px;
-    //     transition: background-color 250ms var(--transition-timing-function), border-color 250ms var(--transition-timing-function);
-
-    //     .application-form__checkbox:checked ~ & {
-    //         background-color: var(--primary-accent-bg-and-text-color);
-    //         border: 1px solid transparent;
-    //     }
-
-
+.buy-now-card-set__input:checked+.buy-now-card-set__label--green {
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.5), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+.buy-now-card-set__input:checked + .buy-now-card-set__label--yellow {
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.5), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+.buy-now-card-set__input:checked+.buy-now-card-set__label--orange {
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.5), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
 
 //-------------------- Форма -----------------------
 .modal-buy-now-form {
