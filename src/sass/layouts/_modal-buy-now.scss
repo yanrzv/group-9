@@ -56,11 +56,6 @@
 // Картки з продуктами
 
 .buy-now-card-set {
-    // display: flex;
-    // box-sizing:content-box;
-    // justify-content: center;
-    // flex-direction: column;
-    // align-items: center;
     margin-bottom: 31px;
     @include tablet {
         display: flex;
@@ -72,12 +67,8 @@
 .buy-now-card-set__item {
     position: relative;
     width: 132px;
-    height: 135; 
+    height: 135px; 
     border-radius: 15px; 
-    // display: block;
-    // width: 128px;
-    // height: 136px;   
-    // background: #FCFCFC;  
     &:not(:last-child) {
         @media screen and (max-width: 767px) {
             margin-bottom: 20px; 
@@ -87,33 +78,33 @@
         border-bottom: 2px solid #96AF8C;
         border-left: 2px solid #96AF8C;
         border-right: 2px solid #96AF8C;
-        // filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-        // background-image: url(../images/by-now-img/Ellipse102x.jpg);
-        // background-position-x: center;
-        // background-position-y: -65px;
-        // background-repeat: no-repeat;
-        // box-sizing: content-box;
+        &:hover,
+        &:focus {
+            background: linear-gradient(0deg, rgba(156, 190, 143, 0.5), rgba(156, 190, 143, 0.7)),#D9D9D9;
+        }
     }
     &:nth-child(2) {
         border-bottom: 2px solid #EFD478;
         border-left: 2px solid #EFD478;
         border-right: 2px solid #EFD478;
-        // box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+        &:hover,
+        &:focus {
+            background: linear-gradient(0deg, rgba(248, 210, 78, 0.5), rgba(248, 210, 78, 0.7)),#D9D9D9;
+        }
     }
     &:nth-child(3) {
         border-bottom: 2px solid #D6936D;
         border-left: 2px solid #D6936D;
-        border-right: 2px solid #D6936D;
-        // filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-        // background-image: url(../images/by-now-img/ellipse12.jpg);
-        // background-position-x: center;
-        // background-position-y: -72px;
-        // background-repeat: no-repeat;    
+        border-right: 2px solid #D6936D; 
+        &:hover,
+        &:focus {
+            background: linear-gradient(0deg, rgba(213, 117, 63, 0.5), rgba(213, 117, 63, 0.7)),#D9D9D9;
+        }
     }
 }
-// .buy-now-visual {
-//     width: 132px;
-// }
+.buy-now-visual {
+    width: 132px;
+}
 .buy-now-visual__bgr-circle {
     position: absolute;
     top: -56px;
@@ -137,14 +128,18 @@
     }
 }
 
-.buy-now-visual__img img {
+.buy-now-visual__img {
     position: absolute;
     top: -63px;
     display: inline-flex;
     width: 132px;
     height: 132px;
     border-radius: 50%;
-    
+    transition: top 300ms linear;
+    .buy-now-card-set__item:hover &,
+    .buy-now-card-set__item:focus & {
+        top: -56px;
+    }
 }
 
 .buy-now-card-set__title {
@@ -158,92 +153,19 @@
     padding-top: 95px;
 }
 
+// Чекбокси
 
+.buy-now-card-set-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
-// .picture-div-byu-now{
-//     width: 132px;
-//     height: 132px;
-//     position: absolute;
-//     bottom: 61px;
-//     left: -2px;
-// }
-// .picture-ice-byu-now {
-//     display:block;
-//     width: 132px;
-//     height: 132px;
-// }
-// .picture-ice-byu-now picture{
-//     width: 100%;
-//     height: 100%;
-//     border-radius: 50%;
-// }
-
-// .fon-yellow-buy-now img{
-//     border-radius: 50%;
-//     width: 132px;
-//     height: 132px;
-//     position: absolute;
-// }
-// .picture-ice-byu-now img {
-// border-radius: 50%;
-// background-color: #EFD478;
-// position: absolute;
-// }
-
-// .fon-yellow-buy-now{
-//     left: -2px;
-//     position: absolute;
-//     bottom: 60px;
-//     border-radius: 50%;
-//     z-index: 2;
-//     box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
-//     background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
-//     #D9D9D9;}
-    
-
-// .picture-div-byu-too{
-//     width: 132px;
-//     height: 132px;
-//     position: absolute;
-//     bottom: 67px;
-//     z-index: 3;
-//     left: -2px;
-// }
-
-// .picture-div-byu-free{
-//             width: 132px;
-//             height: 132px;
-//             position: absolute;
-//             bottom: 68px;
-//             left: -2px;
-//     }
-
-    // &__label-terms {
-    //     position: relative;
-    //     @include font (null, 12px, 1.7);
-    //     color: var(--secondary-text-color);
-    //     margin-top: 10px;
-    //     margin-bottom: 30px;
-    //     display: block;
-    //     padding-left: 37px;
-    // }
-
-    // &__agreement-link {
-    //     text-decoration: underline;
-    //     color: var(--primary-accent-bg-and-text-color);
-    //     display: inline-block;
-    // }
-
-    // &__checkbox {
-    //     position: absolute;
-    //     width: 1px;
-    //     height: 1px;
-    //     margin: -1px;
-    //     border: 0;
-    //     padding: 0;
-    //     clip: rect(0 0 0 0);
-    //     overflow: hidden;
-    // }
 
     // &__checkbox-icon {
     //     position: absolute;
