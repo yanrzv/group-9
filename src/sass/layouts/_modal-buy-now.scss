@@ -11,35 +11,34 @@
     @media screen and (max-width: 767px) {
         height: 100vh;
         max-height: 960px;
-        }
+    }
     @include mobile {
-            width: 440px;
-            padding: 32px 40px;
-        }
+        width: 440px;
+        padding: 32px 40px;
+    }
     @include tablet {
         padding: 32px 54px;
         width: 568px;
-        // height: 644px;
         max-height: 960px;
     }
 }
 
 .modal-buy-now__close-btn {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 20px;
-        height: 20px;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        background-color: transparent;
-        &:hover,
-        &:focus {
-            fill: var(--button-background-hover);
-            transform: scale(2);
-        }
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    &:hover,
+    &:focus {
+        fill: var(--button-background-hover);
+        transform: scale(2);
+    }
 }
 
-.buy-now-title{
+.buy-now-title {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24 / 16);
@@ -69,50 +68,44 @@
     width: 132px;
     height: 135px; 
     border-radius: 15px; 
+    margin-left: auto;
+    margin-right: auto;
     &:not(:last-child) {
         @media screen and (max-width: 767px) {
-            margin-bottom: 20px; 
+            margin-bottom: 85px; 
         }
     }
     &:first-child {
-        border-bottom: 2px solid #96AF8C;
-        border-left: 2px solid #96AF8C;
-        border-right: 2px solid #96AF8C;
+        border: 2px solid #96AF8C;
         &:hover,
         &:focus {
             background: linear-gradient(0deg, rgba(156, 190, 143, 0.5), rgba(156, 190, 143, 0.7)),#D9D9D9;
         }
     }
     &:nth-child(2) {
-        border-bottom: 2px solid #EFD478;
-        border-left: 2px solid #EFD478;
-        border-right: 2px solid #EFD478;
+        border: 2px solid #EFD478;
         &:hover,
         &:focus {
             background: linear-gradient(0deg, rgba(248, 210, 78, 0.5), rgba(248, 210, 78, 0.7)),#D9D9D9;
         }
     }
     &:nth-child(3) {
-        border-bottom: 2px solid #D6936D;
-        border-left: 2px solid #D6936D;
-        border-right: 2px solid #D6936D; 
+        border: 2px solid #D6936D;
         &:hover,
         &:focus {
             background: linear-gradient(0deg, rgba(213, 117, 63, 0.5), rgba(213, 117, 63, 0.7)),#D9D9D9;
         }
     }
 }
-.buy-now-visual {
-    width: 132px;
-}
-.buy-now-visual__bgr-circle {
+
+.buy-now-card-set__circle {
     position: absolute;
     top: -56px;
     left: 50%;
     transform: translateX(-50%);
     display: inline-flex;
-    width: 132px;
-    height: 132px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     z-index: 1;
     &--green {
@@ -129,7 +122,7 @@
     }
 }
 
-.buy-now-visual__img {
+.buy-now-card-set__img {
     position: absolute;
     top: -63px;
     display: inline-flex;
@@ -143,6 +136,7 @@
         top: -56px;
     }
 }
+
 .buy-now-card-set__title {
     font-family: 'Montserrat';
     font-size: 16px;
@@ -154,7 +148,7 @@
     padding-top: 95px;
 }
 
-// Чекбокси
+// ------------------ Чекбокси -------------------
 
 .buy-now-card-set__input {
     position: absolute;
@@ -171,9 +165,12 @@
     position: absolute;
     top: 0;
     width: 128px;
-    height: 133px;
+    height: 131px;
     display: block;
     border-radius: 13px;
+    @include tablet { 
+        width: 127px;
+    }
 }
 
 .buy-now-card-set__input:checked+.buy-now-card-set__label--green {
