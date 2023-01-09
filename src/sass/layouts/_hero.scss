@@ -129,22 +129,15 @@
     @include tablet {
         display: block;
         margin-right: 16px;
-            animation: plateRotation 80s ease-in-out infinite alternate;
-    }
-    
+        animation: plateRotation 80s ease-in-out infinite alternate;
+    }  
 }
-
 @keyframes plateRotation {
     0% {
         transform: rotate(0deg);
-        transform-origin: center;
     }
-    // 50% {
-    //     transform-origin: center;
-    // }
     100% {
         transform: rotate(360deg);
-        transform-origin: center;
     }
 }
 
